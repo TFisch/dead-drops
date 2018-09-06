@@ -6,7 +6,12 @@ export const Welcome = () => {
   return (
     <div>
       <h1>WELCOME</h1>
-      <a href='#/' alt="pinterest-login" />
+      <a href='https://api.pinterest.com/oauth/?
+    response_type=code&
+    redirect_uri=https://mywebsite.com/connect/pinterest/&
+    client_id=12345&
+    scope=read_public&
+    state=666' alt="pinterest-login">LINK</a>
     </div>
   )
 }
