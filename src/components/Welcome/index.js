@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 
 export const Welcome = () => {
   return (
-    <div>
+    <div className="welcome">
       <h1>WELCOME</h1>
       <a href='https://api.pinterest.com/oauth/?
     response_type=code&
