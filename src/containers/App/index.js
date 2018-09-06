@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import { Welcome } from '../../components/Welcome/'
+import { BrowserRouter, Route } from 'react-router-dom';
+import DropSubmitForm from '../DropSubmitForm/';
+
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Welcome />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route path='/' component={Welcome} />
+          <Route exact path='/DropSubmitForm' component={DropSubmitForm} />
+
+
+        </div>
+      </BrowserRouter>
     );
   }
 }
-
-export default App;
