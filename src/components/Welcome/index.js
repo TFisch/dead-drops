@@ -1,17 +1,20 @@
 import React from 'react';
 import './style.css';
 import { Route } from 'react-router-dom';
+import { OauthSender } from 'react-oauth-flow';
 
 export const Welcome = () => {
   return (
     <div className="welcome">
       <h1>WELCOME</h1>
-      <a href='https://api.pinterest.com/oauth/?
-    response_type=code&
-    redirect_uri=https://mywebsite.com/connect/pinterest/&
-    client_id=12345&
-    scope=read_public&
-    state=666' alt="pinterest-login">LINK</a>
+      <OauthSender
+        authorizeUrl="https://api.pinterest.com/oauth/"
+        clientId={'4987807426915878592'}
+        redirectUri="https://localhost:3000/"
+        // state={{ from: '/settings' }}
+        args={{ scope: 'read_public', response_type: 'code' }}
+        render={({ url }) => <a href={url}>LINK</a>}
+      />
     </div>
   )
 }
