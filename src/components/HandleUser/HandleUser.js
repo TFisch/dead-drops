@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { OauthReceiver } from 'react-oauth-flow';
+import id from '../../hidden/hidden'
+
 
 export default class AcceptUser extends Component {
   handleSuccess = async (accessToken, { response, state }) => {
@@ -16,10 +18,10 @@ export default class AcceptUser extends Component {
   render() {
     return (
       <OauthReceiver
-        tokenUrl="https://api.dropbox.com/oauth2/token"
+        tokenUrl="https://api.pinterest.com/v1/oauth/token"
         clientId={'4987807426915878592'}
-        clientSecret={process.env.CLIENT_SECRET}
-        redirectUri="https://www.yourapp.com/auth/dropbox"
+        clientSecret={id}
+        redirectUri="https://localhost:3000/"
         onAuthSuccess={this.handleSuccess}
         onAuthError={this.handleError}
         render={({ processing, state, error }) => (
