@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# files to ignore
+src/api/secret.js
+
 # dependencies
 /node_modules
 
