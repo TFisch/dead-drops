@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import { Route } from 'react-router-dom';
 import { OauthSender } from 'react-oauth-flow';
-import HandleUser from '../HandleUser/HandleUser';
+import HandleUser from '../HandleUser';
 
 
 export const Welcome = () => {
