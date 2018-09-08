@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Welcome } from '../../components/Welcome/'
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { DropSubmitForm } from '../DropSubmitForm/';
 import { Nav } from '../Nav'
 import './App.css';
+import HandleUser from '../../components/HandleUser';
 
 export class App extends Component {
   render() {
@@ -11,8 +12,11 @@ export class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Nav />
-          <Route path='/' component={Welcome} />
-          <Route exact path='/dropSubmitForm' component={DropSubmitForm} />
+          <Switch>
+            <Route exact path='/' component={Welcome} />
+            <Route exact path='/Handleuser' component={HandleUser} />
+            <Route exact path='/dropSubmitForm' component={DropSubmitForm} />
+          </Switch>
         </div>
       </BrowserRouter>
     );
