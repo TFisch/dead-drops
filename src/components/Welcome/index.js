@@ -2,6 +2,8 @@ import React from 'react';
 import './style.css';
 import { Route } from 'react-router-dom';
 import { OauthSender } from 'react-oauth-flow';
+import HandleUser from '../HandleUser/HandleUser';
+
 
 export const Welcome = () => {
   return (
@@ -15,6 +17,7 @@ export const Welcome = () => {
         args={{ scope: 'read_public', response_type: 'code' }}
         render={({ url }) => <a href={url}>LINK</a>}
       />
+
     </div>
   )
 }
