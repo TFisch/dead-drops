@@ -12,10 +12,10 @@ export const Welcome = () => {
       <OauthSender
         authorizeUrl="https://api.pinterest.com/oauth/"
         clientId={'4987807426915878592'}
-        redirectUri="https://localhost:3000/"
+        redirectUri="https://localhost:3000/handleuser"
         // state={{ from: '/settings' }}
         args={{ scope: 'read_public', response_type: 'code' }}
-        render={({ url }) => <a href={url}>LINK</a>}
+        render={({ url }) => <a href={'https://localhost:3000/handleuser'}>LINK</a>}
       />
 
     </div>
