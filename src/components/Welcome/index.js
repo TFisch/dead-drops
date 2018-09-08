@@ -15,9 +15,8 @@ export const Welcome = () => {
         redirectUri="https://localhost:3000/handleuser"
         // state={{ from: '/settings' }}
         args={{ scope: 'read_public', response_type: 'code' }}
-        render={({ url }) => <a href={'https://localhost:3000/handleuser'}>LINK</a>}
+        render={({ url }) => <a href={url}>LINK</a>}
       />
-
     </div>
   )
 }
