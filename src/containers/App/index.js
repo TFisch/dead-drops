@@ -14,8 +14,8 @@ export class App extends Component {
           <Nav />
           <Switch>
             <Route exact path='/' component={Welcome} />
-            <Route exact path='/Handleuser' component={HandleUser} />
-            <Route exact path='/dropSubmitForm' component={DropSubmitForm} />
+            <Route exact path='/handleuser' component={HandleUser} />
+            <Route exact path='/dropsubmitform' component={DropSubmitForm} />
           </Switch>
         </div>
       </BrowserRouter>
