@@ -15,9 +15,10 @@ export default class HandleUser extends Component {
   };
 
   render() {
+    const url = 'https://api.pinterest.com/v1/oauth/token'
     return (
       <OauthReceiver
-        tokenUrl="https://api.pinterest.com/v1/oauth/token"
+        tokenUrl={url}
         clientId={'4987807426915878592'}
         clientSecret={id}
         redirectUri="https://de2c7dca.ngrok.io/profile"
