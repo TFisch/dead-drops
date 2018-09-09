@@ -2,6 +2,7 @@
 
 # file to ignore
 hidden.js
+id.js
 
 # dependencies
 /node_modules
