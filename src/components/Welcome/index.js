@@ -10,9 +10,9 @@ export const Welcome = () => {
     <div className="welcome">
       <h1>WELCOME</h1>
       <OauthSender
-        authorizeUrl="http://api.pinterest.com/oauth/"
+        authorizeUrl="https://api.pinterest.com/oauth/"
         clientId={'4987807426915878592'}
-        redirectUri="https://99338ecb.ngrok.io/profile"
+        redirectUri="https://de2c7dca.ngrok.io/profile"
         // state={{ from: '/settings' }}
         args={{ scope: 'read_public', response_type: 'code' }}
         render={({ url }) => <a href={url}>LINK</a>}
