@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { OauthReceiver } from 'react-oauth-flow';
 import { id } from '../../hidden/hidden'
 
-class HandleUser extends Component {
+export default class HandleUser extends Component {
   handleSuccess = async (accessToken, { response, state }) => {
     console.log('Successfully authorized');
     // await setProfileFromDropbox(accessToken);
@@ -20,10 +20,10 @@ class HandleUser extends Component {
         tokenUrl="https://api.pinterest.com/v1/oauth/token"
         clientId={'4987807426915878592'}
         clientSecret={id}
-        redirectUri="https://99338ecb.ngrok.io/profile"
+        redirectUri="https://de2c7dca.ngrok.io/profile"
         onAuthSuccess={this.handleSuccess}
         onAuthError={this.handleError}
-        args={{ scope: 'read_public', response_type: 'code' }}
+        args={{ grant_type: 'authorization_code' }}
         render={({ processing, state, error }) => (
           <div>
             {processing && <p>Authorizing now...</p>}
@@ -33,9 +33,6 @@ class HandleUser extends Component {
           </div>
         )}
       />
-    )
+    );
   }
 }
-
-
-export default HandleUser;
