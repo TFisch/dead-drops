@@ -20,9 +20,10 @@ class HandleUser extends Component {
         tokenUrl="https://api.pinterest.com/v1/oauth/token"
         clientId={'4987807426915878592'}
         clientSecret={id}
-        redirectUri="https://localhost:3000/profile"
+        redirectUri="https://99338ecb.ngrok.io/profile"
         onAuthSuccess={this.handleSuccess}
         onAuthError={this.handleError}
+        args={{ scope: 'read_public', response_type: 'code' }}
         render={({ processing, state, error }) => (
           <div>
             {processing && <p>Authorizing now...</p>}
