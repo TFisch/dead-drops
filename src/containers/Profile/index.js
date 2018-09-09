@@ -21,5 +21,15 @@ export class Profile extends Component {
     )
   }
 
-
 }
+
+
+export const mapStateToProps = (state) => ({
+  userImage: state.userImage,
+});
+
+export const mapDispatchToProps = (dispatch) => ({
+  getProfileImage: (image) => dispatch(addFavorite(movie)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
