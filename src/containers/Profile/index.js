@@ -29,7 +29,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  getProfileImage: (image) => dispatch(addFavorite(movie)),
+  getProfileImage: (image) => dispatch(getProfileImage(image)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
