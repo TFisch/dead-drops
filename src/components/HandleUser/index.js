@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { OauthReceiver } from 'react-oauth-flow';
 import { id } from '../../hidden/hidden'
+import { extractToken } from '../../utilities/helper'
 
 export default class HandleUser extends Component {
   constructor() {
@@ -28,9 +29,12 @@ export default class HandleUser extends Component {
       `code=${this.state.authorizationCode}`
     const response = await fetch(accessTokenUrl, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded '
+      }
     })
-    const result = await response.json()
-    debugger
+    const result = await response.json();
+    console.log(result.access_token);
   }
 
   handleSuccess = async (accessToken, { response, state }) => {
