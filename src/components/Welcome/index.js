@@ -12,7 +12,7 @@ export const Welcome = () => {
       <OauthSender
         authorizeUrl="https://api.pinterest.com/oauth/"
         clientId={'4987807426915878592'}
-        redirectUri="https://de2c7dca.ngrok.io/profile"
+        redirectUri="https://54f23598.ngrok.io/profile"
         // state={{ from: '/settings' }}
         args={{ scope: 'read_public', response_type: 'code' }}
         render={({ url }) => <a href={url}>LINK</a>}
