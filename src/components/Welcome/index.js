@@ -15,7 +15,7 @@ export const Welcome = () => {
         redirectUri="https://6341b039.ngrok.io/profile"
         // state={{ from: '/settings' }}
         args={{ scope: 'read_public', response_type: 'code' }}
-        render={({ url }) => <a href={url}>LINK</a>}
+        render={({ url }) => <a href={url}>Sign In With Pinterest</a>}
       />
     </div>
 
