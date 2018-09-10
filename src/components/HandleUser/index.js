@@ -21,7 +21,7 @@ export default class HandleUser extends Component {
         tokenUrl={url}
         clientId={'4987807426915878592'}
         clientSecret={id}
-        redirectUri="https://54f23598.ngrok.io/profile"
+        redirectUri="https://6341b039.ngrok.io/profile"
         onAuthSuccess={this.handleSuccess}
         onAuthError={this.handleError}
         args={{ grant_type: 'authorization_code' }}

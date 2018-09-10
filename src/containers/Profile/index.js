@@ -17,7 +17,6 @@ export class Profile extends Component {
 
     return (
       <div>
-        <h1>HI</h1>
         <HandleUser />
       </div>
     )
