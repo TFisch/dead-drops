@@ -52,29 +52,7 @@ export default class HandleUser extends Component {
   render() {
     const url = 'https://api.pinterest.com/v1/oauth/token'
     return (
-      // <OauthReceiver
-      //   tokenUrl={url}
-      //   clientId={'4987807426915878592'}
-      //   clientSecret={id}
-      //   redirectUri="https://6341b039.ngrok.io/profile"
-      //   onAuthSuccess={this.handleSuccess}
-      //   onAuthError={this.handleError}
-      //   args={{
-      //     grant_type: 'authorization_code',
-      //     code: this.state.accessCode,
-      //     client_id: '4987807426915878592',
-      //     client_secret: id
-      //   }}
 
-      //   render={({ processing, state, error }) => (
-      //     <div>
-      //       {processing && <p>Authorizing now...</p>}
-      //       {error && (
-      //         <p className="error">An error occured: {error.message}</p>
-      //       )}
-      //     </div>
-      //   )}
-      // />
       <div>
 
       </div>
