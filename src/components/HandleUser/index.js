@@ -37,16 +37,7 @@ export default class HandleUser extends Component {
     getToken(result.access_token);
   }
 
-  handleSuccess = async (accessToken, { response, state }) => {
-    console.log('Successfully authorized');
-    // await setProfileFromDropbox(accessToken);
-    // await redirect(state.from);
-  };
 
-  handleError = error => {
-    console.error('An error occured');
-    console.error(error.message);
-  };
 
 
   render() {
