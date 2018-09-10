@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { OauthReceiver } from 'react-oauth-flow';
 import { id } from '../../hidden/hidden'
-import { extractToken } from '../../utilities/helper'
+import { getToken } from '../../actions'
 
 export default class HandleUser extends Component {
   constructor() {
@@ -34,7 +34,7 @@ export default class HandleUser extends Component {
       }
     })
     const result = await response.json();
-    console.log(result.access_token);
+    getToken(result.access_token);
   }
 
   handleSuccess = async (accessToken, { response, state }) => {
