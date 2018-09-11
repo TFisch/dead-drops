@@ -5,11 +5,9 @@ import { DropSubmitForm } from '../DropSubmitForm/';
 import { Profile } from '../Profile/';
 import { Nav } from '../Nav'
 import './App.css';
-import HandleUser from '../../components/HandleUser';
+import HandleUser from '../HandleUser';
 
 export class App extends Component {
-
-
 
   render() {
 
