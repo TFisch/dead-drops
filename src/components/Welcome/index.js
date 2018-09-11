@@ -1,8 +1,5 @@
 import React from 'react';
 import './style.css';
-import { Route } from 'react-router-dom';
-import { OauthSender, OauthReceiver } from 'react-oauth-flow';
-import { id } from '../../hidden/hidden'
 
 export const Welcome = () => {
   const url = "https://api.pinterest.com/oauth/?" +
