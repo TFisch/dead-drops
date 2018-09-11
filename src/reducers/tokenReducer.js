@@ -1,4 +1,4 @@
-export const tokenReducer = (state = {}, action) => {
+export const tokenReducer = (state = "", action) => {
   switch (action.type) {
     case 'GET_TOKEN':
       return action.token;
