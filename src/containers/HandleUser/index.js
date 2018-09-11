@@ -4,8 +4,8 @@ import { getToken } from '../../actions'
 import { connect } from 'react-redux';
 
 class HandleUser extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       authorizationCode: ''
     }
@@ -38,6 +38,7 @@ class HandleUser extends Component {
   }
 
   render() {
+    console.log(this.props)
     const url = 'https://api.pinterest.com/v1/oauth/token'
     return (
 
@@ -48,9 +49,12 @@ class HandleUser extends Component {
   }
 }
 
+export const mapStateToProps = (state) => ({
+  userToken: state.userToken
+})
 
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token))
 })
 
-export default connect(null, mapDispatchToProps)(HandleUser);
+export default connect(mapStateToProps, mapDispatchToProps)(HandleUser);
