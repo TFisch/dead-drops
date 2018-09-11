@@ -48,6 +48,7 @@ class HandleUser extends Component {
         {this.state.fireRedirect && (
           <Redirect to={'/profile'} />
         )}
+        <h1>Loading...</h1>
       </div>
     );
   }
