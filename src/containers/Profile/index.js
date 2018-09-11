@@ -17,10 +17,8 @@ export class Profile extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div>
-        <HandleUser />
       </div>
     )
   }
