@@ -16,7 +16,6 @@ export class Profile extends Component {
 
   }
 
-
   render() {
     console.log(this.props);
     return (
@@ -29,7 +28,6 @@ export class Profile extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  userImage: state.userImage,
   userToken: state.token
 });
 
