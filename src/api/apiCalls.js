@@ -1,8 +1,10 @@
 
-// export const fetchUserImage = async => {
-//   const url = `https://api.pinterest.com/v1/users/{user}/?access_token={token}&fields=image`
-//   const response = await fetch(url);
-// }
+export const fetchUserImage = async (token) => {
+  const url = `https://api.pinterest.com/v1/users/me/?access_token=${token}&fields=image`
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data)
+}
 
 
 
