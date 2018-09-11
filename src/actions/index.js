@@ -3,8 +3,7 @@ export const getProfileImage = (userInfo) => ({
   userInfo
 });
 
-export const getToken = (token) => (
-  {
-    type: 'GET_TOKEN',
-    token
-  });
+export const getToken = (token) => ({
+  type: 'GET_TOKEN',
+  token
+});

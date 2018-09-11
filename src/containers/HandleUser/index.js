@@ -34,12 +34,11 @@ class HandleUser extends Component {
       }
     })
     const result = await response.json();
-    getToken(result.access_token);
+    this.props.getToken(result.access_token);
   }
 
   render() {
     console.log(this.props)
-    const url = 'https://api.pinterest.com/v1/oauth/token'
     return (
 
       <div>
@@ -50,7 +49,7 @@ class HandleUser extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  userToken: state.userToken
+  userToken: state.token
 })
 
 export const mapDispatchToProps = (dispatch) => ({
