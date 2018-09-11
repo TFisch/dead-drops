@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HandleUser from '../HandleUser';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
+import { fetchUserImage } from '../../api/apiCalls'
 
 export class Profile extends Component {
   constructor(props) {
@@ -11,9 +12,13 @@ export class Profile extends Component {
     }
   }
 
-  retrieveProfilePicture = () => {
-    const url = `https://api.pinterest.com/v1/me/?access_token={token}&fields=image`
+  componentDidUpdate() {
+    this.retrieveProfilePicture();
+  }
 
+  retrieveProfilePicture = async () => {
+    const token = this.props.userToken.token;
+    await fetchUserImage(token);
   }
 
   render() {
@@ -26,7 +31,7 @@ export class Profile extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  userToken: state.token
+  userToken: state.user
 });
 
 export const mapDispatchToProps = (dispatch) => ({
