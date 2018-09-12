@@ -40,9 +40,9 @@ export class Profile extends Component {
           <div className="post-wrap">
             <div className="profile-wrap">
               <img src={image} alt="user-profile-picture" className='profile-image' />
-              <h1>Welcome, {username}</h1>
+              <h1>Welcome, {username}!</h1>
             </div>
-            <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>
+            {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
           </div>
           {dropFormActive && < DropSubmitForm />}
         </div>
