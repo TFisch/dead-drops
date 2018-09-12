@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HandleUser from '../HandleUser';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchUserImage } from '../../api/apiCalls'
+import { fetchUserImage, fetchedUsername } from '../../api/apiCalls'
 
 export class Profile extends Component {
   constructor(props) {
@@ -19,7 +19,6 @@ export class Profile extends Component {
   retrieveProfilePicture = async () => {
     const token = this.props.userToken.token;
     const fetchedImage = await fetchUserImage(token);
-    const fetchedUsername = await fetchedUsername(token)
     this.setState({ profileImage: fetchedImage })
   }
 
