@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
 import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
-import { Link } from 'react-router-dom';
 import './Profile.css'
 import { DropSubmitForm } from '../DropSubmitForm';
 import { DropList } from '../DropList'
@@ -19,6 +18,7 @@ export class Profile extends Component {
 
   componentDidUpdate() {
     this.retrieveProfilePicture();
+    this.retrieveDropBoard();
   }
 
   retrieveProfilePicture = async () => {
@@ -28,7 +28,7 @@ export class Profile extends Component {
     this.setState({ username, image })
   }
 
-  retrieveDropsBoard = async () => {
+  retrieveDropBoard = async () => {
     const token = this.props.userToken.token;
     const retrievedBoard = await fetchDropBoard(token);
   }
