@@ -23,9 +23,14 @@ export class Profile extends Component {
 
   retrieveProfilePicture = async () => {
     const token = this.props.userToken.token;
+    console.log(token);
     const fetchedImage = await fetchUserImage(token);
     const { username, image } = fetchedImage
     this.setState({ username, image })
+  }
+
+  retrieveDropsBoard = async () => {
+    const token = this.props.userToken.token;
   }
 
   handlePost = () => {
