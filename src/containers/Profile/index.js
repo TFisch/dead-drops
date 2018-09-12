@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import HandleUser from '../HandleUser';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchUserImage, fetchedUsername } from '../../api/apiCalls'
+import { fetchUserImage } from '../../api/apiCalls'
+import { Link } from 'react-router-dom';
 import './Profile.css'
 
 export class Profile extends Component {
@@ -29,8 +29,13 @@ export class Profile extends Component {
     const { username, image } = this.state
     return (
       <div className='user-profile'>
-        <h2>Welcome, {username}</h2>
-        <img src={image} alt="user-profile-picture" className='profile-image' />
+        <div className="post-wrap">
+          <div className="profile-wrap">
+            <img src={image} alt="user-profile-picture" className='profile-image' />
+            <h1>Welcome, {username}</h1>
+          </div>
+          <Link to='/DropSubmitForm'><button className="post-button">POST A DEAD DROP</button></Link>
+        </div>
       </div>
     )
   }
