@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { id } from '../../hidden/hidden'
 import { getToken } from '../../actions'
 import { connect } from 'react-redux';
+import { Redirect, Route } from 'react-router-dom'
+import { Profile } from '../Profile'
 
 class HandleUser extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      authorizationCode: ''
+      authorizationCode: '',
+      fireRedirect: false
     }
   }
 
@@ -34,15 +37,18 @@ class HandleUser extends Component {
       }
     })
     const result = await response.json();
+    await this.setState({ fireRedirect: true })
     this.props.getToken(result.access_token);
   }
 
   render() {
-    console.log(this.props)
     return (
 
       <div>
-
+        {this.state.fireRedirect && (
+          <Redirect to={'/profile'} />
+        )}
+        <h1>Loading...</h1>
       </div>
     );
   }

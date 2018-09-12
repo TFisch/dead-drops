@@ -1,27 +1,58 @@
 import React, { Component } from 'react';
-import HandleUser from '../HandleUser';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
+import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
+import './Profile.css'
+import { DropSubmitForm } from '../DropSubmitForm';
+import { DropList } from '../DropList'
 
 export class Profile extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      username: '',
+      image: '',
+      dropFormActive: false
     }
   }
 
-  retrieveProfilePicture = () => {
-    const url = `https://api.pinterest.com/v1/me/?access_token={token}&fields=image`
-
+  componentDidUpdate() {
+    this.retrieveProfilePicture();
+    this.retrieveDropBoard();
   }
 
+  retrieveProfilePicture = async () => {
+    const token = this.props.userToken.token;
+    const fetchedImage = await fetchUserImage(token);
+    const { username, image } = fetchedImage
+    this.setState({ username, image })
+  }
+
+  retrieveDropBoard = async () => {
+    const token = this.props.userToken.token;
+    const retrievedBoard = await fetchDropBoard(token);
+  }
+
+  handlePost = () => {
+    const dropFormActive = !this.state.dropFormActive;
+    this.setState({ dropFormActive })
+  }
 
   render() {
-    console.log(this.props);
+    const { username, image, dropFormActive } = this.state
     return (
-      <div>
-        <HandleUser />
+      <div className="container">
+        <div className='user-profile'>
+          <div className="post-wrap">
+            <div className="profile-wrap">
+              <img src={image} alt="user-profile-picture" className='profile-image' />
+              <h1>Welcome, {username}!</h1>
+            </div>
+            {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
+          </div>
+          {dropFormActive && < DropSubmitForm />}
+        </div>
+        <DropList token={this.props.userToken.token} />
       </div>
     )
   }
@@ -29,8 +60,7 @@ export class Profile extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  userImage: state.userImage,
-  userToken: state.token
+  userToken: state.user
 });
 
 export const mapDispatchToProps = (dispatch) => ({

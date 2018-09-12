@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Welcome } from '../../components/Welcome/'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { DropSubmitForm } from '../DropSubmitForm/';
-import { Profile } from '../Profile/';
+import Profile from '../Profile/';
 import { Nav } from '../Nav'
 import './App.css';
 import HandleUser from '../HandleUser';

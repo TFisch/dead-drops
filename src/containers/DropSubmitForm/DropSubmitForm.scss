@@ -1,0 +1,50 @@
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.code-entry {
+  width: 1em;
+}
+
+.drop-form {
+  background-color: burlywood;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 15em;
+  margin: 1em;
+  padding: 1em;
+  width: 30em;
+}
+
+.entry-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 29em;
+}
+
+.form-row {
+  margin-top: 1em;
+}
+
+input {
+  height: 2em;
+  width: 20em;
+}
+
+.submit-button {
+  height: 2.8em;
+  margin-right: 1.2em;
+  width: 10em;
+}
+
+.unique-code-entry-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+}
+
