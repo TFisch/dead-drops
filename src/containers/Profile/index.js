@@ -3,6 +3,7 @@ import HandleUser from '../HandleUser';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
 import { fetchUserImage, fetchedUsername } from '../../api/apiCalls'
+import './Profile.css'
 
 export class Profile extends Component {
   constructor(props) {
@@ -28,8 +29,8 @@ export class Profile extends Component {
     const { username, image } = this.state
     return (
       <div className='user-profile'>
-        <h2>Welcome, </h2>
-        <img src={this.state.profileImage} alt="user-profile-picture" className='profile-image' />
+        <h2>Welcome, {username}</h2>
+        <img src={image} alt="user-profile-picture" className='profile-image' />
       </div>
     )
   }
