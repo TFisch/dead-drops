@@ -1,16 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export class DropSubmitForm extends Component {
-  constructor() {
-    super()
-    this.state = {
-
-    }
-  }
-
-
-  render() {
-    return (
+export const DropSubmitForm = () => {
+  return (
+    <div>
       <div className="drop-submit">
         <div className="form">
           <input name="difficulty" placeholder="difficulty" type="text" />
@@ -20,7 +12,6 @@ export class DropSubmitForm extends Component {
           <button>SUBMIT</button>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
-

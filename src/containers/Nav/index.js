@@ -1,10 +1,12 @@
 import React from 'react';
-import './style.css'
+import { Link } from 'react-router-dom';
+import './style.css';
 
 export const Nav = () => {
   return (
     <div className="nav">
-      <button className="logout-button">Log out</button>
+      <Link to='/dropSubmitForm'><button className="post-button">Post A Drop</button></Link>
+      <Link to='/'><button className="logout-button">Log Out</button></Link>
     </div>
   )
 }
