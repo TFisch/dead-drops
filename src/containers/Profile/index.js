@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getProfileImage } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchUserImage } from '../../api/apiCalls'
+import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
 import { Link } from 'react-router-dom';
 import './Profile.css'
 import { DropSubmitForm } from '../DropSubmitForm';
@@ -23,7 +23,6 @@ export class Profile extends Component {
 
   retrieveProfilePicture = async () => {
     const token = this.props.userToken.token;
-    console.log(token);
     const fetchedImage = await fetchUserImage(token);
     const { username, image } = fetchedImage
     this.setState({ username, image })
@@ -31,6 +30,8 @@ export class Profile extends Component {
 
   retrieveDropsBoard = async () => {
     const token = this.props.userToken.token;
+    const retrievedBoard = await fetchDropBoard(token);
+
   }
 
   handlePost = () => {
