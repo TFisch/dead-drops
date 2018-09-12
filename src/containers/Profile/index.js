@@ -31,7 +31,6 @@ export class Profile extends Component {
   retrieveDropsBoard = async () => {
     const token = this.props.userToken.token;
     const retrievedBoard = await fetchDropBoard(token);
-
   }
 
   handlePost = () => {
