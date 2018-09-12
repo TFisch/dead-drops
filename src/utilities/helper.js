@@ -1,7 +1,11 @@
 export const cleanImage = (imageResponse) => {
-  const image = imageResponse.data.image;
   const username = imageResponse.data.username
-  console.log(username);
-  return image['60x60'].url;
+  const imageUrl = imageResponse.data.image;
+  const image = imageUrl['60x60'].url;
+  let userProfile = {
+    username,
+    image
+  }
+  return userProfile;
 }
 
