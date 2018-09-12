@@ -19,12 +19,13 @@ export class Profile extends Component {
   retrieveProfilePicture = async () => {
     const token = this.props.userToken.token;
     const fetchedImage = await fetchUserImage(token);
+    const fetchedUsername = await fetchedUsername(token)
     this.setState({ profileImage: fetchedImage })
   }
 
   render() {
     return (
-      <div>
+      <div className='user-profile'>
         <img src={this.state.profileImage} alt="user-profile-picture" className='profile-image' />
       </div>
     )
