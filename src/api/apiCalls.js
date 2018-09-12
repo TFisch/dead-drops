@@ -1,4 +1,4 @@
-import { cleanImage, cleanUsername } from '../utilities/helper'
+import { cleanImage } from '../utilities/helper'
 
 
 export const fetchUserImage = async (token) => {
@@ -10,7 +10,8 @@ export const fetchUserImage = async (token) => {
 }
 
 export const fetchDropBoard = async (token) => {
-  const url = `https://api.pinterest.com/v1/deaddrops/dead-drops/sections/?access_token=${token}`
+  console.log(token);
+  const url = `https://api.pinterest.com/v1/boards/deaddrops/dead-drops/pins/?access_token=${token}&fields=link%2Cnote%2Curl%2Cimage`
   const response = await fetch(url);
   const data = await response.json();
   console.log(data);
