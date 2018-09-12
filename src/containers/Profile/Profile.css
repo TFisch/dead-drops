@@ -1,5 +1,10 @@
+.board-display {
+  background-color: darkorange;
+  width: 50em; }
+
 .container {
-  background-color: aqua; }
+  background-color: aqua;
+  display: flex; }
 
 .profile-image {
   border: 1px solid black;

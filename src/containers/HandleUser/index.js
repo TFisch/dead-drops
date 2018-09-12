@@ -2,26 +2,28 @@ import React, { Component } from 'react';
 import { id } from '../../hidden/hidden'
 import { getToken } from '../../actions'
 import { connect } from 'react-redux';
-import { Redirect, Route } from 'react-router-dom'
-import { Profile } from '../Profile'
+import { Redirect } from 'react-router-dom'
 
 class HandleUser extends Component {
   constructor(props) {
     super(props)
     this.state = {
       authorizationCode: '',
-      fireRedirect: false
+      fireRedirect: false,
+      tokenFetched: false
     }
   }
 
   async componentDidMount() {
-    let code;
-    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (value) {
-      code = value;
-    });
-    const newCode = code.split('').splice(6, code.length).join('')
-    await this.setState({ authorizationCode: newCode })
-    await this.getAccessToken()
+    if (!this.state.tokenFetched) {
+      let code;
+      window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (value) {
+        code = value;
+      });
+      const newCode = code.split('').splice(6, code.length).join('')
+      await this.setState({ authorizationCode: newCode })
+      await this.getAccessToken()
+    }
   }
 
   async getAccessToken() {
@@ -37,7 +39,7 @@ class HandleUser extends Component {
       }
     })
     const result = await response.json();
-    await this.setState({ fireRedirect: true })
+    await this.setState({ fireRedirect: true, tokenFetched: true })
     this.props.getToken(result.access_token);
   }
 
