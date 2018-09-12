@@ -1,8 +1,21 @@
 .profile-image {
+  border: 1px solid black;
   border-radius: 50%;
 }
 
 .user-profile {
   background-color: magenta;
-  width: 20em;
+  height: 40em;
+  width: 40em;
+}
+
+.profile-wrap {
+  align-items: center;
+  display: flex;
+}
+
+.post-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
