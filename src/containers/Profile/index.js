@@ -5,6 +5,7 @@ import { fetchUserImage } from '../../api/apiCalls'
 import { Link } from 'react-router-dom';
 import './Profile.css'
 import { DropSubmitForm } from '../DropSubmitForm';
+import { DropList } from '../DropList'
 
 export class Profile extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export class Profile extends Component {
     const token = this.props.userToken.token;
     const fetchedImage = await fetchUserImage(token);
     const { username, image } = fetchedImage
-    this.setState({ username, image }, () => console.log(this.state))
+    this.setState({ username, image })
   }
 
   handlePost = () => {
@@ -46,6 +47,7 @@ export class Profile extends Component {
           </div>
           {dropFormActive && < DropSubmitForm />}
         </div>
+        <DropList token={this.props.userToken.token} />
       </div>
     )
   }
