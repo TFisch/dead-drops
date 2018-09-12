@@ -8,7 +8,7 @@ export class Profile extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      profileImage: ''
     }
   }
 
@@ -18,12 +18,14 @@ export class Profile extends Component {
 
   retrieveProfilePicture = async () => {
     const token = this.props.userToken.token;
-    await fetchUserImage(token);
+    const fetchedImage = await fetchUserImage(token);
+    this.setState({ profileImage: fetchedImage })
   }
 
   render() {
     return (
       <div>
+        <img src={this.state.profileImage} alt="user-profile-picture" className='profile-image' />
       </div>
     )
   }
