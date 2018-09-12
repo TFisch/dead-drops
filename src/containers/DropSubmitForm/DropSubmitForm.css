@@ -1,0 +1,21 @@
+input {
+  height: 2em;
+  width: 20em; }
+
+.drop-form {
+  background-color: burlywood;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 15em;
+  margin: 1em;
+  padding: 1em;
+  width: 18em; }
+
+.submit-button {
+  height: 2.8em;
+  width: 10em; }
+
+.form-row {
+  margin-top: 1em; }
