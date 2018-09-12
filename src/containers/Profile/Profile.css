@@ -1,2 +1,6 @@
 .profile-image {
   border-radius: 50%; }
+
+.user-profile {
+  background-color: magenta;
+  width: 20em; }
