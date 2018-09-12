@@ -25,6 +25,7 @@ export class Profile extends Component {
   }
 
   render() {
+    const { username, image } = this.state
     return (
       <div className='user-profile'>
         <h2>Welcome, </h2>
