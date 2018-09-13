@@ -1,6 +1,7 @@
-export const getProfileImage = (userInfo) => ({
-  type: 'GET_IMAGE',
-  userInfo
+export const setUser = ({ username, image }) => ({
+  type: 'SET_USER',
+  username,
+  image
 });
 
 export const getToken = (token) => ({
