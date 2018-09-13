@@ -1,3 +1,11 @@
 .drop-card {
   background-color: palevioletred;
-  height: 4em; }
+  display: flex;
+  flex-direction: column;
+  height: 12em;
+  padding: 1em;
+  width: 10em; }
+
+.drop-image {
+  height: 5em;
+  width: 7em; }
