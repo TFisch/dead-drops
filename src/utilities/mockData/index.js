@@ -1,0 +1,2 @@
+export const tokenReducerMock = 'AotyU8WH1d1jf6hbf_a5y4HeZ-StFVPaN5kRpsdFOEBtoWBGwAn_ADAAAabaRTpF9OxgaLYAAAAA'
+
