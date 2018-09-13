@@ -1,4 +1,4 @@
-import { cleanImage, cleanBoard } from '../utilities/helper'
+import { cleanImage, cleanBoard } from '../utilities/helper/'
 
 
 export const fetchUserImage = async (token) => {
