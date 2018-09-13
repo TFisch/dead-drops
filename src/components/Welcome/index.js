@@ -10,7 +10,7 @@ export const Welcome = () => {
   return (
     <div className="welcome">
       <h1>WELCOME</h1>
-      <a href={url}>Start the process</a>
+      <a href={url}>Sign In With Pinterest</a>
     </div>
 
   )
