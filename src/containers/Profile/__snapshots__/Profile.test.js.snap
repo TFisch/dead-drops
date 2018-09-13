@@ -48,9 +48,7 @@ ShallowWrapper {
 </div>,
         <div
           className="board-display"
->
-          å
-</div>,
+/>,
       ],
       "className": "container",
     },
@@ -204,17 +202,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "å",
-            false,
-          ],
+          "children": false,
           "className": "board-display",
         },
         "ref": null,
-        "rendered": Array [
-          "å",
-          false,
-        ],
+        "rendered": false,
         "type": "div",
       },
     ],
@@ -257,9 +249,7 @@ ShallowWrapper {
 </div>,
           <div
             className="board-display"
->
-            å
-</div>,
+/>,
         ],
         "className": "container",
       },
@@ -413,17 +403,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "å",
-              false,
-            ],
+            "children": false,
             "className": "board-display",
           },
           "ref": null,
-          "rendered": Array [
-            "å",
-            false,
-          ],
+          "rendered": false,
           "type": "div",
         },
       ],
