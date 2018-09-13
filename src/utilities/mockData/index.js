@@ -4,4 +4,6 @@ export const userReducerMock = { username: 'clark', image: 'https://via.placehol
 
 export const mockUsername = "Harvey";
 
-export const mockImage = 'https://via.placeholder.com/350x150'; 
+export const mockImage = 'https://via.placeholder.com/350x150';
+
+export const mockUser = { username: mockUsername, image: mockImage }
