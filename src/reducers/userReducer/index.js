@@ -1,16 +1,8 @@
 export const userReducer = (state = {}, action) => {
   switch (action.type) {
-    case 'GET_IMAGE':
-      return { ...state, image: action.image };
-    case 'GET_TOKEN':
-      return { ...state, token: action.token };
+    case 'SET_USER':
+      return { username: action.username, image: action.image };
     default:
       return state;
   }
 }
-
-
-
-
-
-
