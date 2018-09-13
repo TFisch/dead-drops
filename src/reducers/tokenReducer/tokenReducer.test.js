@@ -1,6 +1,6 @@
 import React from 'react';
 import { tokenReducer } from '../tokenReducer'
-import { tokenReducerMock } from '../../utilities/mockData'
+import { tokenMock } from '../../utilities/mockData'
 import * as actions from '../../actions/';
 
 
@@ -17,7 +17,7 @@ describe('tokenReducer', () => {
 
   it('should retieve the token', () => {
 
-    expect(tokenReducer(undefined, getToken(tokenReducerMock))).toEqual(tokenReducerMock)
+    expect(tokenReducer(undefined, getToken(tokenMock))).toEqual(tokenMock)
   });
 
 });
