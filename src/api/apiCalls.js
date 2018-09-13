@@ -10,7 +10,7 @@ export const fetchUserImage = async (token) => {
 }
 
 export const fetchDropBoard = async (token) => {
-  const url = `https://api.pinterest.com/v1/boards/deaddrops/dead-drops/pins/?access_token=${token}&fields=link%2Cnote%2Curl%2Cimage`
+  const url = `https://api.pinterest.com/v1/boards/deaddrops/dead-drops/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl%2Cimage`
   const response = await fetch(url);
   const data = await response.json();
   const cleanedBoard = await cleanBoard(data);
