@@ -15,11 +15,11 @@ export const DropSubmitForm = () => {
             </select>
           </span>
           <span className="entry-row">
-            <h3>Northern Coordinates</h3>
+            <h3>Longitude Coordinates</h3>
             <input name="north-coord" placeholder="north coordinates" type="text" />
           </span>
           <span className="entry-row">
-            <h3>Western Coordinates</h3>
+            <h3>Latitude Coordinates</h3>
             <input name="west-coord" placeholder="west coordinates" type="text" />
           </span>
           <span className="entry-row">
