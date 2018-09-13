@@ -53,14 +53,14 @@ export class Profile extends Component {
         <div className='user-profile'>
           <div className="post-wrap">
             <div className="profile-wrap">
-              <img src={image} className='profile-image' />
+              <img src={image} className='profile-image' alt='user-avatar' />
               <h1>Welcome, {username}!</h1>
             </div>
             {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
           </div>
           {dropFormActive && < DropSubmitForm />}
         </div>
-        <div className="board-display">
+        <div className="board-display">å
           {dropListRetrieved && <DropList retrievedBoard={retrievedBoard} />}
         </div>
       </div>
