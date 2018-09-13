@@ -11,7 +11,6 @@ export const cleanImage = (imageResponse) => {
 
 export const cleanBoard = (boardResponse) => {
 
-  const pinData = boardResponse.data.map(pin => pin)
-  console.log(pinData);
+  const pinData = boardResponse.data.map(pin => pin.image.original.url)
   return pinData;
 }
