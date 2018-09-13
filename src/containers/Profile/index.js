@@ -60,7 +60,7 @@ export class Profile extends Component {
           </div>
           {dropFormActive && < DropSubmitForm />}
         </div>
-        <div className="board-display">å
+        <div className="board-display">
           {dropListRetrieved && <DropList retrievedBoard={retrievedBoard} />}
         </div>
       </div>
