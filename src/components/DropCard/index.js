@@ -1,11 +1,12 @@
 import React from 'react'
+import './DropCard.css'
 
 export default (props) => {
-  const { note, url } = props
+  const { note, image } = props
   return (
     <div className="drop-card">
-      <h2>{note}</h2>
-      <p>{url}</p>
+      <img src={image} alt="drop-map-location" className="drop-image" />
+      <p>{note}</p>
     </div>
   )
 }
