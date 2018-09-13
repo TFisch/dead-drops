@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getProfileImage } from '../../actions';
+import { getToken, setUser } from '../../actions';
 import { connect } from 'react-redux';
 import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
 import './Profile.css'
@@ -21,24 +21,15 @@ export class Profile extends Component {
 
   componentDidUpdate() {
     if (!this.state.dropListRetrieved) {
-      this.retrieveDropBoard();
+      // this.retrieveDropBoard();
     }
-    if (!this.state.pictureRetrieved) {
-      this.retrieveProfilePicture();
-    }
-  }
 
-  retrieveProfilePicture = async () => {
-    const token = this.props.userToken.token;
-    const fetchedImage = await fetchUserImage(token);
-    const { username, image } = fetchedImage
-    await this.setState({ username, image, pictureRetrieved: true })
   }
 
   retrieveDropBoard = async () => {
     const token = this.props.userToken.token;
-    const retrievedBoard = await fetchDropBoard(token);
-    await this.setState({ retrievedBoard, dropListRetrieved: true })
+    // const retrievedBoard = await fetchDropBoard(token);
+    // await this.setState({ retrievedBoard, dropListRetrieved: true })
   }
 
   handlePost = () => {
@@ -47,7 +38,8 @@ export class Profile extends Component {
   }
 
   render() {
-    const { username, image, dropFormActive, retrievedBoard, dropListRetrieved } = this.state
+    const { username, image } = this.props.user;
+    const { dropFormActive, retrievedBoard, dropListRetrieved } = this.state
     return (
       <div className="container">
         <div className='user-profile'>
@@ -66,15 +58,17 @@ export class Profile extends Component {
       </div>
     )
   }
-
 }
 
 export const mapStateToProps = (state) => ({
-  userToken: state.user
+  token: state.token,
+  user: state.user
 });
 
+
 export const mapDispatchToProps = (dispatch) => ({
-  getProfileImage: (image) => dispatch(getProfileImage(image)),
+  getToken: (token) => dispatch(getToken(token)),
+  setUser: (user) => dispatch(setUser(user))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
