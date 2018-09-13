@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { id } from '../../hidden/hidden'
-import { getToken } from '../../actions'
+import { getToken, setUser } from '../../actions'
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
+import { fetchUserImage } from '../../api/apiCalls'
+
 
 class HandleUser extends Component {
   constructor(props) {
@@ -41,11 +43,16 @@ class HandleUser extends Component {
     const result = await response.json();
     await this.setState({ fireRedirect: true, tokenFetched: true })
     this.props.getToken(result.access_token);
+    this.getUserImage(result.access_token);
+  }
+
+  async getUserImage(token) {
+    const fetchedUser = await fetchUserImage(token);
+    await this.props.setUser(fetchedUser);
   }
 
   render() {
     return (
-
       <div>
         {this.state.fireRedirect && (
           <Redirect to={'/profile'} />
@@ -57,11 +64,13 @@ class HandleUser extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  userToken: state.token
+  token: state.token,
+  user: state.user
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  getToken: (token) => dispatch(getToken(token))
+  getToken: (token) => dispatch(getToken(token)),
+  setUser: (user) => dispatch(setUser(user))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(HandleUser);
