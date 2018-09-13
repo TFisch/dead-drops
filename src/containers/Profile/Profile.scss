@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .board-display {
   background-color: darkorange;
   width: 50em;
@@ -15,6 +17,7 @@
 
 .user-profile {
   background-color: magenta;
+  font-family: $primary-font;
   height: 40em;
   width: 40em;
 }
