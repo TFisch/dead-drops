@@ -39,3 +39,7 @@ input {
   display: flex;
   justify-content: space-between;
   width: 10em; }
+
+.map-icon {
+  width: 10em;
+}
