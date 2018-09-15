@@ -22,6 +22,6 @@ describe('MapStateToProps', () => {
 
   it('should have a user Object in props', () => {
     const expectedProps = mapStateToProps(user);
-
+    
   });
 });
