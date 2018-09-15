@@ -7,14 +7,29 @@ export class DropSubmitForm extends Component {
     super()
     this.state = {
       difficulty: "",
-      longitude: 0,
-      latitude: 0,
-      uniqueCode: 0
+      longitude: "",
+      latitude: "",
+      codeLog: [0, 0, 0, 0, 0, 0],
+      uniqueOne: "",
+      uniqueTwo: "",
+      uniqueThree: "",
+      uniqueFour: "",
+      uniqueFive: "",
+      uniqueSix: "",
     }
   }
 
-  handleChange = () => {
+  handleChange = (e) => {
+    const { name, value } = e.target
+    this.setState({ [name]: value })
+  }
 
+  handleCode = (e) => {
+    const id = e.target.id;
+    const entry = e.target.value;
+    let codeLog = this.state.codeLog;
+    codeLog[id] = entry;
+    this.setState({ codeLog })
   }
 
   handleDifficulty = (e) => {
@@ -22,11 +37,20 @@ export class DropSubmitForm extends Component {
     this.setState({ difficulty })
   }
 
+
+
   sendCoordinates = (e) => {
     console.log('hi')
   }
 
+  autoTab(current, to) {
+    if (current.getAttribute && current.value.length === current.getAttribute("maxlength")) {
+      to.focus()
+    }
+  }
+
   render() {
+
     return (
       <div>
         <form className="drop-submit" onSubmit={(e) => this.sendCoordinates(e)}>
@@ -41,21 +65,21 @@ export class DropSubmitForm extends Component {
             </span>
             <span className="entry-row">
               <h3>Longitude Coordinates</h3>
-              <input name="north-coord" placeholder="north coordinates" type="text" onChange={this.handleChange} />
+              <input name="longitude" placeholder="enter coordinates..." type="number" value={this.state.longitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3>Latitude Coordinates</h3>
-              <input name="west-coord" placeholder="west coordinates" type="text" onChange={this.handleChange} />
+              <input name="latitude" placeholder="enter coordinates..." type="number" value={this.state.latitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3>Unique Verification Code</h3>
               <div className="unique-code-entry-wrap">
-                <input className="code-entry" name="unique-one" maxlength="1" type="text" />
-                <input className="code-entry" name="unique-two" maxlength="1" type="text" />
-                <input className="code-entry" name="unique-three" maxlength="1" type="text" />
-                <input className="code-entry" name="unique-four" maxlength="1" type="text" />
-                <input className="code-entry" name="unique-five" maxlength="1" type="text" />
-                <input className="code-entry" name="unique-six" maxlength="1" type="text" />
+                <input className="code-entry" id="0" placeholder='0' name='uniqueOne' maxLength="1" type="text" value={this.state.uniqueOne} onChange={this.handleCode} />
+                <input className="code-entry" id="1" placeholder='0' name="uniqueTwo" maxLength="1" type="text" value={this.state.uniqueTwo} onChange={this.handleCode} />
+                <input className="code-entry" id="2" placeholder='0' name="uniqueThree" maxLength="1" type="text" value={this.state.uniqueThree} onChange={this.handleCode} />
+                <input className="code-entry" id="3" placeholder='0' name="uniqueFour" maxLength="1" type="text" value={this.state.uniqueFour} onChange={this.handleCode} />
+                <input className="code-entry" id="4" placeholder='0' name="uniqueFive" maxLength="1" type="text" value={this.state.uniqueFive} onChange={this.handleCode} />
+                <input className="code-entry" id="5" placeholder='0' name="uniqueSix" maxLength="1" type="text" value={this.state.uniqueSix} onChange={this.handleCode} />
               </div>
             </span>
             <span className="button-row">
