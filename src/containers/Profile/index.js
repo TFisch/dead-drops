@@ -5,9 +5,7 @@ import { fetchDropBoard } from '../../api/apiCalls'
 import './Profile.css'
 import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
-import { ConfirmDrop } from '../../components/ConfirmDrop';
-
-
+import ConfirmDrop from '../../components/ConfirmDrop';
 
 export class Profile extends Component {
   constructor(props) {
@@ -41,9 +39,15 @@ export class Profile extends Component {
     this.setState({ dropFormActive })
   }
 
+  toggleSubmit = (boolean) => {
+    this.setState({ dropToConfirm: boolean })
+  }
+
   render() {
+    const { user, location } = this.props
     const { username, image } = this.props.user;
-    const { dropFormActive, retrievedBoard, dropListRetrieved, dropToConfirm } = this.state
+    const { dropFormActive, retrievedBoard, dropListRetrieved, dropToConfirm } = this.state;
+
     return (
       <div className="container">
         <div className='user-profile'>
@@ -54,7 +58,7 @@ export class Profile extends Component {
             </div>
             {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
           </div>
-          {dropFormActive && < DropSubmitForm />}
+          {dropFormActive && <DropSubmitForm toggleSubmit={this.toggleSubmit} />}
         </div>
         <div className="board-display">
           {dropListRetrieved && <DropList retrievedBoard={retrievedBoard} />}
@@ -73,7 +77,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
-  setUser: (user) => dispatch(setUser(user))
+  setUser: (user) => dispatch(setUser(user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
