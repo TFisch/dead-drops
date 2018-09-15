@@ -31,6 +31,7 @@ export class Profile extends Component {
   retrieveDropBoard = async () => {
     const token = this.props.token
     const retrievedBoard = await fetchDropBoard(token);
+    console.log('hi')
     await this.setState({ retrievedBoard, dropListRetrieved: true })
   }
 
