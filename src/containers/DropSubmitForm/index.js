@@ -10,12 +10,6 @@ export class DropSubmitForm extends Component {
       longitude: "",
       latitude: "",
       codeLog: [0, 0, 0, 0, 0, 0],
-      uniqueOne: "",
-      uniqueTwo: "",
-      uniqueThree: "",
-      uniqueFour: "",
-      uniqueFive: "",
-      uniqueSix: "",
     }
   }
 
@@ -30,6 +24,7 @@ export class DropSubmitForm extends Component {
     let codeLog = this.state.codeLog;
     codeLog[id] = entry;
     this.setState({ codeLog })
+    this.autotab(e);
   }
 
   handleDifficulty = (e) => {
@@ -37,16 +32,21 @@ export class DropSubmitForm extends Component {
     this.setState({ difficulty })
   }
 
-
+  autotab = (e) => {
+    const next = e.target.nextElementSibling;
+    const previous = e.target.previousElementSibling;
+    if (e.target.value.length == e.target.getAttribute("maxlength") && next !== null) {
+      next.focus();
+    } else if (e.target.value.length === 0) {
+      if (previous === null) {
+        return
+      }
+      previous.focus();
+    }
+  }
 
   sendCoordinates = (e) => {
     console.log('hi')
-  }
-
-  autoTab(current, to) {
-    if (current.getAttribute && current.value.length === current.getAttribute("maxlength")) {
-      to.focus()
-    }
   }
 
   render() {
