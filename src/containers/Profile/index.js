@@ -5,6 +5,8 @@ import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
 import './Profile.css'
 import { DropSubmitForm } from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
+import { Redirect } from 'react-router-dom';
+
 
 export class Profile extends Component {
   constructor(props) {
@@ -21,15 +23,15 @@ export class Profile extends Component {
 
   componentDidUpdate() {
     if (!this.state.dropListRetrieved) {
-      // this.retrieveDropBoard();
+      this.retrieveDropBoard();
     }
 
   }
 
   retrieveDropBoard = async () => {
-    const token = this.props.userToken.token;
-    // const retrievedBoard = await fetchDropBoard(token);
-    // await this.setState({ retrievedBoard, dropListRetrieved: true })
+    const token = this.props.token
+    const retrievedBoard = await fetchDropBoard(token);
+    await this.setState({ retrievedBoard, dropListRetrieved: true })
   }
 
   handlePost = () => {
@@ -46,7 +48,7 @@ export class Profile extends Component {
           <div className="post-wrap">
             <div className="profile-wrap">
               <img src={image} className='profile-image' alt='user-avatar' />
-              <h1>Welcome, {username}!</h1>
+              <h1 className="welcome-text">Welcome, {username}!</h1>
             </div>
             {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
           </div>
@@ -64,7 +66,6 @@ export const mapStateToProps = (state) => ({
   token: state.token,
   user: state.user
 });
-
 
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
