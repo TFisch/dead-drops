@@ -12,8 +12,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 15em;
-  margin: 1em;
+  height: 23.3em;
+  margin-left: 3.2em;
+  margin-top: 4.6em;
   padding: 1em;
   width: 30em; }
 
@@ -39,7 +40,3 @@ input {
   display: flex;
   justify-content: space-between;
   width: 10em; }
-
-.map-icon {
-  width: 10em;
-}
