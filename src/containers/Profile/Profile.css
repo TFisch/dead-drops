@@ -12,9 +12,12 @@
 
 .user-profile {
   background-color: magenta;
-  font-family: "Audiowide", cursive;
   height: 40em;
   width: 40em; }
+
+.welcome-text {
+  font-family: 'PT Sans', Arial, Verdana;
+  font-weight: 400; }
 
 .profile-wrap {
   align-items: center;

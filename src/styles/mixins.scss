@@ -1,0 +1,9 @@
+@mixin primary-font(){
+  font-family: 'PT Sans', Arial, Verdana;
+  font-weight: 400;
+}
+
+@mixin primary-font-heavy(){
+  font-family: 'PT Sans', Arial, Verdana;
+  font-weight: 700;
+}

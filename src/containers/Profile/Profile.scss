@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .board-display {
   background-color: darkorange;
@@ -17,9 +17,12 @@
 
 .user-profile {
   background-color: magenta;
-  font-family: $primary-font;
   height: 40em;
   width: 40em;
+}
+
+.welcome-text {
+  @include primary-font;
 }
 
 .profile-wrap {
