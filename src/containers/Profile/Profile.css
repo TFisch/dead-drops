@@ -3,8 +3,9 @@
   width: 50em; }
 
 .container {
-  background-color: aqua;
-  display: flex; }
+  display: flex; 
+  height: 46em;
+}
 
 .profile-image {
   border: 1px solid black;
@@ -12,7 +13,7 @@
 
 .user-profile {
   background-color: magenta;
-  height: 40em;
+  height: 100%;
   width: 40em; }
 
 .welcome-text {
