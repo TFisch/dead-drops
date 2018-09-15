@@ -1,13 +1,20 @@
 .nav {
+  align-items: center;
   background-color: lime;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 4em;
   width: 100%; }
 
 .logout-button {
   background: none;
   border: none;
-  margin: 0 2em 0 0;
+  margin-right: 2em;
   padding: 0;
   cursor: pointer; }
+
+.logo {
+  font-family: 'PT Sans', Arial, Verdana;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-left: 1em; }
