@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { getToken, setUser } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchUserImage, fetchDropBoard } from '../../api/apiCalls'
+import { fetchDropBoard } from '../../api/apiCalls'
 import './Profile.css'
-import { DropSubmitForm } from '../DropSubmitForm';
+import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
-import { Redirect } from 'react-router-dom';
+import { ConfirmDrop } from '../../components/ConfirmDrop';
+
 
 
 export class Profile extends Component {
@@ -17,13 +18,14 @@ export class Profile extends Component {
       dropFormActive: false,
       dropListRetrieved: false,
       pictureRetrieved: false,
-      retrievedBoard: []
+      retrievedBoard: [],
+      dropToConfirm: false
     }
   }
 
   componentDidUpdate() {
     if (!this.state.dropListRetrieved) {
-      this.retrieveDropBoard();
+      // this.retrieveDropBoard();
     }
 
   }
@@ -31,7 +33,6 @@ export class Profile extends Component {
   retrieveDropBoard = async () => {
     const token = this.props.token
     const retrievedBoard = await fetchDropBoard(token);
-    console.log('hi')
     await this.setState({ retrievedBoard, dropListRetrieved: true })
   }
 
@@ -42,7 +43,7 @@ export class Profile extends Component {
 
   render() {
     const { username, image } = this.props.user;
-    const { dropFormActive, retrievedBoard, dropListRetrieved } = this.state
+    const { dropFormActive, retrievedBoard, dropListRetrieved, dropToConfirm } = this.state
     return (
       <div className="container">
         <div className='user-profile'>
@@ -57,6 +58,7 @@ export class Profile extends Component {
         </div>
         <div className="board-display">
           {dropListRetrieved && <DropList retrievedBoard={retrievedBoard} />}
+          {dropToConfirm && <ConfirmDrop />}
         </div>
       </div>
     )
@@ -65,7 +67,8 @@ export class Profile extends Component {
 
 export const mapStateToProps = (state) => ({
   token: state.token,
-  user: state.user
+  user: state.user,
+  location: state.locationData
 });
 
 export const mapDispatchToProps = (dispatch) => ({

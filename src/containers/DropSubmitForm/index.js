@@ -1,6 +1,9 @@
 import React from 'react';
 import './DropSubmitForm.css'
 import { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchLocation } from '../../api/apiCalls';
+import { getLocation } from '../../actions'
 
 export class DropSubmitForm extends Component {
   constructor() {
@@ -10,6 +13,7 @@ export class DropSubmitForm extends Component {
       longitude: "",
       latitude: "",
       codeLog: [0, 0, 0, 0, 0, 0],
+      drop: false
     }
   }
 
@@ -45,8 +49,12 @@ export class DropSubmitForm extends Component {
     }
   }
 
-  sendCoordinates = (e) => {
-    console.log('hi')
+  sendCoordinates = async (event) => {
+    event.preventDefault();
+    const returnLocation = await fetchLocation(this.state);
+    console.log(returnLocation);
+    await this.props.getLocation(returnLocation);
+
   }
 
   render() {
@@ -58,6 +66,7 @@ export class DropSubmitForm extends Component {
             <span className="entry-row">
               <h3>Difficulty</h3>
               <select name="difficulty" onChange={(e) => this.handleDifficulty(e)}>
+                <option value="select">Select</option>
                 <option value="easy">Easy</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="Hard">Hard</option>
@@ -91,3 +100,16 @@ export class DropSubmitForm extends Component {
     )
   }
 }
+
+export const mapStateToProps = (state) => ({
+  token: state.token,
+  user: state.user,
+  location: state.locationData
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  getLocation: (locationData) => dispatch(getLocation(locationData)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(DropSubmitForm);
+
