@@ -1,3 +1,10 @@
+.button-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
 .drop-card {
   background-color: palevioletred;
   display: flex;
@@ -10,4 +17,9 @@
 .drop-image {
   height: 5em;
   width: 7em;
+}
+
+.submit-button {
+  height: 1.3em;
+  width: 8em;
 }
