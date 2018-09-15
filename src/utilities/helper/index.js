@@ -8,8 +8,3 @@ export const cleanImage = (imageResponse) => {
   }
   return userProfile;
 }
-
-export const cleanBoard = (boardResponse) => {
-  const pinData = boardResponse.data.map(pin => pin.image.original.url)
-  return pinData;
-}
