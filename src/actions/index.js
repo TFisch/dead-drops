@@ -9,9 +9,10 @@ export const getToken = (token) => ({
   token
 });
 
-export const getLocation = ({ long, lat, image }) => ({
+export const getLocation = ({ long, lat, locationImage, verificationCode }) => ({
   type: 'GET_LOCATION',
   long,
   lat,
-  image
+  locationImage,
+  verificationCode
 })

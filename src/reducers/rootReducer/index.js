@@ -6,5 +6,5 @@ import { locationReducer } from '../locationReducer'
 export const rootReducer = combineReducers({
   token: tokenReducer,
   user: userReducer,
-  location: locationReducer
+  locationData: locationReducer
 })
