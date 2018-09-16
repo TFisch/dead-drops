@@ -44,7 +44,6 @@ export class Profile extends Component {
   }
 
   render() {
-    const { user, location } = this.props
     const { username, image } = this.props.user;
     const { dropFormActive, retrievedBoard, dropListRetrieved, dropToConfirm } = this.state;
 

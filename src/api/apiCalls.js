@@ -1,4 +1,4 @@
-import { cleanImage, cleanBoard } from '../utilities/helper/'
+import { cleanImage } from '../utilities/helper/'
 import { key } from '../hidden/hidden'
 
 export const fetchUserImage = async (token) => {
@@ -20,7 +20,7 @@ export const fetchDropBoard = async (token) => {
 export const fetchLocation = async (coordinatesEntry) => {
   try {
     const { longitude, latitude, codeLog } = coordinatesEntry;
-    const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.${longitude},${latitude}&key=${key}`
+    const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C${longitude},${latitude}&key=${key}`
     const response = await fetch(url);
     const data = await response.blob();
     const imageUrl = URL.createObjectURL(data)
@@ -37,20 +37,22 @@ export const fetchLocation = async (coordinatesEntry) => {
 }
 
 export const postPin = async (note, token) => {
-
-  const url = `https://api.pinterest.com/v1/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl`
-  const response = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify({
-      board: 'deaddrops/dead-drops-official',
-      note: 'from-here',
-      image_url: 'https://via.placeholder.com/350x150'
-    }),
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    }
-  })
-  const result = await response.json();
+  try {
+    const url = `https://api.pinterest.com/v1/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl`
+    const response = await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify({
+        "data": {
+          'board': 'deaddrops',
+          "note": "note",
+          "url": "https://www.pinterest.com/pin/864409722205273908/",
+        }
+      }),
+    })
+    const result = await response.json();
+  } catch (error) {
+    console.log(error.message)
+  }
 }
 
 

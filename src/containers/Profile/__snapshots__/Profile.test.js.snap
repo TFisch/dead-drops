@@ -39,7 +39,9 @@ ShallowWrapper {
                                         className="profile-image"
                                         src="https://via.placeholder.com/350x150"
                               />
-                              <h1>
+                              <h1
+                                        className="welcome-text"
+                              >
                                         Welcome, 
                                         Harvey
                                         !
@@ -55,7 +57,9 @@ ShallowWrapper {
 </div>,
         <div
           className="board-display"
-/>,
+>
+          
+</div>,
       ],
       "className": "container",
     },
@@ -78,7 +82,9 @@ ShallowWrapper {
                                           className="profile-image"
                                           src="https://via.placeholder.com/350x150"
                             />
-                            <h1>
+                            <h1
+                                          className="welcome-text"
+                            >
                                           Welcome, 
                                           Harvey
                                           !
@@ -111,7 +117,9 @@ ShallowWrapper {
                                     className="profile-image"
                                     src="https://via.placeholder.com/350x150"
                   />
-                  <h1>
+                  <h1
+                                    className="welcome-text"
+                  >
                                     Welcome, 
                                     Harvey
                                     !
@@ -139,7 +147,9 @@ ShallowWrapper {
                       className="profile-image"
                       src="https://via.placeholder.com/350x150"
 />,
-                    <h1>
+                    <h1
+                      className="welcome-text"
+>
                       Welcome, 
                       Harvey
                       !
@@ -172,6 +182,7 @@ ShallowWrapper {
                         "Harvey",
                         "!",
                       ],
+                      "className": "welcome-text",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -209,11 +220,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": false,
+          "children": Array [
+            false,
+            false,
+          ],
           "className": "board-display",
         },
         "ref": null,
-        "rendered": false,
+        "rendered": Array [
+          false,
+          false,
+        ],
         "type": "div",
       },
     ],
@@ -240,7 +257,9 @@ ShallowWrapper {
                                                 className="profile-image"
                                                 src="https://via.placeholder.com/350x150"
                                     />
-                                    <h1>
+                                    <h1
+                                                className="welcome-text"
+                                    >
                                                 Welcome, 
                                                 Harvey
                                                 !
@@ -256,7 +275,9 @@ ShallowWrapper {
 </div>,
           <div
             className="board-display"
-/>,
+>
+            
+</div>,
         ],
         "className": "container",
       },
@@ -279,7 +300,9 @@ ShallowWrapper {
                                                 className="profile-image"
                                                 src="https://via.placeholder.com/350x150"
                                 />
-                                <h1>
+                                <h1
+                                                className="welcome-text"
+                                >
                                                 Welcome, 
                                                 Harvey
                                                 !
@@ -312,7 +335,9 @@ ShallowWrapper {
                                         className="profile-image"
                                         src="https://via.placeholder.com/350x150"
                     />
-                    <h1>
+                    <h1
+                                        className="welcome-text"
+                    >
                                         Welcome, 
                                         Harvey
                                         !
@@ -340,7 +365,9 @@ ShallowWrapper {
                         className="profile-image"
                         src="https://via.placeholder.com/350x150"
 />,
-                      <h1>
+                      <h1
+                        className="welcome-text"
+>
                         Welcome, 
                         Harvey
                         !
@@ -373,6 +400,7 @@ ShallowWrapper {
                           "Harvey",
                           "!",
                         ],
+                        "className": "welcome-text",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -410,11 +438,17 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": false,
+            "children": Array [
+              false,
+              false,
+            ],
             "className": "board-display",
           },
           "ref": null,
-          "rendered": false,
+          "rendered": Array [
+            false,
+            false,
+          ],
           "type": "div",
         },
       ],

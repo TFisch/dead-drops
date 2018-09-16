@@ -3,11 +3,25 @@ import * as mockData from '../utilities/mockData';
 
 describe('actions', () => {
 
-  const { mockUsername, mockImage, tokenMock } = mockData;
-  const { setUser, getToken } = actions;
+  const {
+    mockUsername,
+    mockImage,
+    tokenMock
+  } = mockData;
+
+  const {
+    setUser,
+    getToken,
+    getLocation
+  } = actions;
 
   it('should return a user object with the type of SET_USER', () => {
-    const expected = { type: 'SET_USER', username: mockUsername, image: mockImage }
+    const expected = {
+      type: 'SET_USER',
+      username: mockUsername,
+      image: mockImage
+    }
+
     const username = mockUsername;
     const image = mockImage;
 
@@ -22,4 +36,30 @@ describe('actions', () => {
 
     expect(expected).toEqual(result);
   })
+
+  it('should return a location object with the type of GET_LOCATION', () => {
+    const longMock = '3214321504';
+    const latMock = '2.52343245';
+    const mockLocationImage = 'https://via.placeholder.com/350x150'
+    const vcMock = [0, 0, 0, 0, 0, 0]
+
+    const expected = {
+      type: 'GET_LOCATION',
+      long: longMock,
+      lat: latMock,
+      locationImage: mockLocationImage,
+      verificationCode: vcMock
+    }
+
+    const mockAction = {
+      long: longMock,
+      lat: latMock,
+      locationImage: mockLocationImage,
+      verificationCode: vcMock
+    }
+
+    const result = getLocation(mockAction)
+
+    expect(expected).toEqual(result);
+  });
 });
