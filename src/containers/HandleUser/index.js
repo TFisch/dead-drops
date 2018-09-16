@@ -6,7 +6,7 @@ import { Redirect } from 'react-router-dom';
 import { fetchUserImage, fetchAccessToken } from '../../api/apiCalls'
 
 
-class HandleUser extends Component {
+export class HandleUser extends Component {
   constructor(props) {
     super(props)
     this.state = {
