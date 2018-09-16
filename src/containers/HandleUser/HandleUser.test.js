@@ -3,7 +3,6 @@ import { shallow } from 'enzyme'
 import { HandleUser } from '../HandleUser'
 import { mockUser, mockAuth } from '../../utilities/mockData'
 
-
 describe('HandleUser', () => {
   let wrapper;
 
@@ -15,6 +14,8 @@ describe('HandleUser', () => {
     expect(wrapper).toMatchSnapshot();
 
   });
+
+
 });
 
 

@@ -20,8 +20,12 @@ describe('Profile', () => {
 describe('MapStateToProps', () => {
   const user = mockUser;
 
-  it('should have a user Object in props', () => {
-    const expectedProps = mapStateToProps(user);
-    
+  it('should return an object with username and image', () => {
+    const mockedState = { locationData: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+    const expected = { location: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+    const mappedProps = mapStateToProps(mockedState);
+
+    expect(mappedProps).toEqual(expected);
+
   });
 });
