@@ -3,7 +3,7 @@ import { id } from '../../hidden/hidden'
 import { getToken, setUser } from '../../actions'
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { fetchUserImage } from '../../api/apiCalls'
+import { fetchUserImage, fetchAccessToken } from '../../api/apiCalls'
 
 
 class HandleUser extends Component {
@@ -24,26 +24,15 @@ class HandleUser extends Component {
       });
       const newCode = code.split('').splice(6, code.length).join('')
       await this.setState({ authorizationCode: newCode })
-      await this.getAccessToken()
+      await this.getAccessToken();
     }
   }
 
-  async getAccessToken() {
-    const accessTokenUrl = 'https://api.pinterest.com/v1/oauth/token?' +
-      'grant_type=authorization_code&' +
-      'client_id=4987807426915878592&' +
-      `client_secret=${id}&` +
-      `code=${this.state.authorizationCode}`
-    const response = await fetch(accessTokenUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded '
-      }
-    })
-    const result = await response.json();
+  getAccessToken = async () => {
+    const response = await fetchAccessToken(id, this.state.authorizationCode);
     await this.setState({ fireRedirect: true, tokenFetched: true })
-    this.props.getToken(result.access_token);
-    this.getUserImage(result.access_token);
+    this.props.getToken(response.access_token);
+    this.getUserImage(response.access_token);
   }
 
   async getUserImage(token) {

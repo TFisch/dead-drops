@@ -55,6 +55,22 @@ export const postPin = async (note, token) => {
   }
 }
 
+export const fetchAccessToken = async (id, authcode) => {
+  const accessTokenUrl = 'https://api.pinterest.com/v1/oauth/token?' +
+    'grant_type=authorization_code&' +
+    'client_id=4987807426915878592&' +
+    `client_secret=${id}&` +
+    `code=${authcode}`
+  const response = await fetch(accessTokenUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded '
+    }
+  })
+  const result = await response.json();
+  return result;
+}
+
 
 
 
