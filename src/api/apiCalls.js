@@ -36,6 +36,22 @@ export const fetchLocation = async (coordinatesEntry) => {
   }
 }
 
+export const postPin = async (note, token) => {
+
+  const url = `https://api.pinterest.com/v1/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl`
+  const response = await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify({
+      board: 'deaddrops/dead-drops-official',
+      note: 'from-here',
+      image_url: 'https://via.placeholder.com/350x150'
+    }),
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  })
+  const result = await response.json();
+}
 
 
 
