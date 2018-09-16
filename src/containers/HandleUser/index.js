@@ -3,7 +3,7 @@ import { id } from '../../hidden/hidden'
 import { getToken, setUser } from '../../actions'
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { fetchUserImage, fetchAccessToken } from '../../api/apiCalls'
+import { fetchUserImage, fetchAccessToken } from '../../api'
 
 
 export class HandleUser extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { postPin } from '../../api/apiCalls'
+import { postPin } from '../../api'
 import './ConfirmDrop.css'
 
 class ConfirmDrop extends Component {

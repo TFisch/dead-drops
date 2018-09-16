@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getToken, setUser } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchDropBoard } from '../../api/apiCalls'
+import { fetchDropBoard } from '../../api'
 import './Profile.css'
 import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';

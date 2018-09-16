@@ -2,7 +2,7 @@ import React from 'react';
 import './DropSubmitForm.css'
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchLocation } from '../../api/apiCalls';
+import { fetchLocation } from '../../api';
 import { getLocation } from '../../actions'
 
 export class DropSubmitForm extends Component {
