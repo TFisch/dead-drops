@@ -43,3 +43,7 @@ export const mockBoardResponse = {
   data: [{ mockBoard: 'mockBoard' }]
 }
 
+export const mockImageResponse = {
+  size: 3509,
+  type: "image/png"
+}
