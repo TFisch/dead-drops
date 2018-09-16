@@ -5,7 +5,7 @@ import { fetchDropBoard } from '../../api/apiCalls'
 import './Profile.css'
 import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
-import ConfirmDrop from '../../components/ConfirmDrop';
+import ConfirmDrop from '../ConfirmDrop';
 
 export class Profile extends Component {
   constructor(props) {
