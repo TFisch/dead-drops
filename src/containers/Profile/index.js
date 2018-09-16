@@ -15,6 +15,7 @@ export class Profile extends Component {
       image: '',
       dropFormActive: false,
       dropListRetrieved: false,
+      dropListHidden: false,
       pictureRetrieved: false,
       retrievedBoard: [],
       dropToConfirm: false
@@ -23,9 +24,8 @@ export class Profile extends Component {
 
   componentDidUpdate() {
     if (!this.state.dropListRetrieved) {
-      // this.retrieveDropBoard();
+      this.retrieveDropBoard();
     }
-
   }
 
   retrieveDropBoard = async () => {
@@ -40,12 +40,23 @@ export class Profile extends Component {
   }
 
   toggleSubmit = (boolean) => {
-    this.setState({ dropToConfirm: boolean })
+    this.setState({ dropToConfirm: boolean, dropListHidden: true })
+  }
+
+  toggleDisplay = () => {
+    const dropListHidden = !this.state.dropListHidden;
+    this.setState({ dropListHidden })
   }
 
   render() {
     const { username, image } = this.props.user;
-    const { dropFormActive, retrievedBoard, dropListRetrieved, dropToConfirm } = this.state;
+    const {
+      dropFormActive,
+      retrievedBoard,
+      dropListRetrieved,
+      dropToConfirm,
+      dropListHidden
+    } = this.state;
 
     return (
       <div className="container">
@@ -60,8 +71,8 @@ export class Profile extends Component {
           {dropFormActive && <DropSubmitForm toggleSubmit={this.toggleSubmit} />}
         </div>
         <div className="board-display">
-          {dropListRetrieved && <DropList retrievedBoard={retrievedBoard} />}
-          {dropToConfirm && <ConfirmDrop />}
+          {dropListRetrieved && !dropListHidden && < DropList retrievedBoard={retrievedBoard} />}
+          {dropToConfirm && dropListHidden && <ConfirmDrop toggleDisplay={this.toggleDisplay} />}
         </div>
       </div>
     )

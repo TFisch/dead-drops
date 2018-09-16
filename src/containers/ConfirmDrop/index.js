@@ -4,11 +4,15 @@ import { postPin } from '../../api'
 import './ConfirmDrop.css'
 
 class ConfirmDrop extends Component {
+  constructor(props) {
+    super(props)
+  }
 
   handleConfirm = (e) => {
     const { latitude, longitude } = this.props.location;
     const note = `Latitude: ${latitude}, Longitude: ${longitude}`;
     postPin(note, this.props.token)
+    this.props.toggleDisplay();
   }
 
   render() {
