@@ -6,7 +6,8 @@ describe('actions', () => {
   const {
     mockUsername,
     mockImage,
-    tokenMock
+    tokenMock,
+    mockLocation
   } = mockData;
 
   const {
@@ -51,14 +52,7 @@ describe('actions', () => {
       verificationCode: vcMock
     }
 
-    const mockAction = {
-      long: longMock,
-      lat: latMock,
-      locationImage: mockLocationImage,
-      verificationCode: vcMock
-    }
-
-    const result = getLocation(mockAction)
+    const result = getLocation(mockLocation)
 
     expect(expected).toEqual(result);
   });
