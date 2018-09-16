@@ -78,17 +78,27 @@ describe('Profile', () => {
   describe('handlePost', () => {
 
     it('should change the state of dropFormActive when called', () => {
-
-
       expect(wrapper.state().dropFormActive).toEqual(false)
 
       wrapper.instance().handlePost();
 
       expect(wrapper.state().dropFormActive).toEqual(true)
-
-
     });
 
   });
+
+  describe('toggleSubmit', () => {
+
+    it('should change the state of dropToConfirm when called', () => {
+      expect(wrapper.state().dropToConfirm).toEqual(false)
+
+      wrapper.instance().toggleSubmit(true);
+
+      expect(wrapper.state().dropToConfirm).toEqual(true)
+    });
+
+  });
+
+
 
 });
