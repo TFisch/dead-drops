@@ -1,2 +1,8 @@
 .drop-list {
-  background-color: darkslateblue; }
+  background-color: blueviolet; 
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+
