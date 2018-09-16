@@ -1,8 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Profile, mapStateToProps, mapDispatchToProps } from '../Profile/'
+import {
+  Profile,
+  retrieveDropBoard,
+  mapStateToProps,
+  mapDispatchToProps,
+  handlePost
+} from '../Profile/'
 import { mockUser, mockToken } from '../../utilities/mockData'
-import { getToken } from '../../actions'
+import { getToken, setUser } from '../../actions'
 
 describe('Profile', () => {
   let wrapper;
@@ -16,31 +22,73 @@ describe('Profile', () => {
   });
 
 
-});
 
-describe('MapStateToProps', () => {
+  describe('MapStateToProps', () => {
 
-  it('should return an object with username and image', () => {
-    const mockedState = { locationData: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
-    const expected = { location: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
-    const mappedProps = mapStateToProps(mockedState);
+    it('should return an object with username and image', () => {
+      const mockedState = { locationData: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+      const expected = { location: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+      const mappedProps = mapStateToProps(mockedState);
 
-    expect(mappedProps).toEqual(expected);
+      expect(mappedProps).toEqual(expected);
+
+    });
+  });
+
+  describe('MapDispatchToProps', () => {
+
+    it('calls dispatch with a getToken action when getToken is called', () => {
+
+      const mockDispatch = jest.fn()
+      const actionToDispatch = getToken(mockToken)
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.getToken(mockToken)
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+
+    });
+
+
+    it('calls dispatch with a setUser action when setUser is called', () => {
+
+      const mockDispatch = jest.fn()
+      const actionToDispatch = setUser(mockUser)
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.setUser(mockUser)
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+
+    });
+  });
+
+  describe('retrieveDropBoard', () => {
+
+    it.skip('set state when retrieveDropBoard is called', async () => {
+      const mockfetch = jest.fn()
+      const mockState = { mockfetch, dropListRetrieved: true }
+      await wrapper.instance().retrieveDropBoard();
+
+
+    });
 
   });
-});
 
-describe('MapDispatchToProps', () => {
+  describe('handlePost', () => {
 
-  it('calls dispatch with a getToken action when getToken is called', () => {
+    it('should change the state of dropFormActive when called', () => {
 
-    const mockDispatch = jest.fn()
-    const actionToDispatch = getToken(mockToken)
 
-    const mappedProps = mapDispatchToProps(mockDispatch)
-    mappedProps.getToken(mockToken)
+      expect(wrapper.state().dropFormActive).toEqual(false)
 
-    expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+      wrapper.instance().handlePost();
+
+      expect(wrapper.state().dropFormActive).toEqual(true)
+
+
+    });
 
   });
+
 });
