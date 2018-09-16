@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Profile, mapStateToProps } from '../Profile/'
-import { mockUser } from '../../utilities/mockData'
+import { Profile, mapStateToProps, mapDispatchToProps } from '../Profile/'
+import { mockUser, mockToken } from '../../utilities/mockData'
+import { getToken } from '../../actions'
 
 describe('Profile', () => {
   let wrapper;
@@ -18,7 +19,6 @@ describe('Profile', () => {
 });
 
 describe('MapStateToProps', () => {
-  const user = mockUser;
 
   it('should return an object with username and image', () => {
     const mockedState = { locationData: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
@@ -26,6 +26,21 @@ describe('MapStateToProps', () => {
     const mappedProps = mapStateToProps(mockedState);
 
     expect(mappedProps).toEqual(expected);
+
+  });
+});
+
+describe('MapDispatchToProps', () => {
+
+  it('calls dispatch with a getToken action when getToken is called', () => {
+
+    const mockDispatch = jest.fn()
+    const actionToDispatch = getToken(mockToken)
+
+    const mappedProps = mapDispatchToProps(mockDispatch)
+    mappedProps.getToken(mockToken)
+
+    expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
 
   });
 });
