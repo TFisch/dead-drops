@@ -51,14 +51,12 @@ export class DropSubmitForm extends Component {
 
   sendCoordinates = async (event) => {
     event.preventDefault();
-    const returnLocation = await fetchLocation(this.state);
-    console.log(returnLocation);
-    await this.props.getLocation(returnLocation);
-
+    const returnedLocation = await fetchLocation(this.state);
+    await this.props.getLocation(returnedLocation);
+    this.props.toggleSubmit(true);
   }
 
   render() {
-
     return (
       <div>
         <form className="drop-submit" onSubmit={(e) => this.sendCoordinates(e)}>
