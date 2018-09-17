@@ -1,0 +1,1086 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmDrop should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConfirmDrop
+    location={
+        Object {
+            "lat": "2.52343245",
+            "locationImage": "https://via.placeholder.com/350x150",
+            "long": "3214321504",
+            "verificationCode": Array [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+            ],
+          }
+    }
+    postPin={[Function]}
+    toggleSubmit={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="data-wrap"
+>
+        <div
+                className="column-left-wrap"
+        >
+                <div
+                        className="stat-wrap"
+                >
+                        <h3
+                                className="category-confirm"
+                                id="longitude"
+                        >
+                                Longitude
+                        </h3>
+                        <h2
+                                className="output"
+                        />
+                </div>
+                <div
+                        className="stat-wrap"
+                >
+                        <h3
+                                className="category-confirm"
+                        >
+                                Latitude
+                        </h3>
+                        <h2
+                                className="output"
+                        >
+                                 
+                        </h2>
+                </div>
+                <div
+                        className="stat-wrap"
+                >
+                        <h3
+                                className="category-confirm"
+                        >
+                                Unique Verification Code
+                        </h3>
+                        <h2
+                                className="output"
+                        >
+                                 
+                                0
+                                0
+                                0
+                                0
+                                0
+                                0
+                        </h2>
+                </div>
+        </div>
+        <div
+                className="column-right-wrap"
+        >
+                <img
+                        alt="coordinate-location"
+                        className="location-display"
+                        src={undefined}
+                />
+                <div
+                        className="button-wrap-confirm"
+                >
+                        <button
+                                className="edit-button"
+                                onClick={[Function]}
+                        >
+                                EDIT
+                        </button>
+                        <button
+                                className="confirm-button"
+                                onClick={[Function]}
+                        >
+                                CONFIRM
+                        </button>
+                </div>
+        </div>
+</div>,
+      "className": "confirm-form",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="column-left-wrap"
+>
+            <div
+                        className="stat-wrap"
+            >
+                        <h3
+                                    className="category-confirm"
+                                    id="longitude"
+                        >
+                                    Longitude
+                        </h3>
+                        <h2
+                                    className="output"
+                        />
+            </div>
+            <div
+                        className="stat-wrap"
+            >
+                        <h3
+                                    className="category-confirm"
+                        >
+                                    Latitude
+                        </h3>
+                        <h2
+                                    className="output"
+                        >
+                                     
+                        </h2>
+            </div>
+            <div
+                        className="stat-wrap"
+            >
+                        <h3
+                                    className="category-confirm"
+                        >
+                                    Unique Verification Code
+                        </h3>
+                        <h2
+                                    className="output"
+                        >
+                                     
+                                    0
+                                    0
+                                    0
+                                    0
+                                    0
+                                    0
+                        </h2>
+            </div>
+</div>,
+          <div
+            className="column-right-wrap"
+>
+            <img
+                        alt="coordinate-location"
+                        className="location-display"
+                        src={undefined}
+            />
+            <div
+                        className="button-wrap-confirm"
+            >
+                        <button
+                                    className="edit-button"
+                                    onClick={[Function]}
+                        >
+                                    EDIT
+                        </button>
+                        <button
+                                    className="confirm-button"
+                                    onClick={[Function]}
+                        >
+                                    CONFIRM
+                        </button>
+            </div>
+</div>,
+        ],
+        "className": "data-wrap",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="stat-wrap"
+>
+                <h3
+                                className="category-confirm"
+                                id="longitude"
+                >
+                                Longitude
+                </h3>
+                <h2
+                                className="output"
+                />
+</div>,
+              <div
+                className="stat-wrap"
+>
+                <h3
+                                className="category-confirm"
+                >
+                                Latitude
+                </h3>
+                <h2
+                                className="output"
+                >
+                                 
+                </h2>
+</div>,
+              <div
+                className="stat-wrap"
+>
+                <h3
+                                className="category-confirm"
+                >
+                                Unique Verification Code
+                </h3>
+                <h2
+                                className="output"
+                >
+                                 
+                                0
+                                0
+                                0
+                                0
+                                0
+                                0
+                </h2>
+</div>,
+            ],
+            "className": "column-left-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category-confirm"
+                    id="longitude"
+>
+                    Longitude
+</h3>,
+                  <h2
+                    className="output"
+/>,
+                ],
+                "className": "stat-wrap",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Longitude",
+                    "className": "category-confirm",
+                    "id": "longitude",
+                  },
+                  "ref": null,
+                  "rendered": "Longitude",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "output",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h2",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category-confirm"
+>
+                    Latitude
+</h3>,
+                  <h2
+                    className="output"
+>
+                     
+</h2>,
+                ],
+                "className": "stat-wrap",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Latitude",
+                    "className": "category-confirm",
+                  },
+                  "ref": null,
+                  "rendered": "Latitude",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      undefined,
+                    ],
+                    "className": "output",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    undefined,
+                  ],
+                  "type": "h2",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category-confirm"
+>
+                    Unique Verification Code
+</h3>,
+                  <h2
+                    className="output"
+>
+                     
+                    0
+                    0
+                    0
+                    0
+                    0
+                    0
+</h2>,
+                ],
+                "className": "stat-wrap",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Unique Verification Code",
+                    "className": "category-confirm",
+                  },
+                  "ref": null,
+                  "rendered": "Unique Verification Code",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      Array [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                      ],
+                    ],
+                    "className": "output",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                  ],
+                  "type": "h2",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="coordinate-location"
+                className="location-display"
+                src={undefined}
+/>,
+              <div
+                className="button-wrap-confirm"
+>
+                <button
+                                className="edit-button"
+                                onClick={[Function]}
+                >
+                                EDIT
+                </button>
+                <button
+                                className="confirm-button"
+                                onClick={[Function]}
+                >
+                                CONFIRM
+                </button>
+</div>,
+            ],
+            "className": "column-right-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "coordinate-location",
+                "className": "location-display",
+                "src": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="edit-button"
+                    onClick={[Function]}
+>
+                    EDIT
+</button>,
+                  <button
+                    className="confirm-button"
+                    onClick={[Function]}
+>
+                    CONFIRM
+</button>,
+                ],
+                "className": "button-wrap-confirm",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "EDIT",
+                    "className": "edit-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "EDIT",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "CONFIRM",
+                    "className": "confirm-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "CONFIRM",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="data-wrap"
+>
+          <div
+                    className="column-left-wrap"
+          >
+                    <div
+                              className="stat-wrap"
+                    >
+                              <h3
+                                        className="category-confirm"
+                                        id="longitude"
+                              >
+                                        Longitude
+                              </h3>
+                              <h2
+                                        className="output"
+                              />
+                    </div>
+                    <div
+                              className="stat-wrap"
+                    >
+                              <h3
+                                        className="category-confirm"
+                              >
+                                        Latitude
+                              </h3>
+                              <h2
+                                        className="output"
+                              >
+                                         
+                              </h2>
+                    </div>
+                    <div
+                              className="stat-wrap"
+                    >
+                              <h3
+                                        className="category-confirm"
+                              >
+                                        Unique Verification Code
+                              </h3>
+                              <h2
+                                        className="output"
+                              >
+                                         
+                                        0
+                                        0
+                                        0
+                                        0
+                                        0
+                                        0
+                              </h2>
+                    </div>
+          </div>
+          <div
+                    className="column-right-wrap"
+          >
+                    <img
+                              alt="coordinate-location"
+                              className="location-display"
+                              src={undefined}
+                    />
+                    <div
+                              className="button-wrap-confirm"
+                    >
+                              <button
+                                        className="edit-button"
+                                        onClick={[Function]}
+                              >
+                                        EDIT
+                              </button>
+                              <button
+                                        className="confirm-button"
+                                        onClick={[Function]}
+                              >
+                                        CONFIRM
+                              </button>
+                    </div>
+          </div>
+</div>,
+        "className": "confirm-form",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="column-left-wrap"
+>
+              <div
+                            className="stat-wrap"
+              >
+                            <h3
+                                          className="category-confirm"
+                                          id="longitude"
+                            >
+                                          Longitude
+                            </h3>
+                            <h2
+                                          className="output"
+                            />
+              </div>
+              <div
+                            className="stat-wrap"
+              >
+                            <h3
+                                          className="category-confirm"
+                            >
+                                          Latitude
+                            </h3>
+                            <h2
+                                          className="output"
+                            >
+                                           
+                            </h2>
+              </div>
+              <div
+                            className="stat-wrap"
+              >
+                            <h3
+                                          className="category-confirm"
+                            >
+                                          Unique Verification Code
+                            </h3>
+                            <h2
+                                          className="output"
+                            >
+                                           
+                                          0
+                                          0
+                                          0
+                                          0
+                                          0
+                                          0
+                            </h2>
+              </div>
+</div>,
+            <div
+              className="column-right-wrap"
+>
+              <img
+                            alt="coordinate-location"
+                            className="location-display"
+                            src={undefined}
+              />
+              <div
+                            className="button-wrap-confirm"
+              >
+                            <button
+                                          className="edit-button"
+                                          onClick={[Function]}
+                            >
+                                          EDIT
+                            </button>
+                            <button
+                                          className="confirm-button"
+                                          onClick={[Function]}
+                            >
+                                          CONFIRM
+                            </button>
+              </div>
+</div>,
+          ],
+          "className": "data-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="stat-wrap"
+>
+                  <h3
+                                    className="category-confirm"
+                                    id="longitude"
+                  >
+                                    Longitude
+                  </h3>
+                  <h2
+                                    className="output"
+                  />
+</div>,
+                <div
+                  className="stat-wrap"
+>
+                  <h3
+                                    className="category-confirm"
+                  >
+                                    Latitude
+                  </h3>
+                  <h2
+                                    className="output"
+                  >
+                                     
+                  </h2>
+</div>,
+                <div
+                  className="stat-wrap"
+>
+                  <h3
+                                    className="category-confirm"
+                  >
+                                    Unique Verification Code
+                  </h3>
+                  <h2
+                                    className="output"
+                  >
+                                     
+                                    0
+                                    0
+                                    0
+                                    0
+                                    0
+                                    0
+                  </h2>
+</div>,
+              ],
+              "className": "column-left-wrap",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      className="category-confirm"
+                      id="longitude"
+>
+                      Longitude
+</h3>,
+                    <h2
+                      className="output"
+/>,
+                  ],
+                  "className": "stat-wrap",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Longitude",
+                      "className": "category-confirm",
+                      "id": "longitude",
+                    },
+                    "ref": null,
+                    "rendered": "Longitude",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "output",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "h2",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      className="category-confirm"
+>
+                      Latitude
+</h3>,
+                    <h2
+                      className="output"
+>
+                       
+</h2>,
+                  ],
+                  "className": "stat-wrap",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Latitude",
+                      "className": "category-confirm",
+                    },
+                    "ref": null,
+                    "rendered": "Latitude",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        undefined,
+                      ],
+                      "className": "output",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      undefined,
+                    ],
+                    "type": "h2",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      className="category-confirm"
+>
+                      Unique Verification Code
+</h3>,
+                    <h2
+                      className="output"
+>
+                       
+                      0
+                      0
+                      0
+                      0
+                      0
+                      0
+</h2>,
+                  ],
+                  "className": "stat-wrap",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Unique Verification Code",
+                      "className": "category-confirm",
+                    },
+                    "ref": null,
+                    "rendered": "Unique Verification Code",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        Array [
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                        ],
+                      ],
+                      "className": "output",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                    ],
+                    "type": "h2",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="coordinate-location"
+                  className="location-display"
+                  src={undefined}
+/>,
+                <div
+                  className="button-wrap-confirm"
+>
+                  <button
+                                    className="edit-button"
+                                    onClick={[Function]}
+                  >
+                                    EDIT
+                  </button>
+                  <button
+                                    className="confirm-button"
+                                    onClick={[Function]}
+                  >
+                                    CONFIRM
+                  </button>
+</div>,
+              ],
+              "className": "column-right-wrap",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "coordinate-location",
+                  "className": "location-display",
+                  "src": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="edit-button"
+                      onClick={[Function]}
+>
+                      EDIT
+</button>,
+                    <button
+                      className="confirm-button"
+                      onClick={[Function]}
+>
+                      CONFIRM
+</button>,
+                  ],
+                  "className": "button-wrap-confirm",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "EDIT",
+                      "className": "edit-button",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "EDIT",
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "CONFIRM",
+                      "className": "confirm-button",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "CONFIRM",
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "disableLifecycleMethods": true,
+    "hydrateIn": undefined,
+  },
+}
+`;
