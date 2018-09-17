@@ -4,6 +4,7 @@ exports[`ConfirmDrop should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ConfirmDrop
+    handleEdit={[Function]}
     location={
         Object {
             "lat": "2.52343245",
@@ -102,12 +103,14 @@ ShallowWrapper {
                 >
                         <button
                                 className="edit-button"
+                                name="edit"
                                 onClick={[Function]}
                         >
                                 EDIT
                         </button>
                         <button
                                 className="confirm-button"
+                                name="confirm"
                                 onClick={[Function]}
                         >
                                 CONFIRM
@@ -188,12 +191,14 @@ ShallowWrapper {
             >
                         <button
                                     className="edit-button"
+                                    name="edit"
                                     onClick={[Function]}
                         >
                                     EDIT
                         </button>
                         <button
                                     className="confirm-button"
+                                    name="confirm"
                                     onClick={[Function]}
                         >
                                     CONFIRM
@@ -456,12 +461,14 @@ ShallowWrapper {
 >
                 <button
                                 className="edit-button"
+                                name="edit"
                                 onClick={[Function]}
                 >
                                 EDIT
                 </button>
                 <button
                                 className="confirm-button"
+                                name="confirm"
                                 onClick={[Function]}
                 >
                                 CONFIRM
@@ -493,12 +500,14 @@ ShallowWrapper {
                 "children": Array [
                   <button
                     className="edit-button"
+                    name="edit"
                     onClick={[Function]}
 >
                     EDIT
 </button>,
                   <button
                     className="confirm-button"
+                    name="confirm"
                     onClick={[Function]}
 >
                     CONFIRM
@@ -515,6 +524,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "EDIT",
                     "className": "edit-button",
+                    "name": "edit",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -528,6 +538,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": "CONFIRM",
                     "className": "confirm-button",
+                    "name": "confirm",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -618,12 +629,14 @@ ShallowWrapper {
                     >
                               <button
                                         className="edit-button"
+                                        name="edit"
                                         onClick={[Function]}
                               >
                                         EDIT
                               </button>
                               <button
                                         className="confirm-button"
+                                        name="confirm"
                                         onClick={[Function]}
                               >
                                         CONFIRM
@@ -704,12 +717,14 @@ ShallowWrapper {
               >
                             <button
                                           className="edit-button"
+                                          name="edit"
                                           onClick={[Function]}
                             >
                                           EDIT
                             </button>
                             <button
                                           className="confirm-button"
+                                          name="confirm"
                                           onClick={[Function]}
                             >
                                           CONFIRM
@@ -972,12 +987,14 @@ ShallowWrapper {
 >
                   <button
                                     className="edit-button"
+                                    name="edit"
                                     onClick={[Function]}
                   >
                                     EDIT
                   </button>
                   <button
                                     className="confirm-button"
+                                    name="confirm"
                                     onClick={[Function]}
                   >
                                     CONFIRM
@@ -1009,12 +1026,14 @@ ShallowWrapper {
                   "children": Array [
                     <button
                       className="edit-button"
+                      name="edit"
                       onClick={[Function]}
 >
                       EDIT
 </button>,
                     <button
                       className="confirm-button"
+                      name="confirm"
                       onClick={[Function]}
 >
                       CONFIRM
@@ -1031,6 +1050,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "EDIT",
                       "className": "edit-button",
+                      "name": "edit",
                       "onClick": [Function],
                     },
                     "ref": null,
@@ -1044,6 +1064,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "CONFIRM",
                       "className": "confirm-button",
+                      "name": "confirm",
                       "onClick": [Function],
                     },
                     "ref": null,

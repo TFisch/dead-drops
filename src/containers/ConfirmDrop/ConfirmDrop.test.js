@@ -7,9 +7,16 @@ import { mapStateToProps } from './';
 describe('ConfirmDrop', () => {
   let wrapper;
   const mockPropsMethodTwo = mockPropsMethod;
+  const mockPropsMethodThree = mockPropsMethod;
+  const mockPropsMethodFour = mockPropsMethod;
 
   beforeEach(() => {
-    wrapper = shallow(<ConfirmDrop location={mockLocation} toggleSubmit={mockPropsMethod} postPin={mockPropsMethodTwo} />)
+    wrapper = shallow(<ConfirmDrop
+      location={mockLocation}
+      toggleSubmit={mockPropsMethod}
+      postPin={mockPropsMethodTwo}
+      handleEdit={mockPropsMethodFour}
+    />)
   });
 
   it('should match the snapshot', () => {
@@ -17,6 +24,12 @@ describe('ConfirmDrop', () => {
   });
 
   describe('handleConfirm', () => {
+
+    it('should call handleConfirm on click', () => {
+      wrapper.find('[name="confirm"]').simulate('click');
+
+      expect(mockPropsMethodThree).toHaveBeenCalled();
+    });
 
     it('should call toggleSubmit', () => {
 
@@ -37,6 +50,12 @@ describe('ConfirmDrop', () => {
 
 
   describe('handleEdit', () => {
+
+    it('should call handleEdit on click', () => {
+      wrapper.find('[name="edit"]').simulate('click');
+
+      expect(mockPropsMethodFour).toHaveBeenCalled();
+    });
 
     it('should call toggleSubmit', () => {
 

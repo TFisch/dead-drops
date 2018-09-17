@@ -3,19 +3,19 @@ import { connect } from 'react-redux';
 import { postPin } from '../../api'
 import './ConfirmDrop.css'
 
-class ConfirmDrop extends Component {
+export class ConfirmDrop extends Component {
   constructor(props) {
     super(props)
   }
 
-  handleConfirm = (e) => {
+  handleConfirm = () => {
     const { latitude, longitude } = this.props.location;
     const note = `Latitude: ${latitude}, Longitude: ${longitude}`;
     postPin(note, this.props.token)
     this.props.toggleSubmit();
   }
 
-  handleEdit = (e) => {
+  handleEdit = () => {
     this.props.toggleSubmit();
   }
 
@@ -41,8 +41,8 @@ class ConfirmDrop extends Component {
           <div className="column-right-wrap">
             <img className="location-display" src={image} alt="coordinate-location" />
             <div className="button-wrap-confirm">
-              <button className="edit-button" onClick={(e) => this.handleEdit(e)}>EDIT</button>
-              <button className="confirm-button" onClick={(e) => this.handleConfirm(e)}>CONFIRM</button>
+              <button className="edit-button" name="edit" onClick={() => this.handleEdit()}>EDIT</button>
+              <button className="confirm-button" name="confirm" onClick={() => this.handleConfirm()}>CONFIRM</button>
             </div>
           </div>
         </div>
@@ -53,7 +53,6 @@ class ConfirmDrop extends Component {
 
 export const mapStateToProps = (state) => ({
   token: state.token,
-  user: state.user,
   location: state.locationData
 });
 
