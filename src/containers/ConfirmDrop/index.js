@@ -15,15 +15,16 @@ class ConfirmDrop extends Component {
     this.props.toggleSubmit();
   }
 
+  handleEdit = (e) => {
+    this.props.toggleSubmit();
+  }
+
   render() {
     const { latitude, longitude, image, verificationCode } = this.props.location;
     return (
       <div className="confirm-form">
         <div className="data-wrap">
           <div className="column-left-wrap">
-            <img className="location-display" src={image} alt="coordinate-location" />
-          </div>
-          <div className="column-right-wrap">
             <div className="stat-wrap">
               <h3 className="category-confirm" id="longitude">Longitude</h3>
               <h2 className="output">{longitude}</h2>
@@ -37,8 +38,14 @@ class ConfirmDrop extends Component {
               <h2 className="output"> {verificationCode}</h2>
             </div>
           </div>
+          <div className="column-right-wrap">
+            <img className="location-display" src={image} alt="coordinate-location" />
+            <div className="button-wrap-confirm">
+              <button className="edit-button" onClick={(e) => this.handleEdit(e)}>EDIT</button>
+              <button className="confirm-button" onClick={(e) => this.handleConfirm(e)}>CONFIRM</button>
+            </div>
+          </div>
         </div>
-        <button className="confirm-button" onClick={(e) => this.handleConfirm(e)}>CONFIRM</button>
       </div>
     )
   }
