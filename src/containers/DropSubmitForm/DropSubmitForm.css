@@ -3,11 +3,15 @@
   justify-content: flex-end;
   width: 100%; }
 
+.category {
+  color: #86C232;
+  text-shadow: 2px 1.3px black; }
+
 .code-entry {
   width: 1em; }
 
 .drop-form {
-  background-color: burlywood;
+  background-color: #6B6E70;
   border: 1px solid black;
   display: flex;
   flex-direction: column;

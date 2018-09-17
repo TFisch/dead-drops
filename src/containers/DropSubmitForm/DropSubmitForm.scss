@@ -1,7 +1,14 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
 .button-row {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.category {
+  @include category();
 }
 
 .code-entry {
@@ -9,7 +16,7 @@
 }
 
 .drop-form {
-  background-color: burlywood;
+  background-color: $color-three;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
