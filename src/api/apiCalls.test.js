@@ -1,5 +1,20 @@
-import { fetchUserImage, fetchDropBoard, fetchLocation } from './'
-import { tokenMock, mockRawImage, mockBoardResponse, mockImageResponse, mockLocation } from '../utilities/mockData'
+import {
+  fetchUserImage,
+  fetchDropBoard,
+  fetchLocation,
+  fetchAccessToken
+} from './'
+
+import {
+  tokenMock,
+  mockRawImage,
+  mockBoardResponse,
+  mockImageResponse,
+  mockLocation,
+  mockId,
+  tokenAuth
+} from '../utilities/mockData'
+
 import { id, key } from '../hidden/hidden'
 
 describe('API Calls', () => {
@@ -40,6 +55,7 @@ describe('API Calls', () => {
   describe('fetchLocation', () => {
 
     it('should return an image object when called', async () => {
+
       window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
         status: 200, json: () => Promise.resolve(mockImageResponse)
       }));
@@ -49,6 +65,15 @@ describe('API Calls', () => {
       await fetchLocation(mockLocation)
 
       expect(window.fetch).toHaveBeenCalledWith(url);
+    });
+
+    it('should display a catch error when a problem has occcured', () => {
+
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        status: 200, json: () => Promise.resolve(tokenMock)
+      }));
+
+
     });
   });
 
@@ -62,6 +87,17 @@ describe('API Calls', () => {
 
   describe('fetchAccessToken', () => {
 
+    it.skip('should retrieve an access token for the user', async () => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        status: 200, json: () => Promise.resolve(tokenMock)
+      }));
+
+      const url = `https://api.pinterest.com/v1/oauth/token?grant_type=authorization_code&client_id=4987807426915878592&client_secret=4b6305e8od12b2e30386a2ee5546e8a2a6bde854e3c2190fc323da077e98f1e3&code=qwekrj43-kpkl;khbf_a5234kjkjfmjpsdFOEBtoWBGwAn_ADAAAabaRTpF9Oppppppp",{"headers": {"Content-Type": "application/x-www-form-urlencoded "}, "method": "POST"}`
+
+      await fetchAccessToken(mockId, tokenAuth)
+
+      expect(window.fetch).toHaveBeenCalledWith(url);
+    });
   });
 
 });
