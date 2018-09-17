@@ -64,21 +64,12 @@ export class DropSubmitForm extends Component {
         <form className="drop-submit" onSubmit={(e) => this.sendCoordinates(e)}>
           <div className="drop-form">
             <span className="entry-row">
-              <h3 className="category">Difficulty</h3>
-              <select name="difficulty" onChange={(e) => this.handleDifficulty(e)}>
-                <option value="select">Select</option>
-                <option value="easy">Easy</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="Hard">Hard</option>
-              </select>
+              <h3 className="category">Latitude Coordinates</h3>
+              <input name="latitude" className="co-entry" placeholder="enter coordinates..." type="number" value={this.state.latitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3 className="category">Longitude Coordinates</h3>
               <input name="longitude" className="co-entry" placeholder="enter coordinates..." type="number" value={this.state.longitude} onChange={this.handleChange} />
-            </span>
-            <span className="entry-row">
-              <h3 className="category">Latitude Coordinates</h3>
-              <input name="latitude" className="co-entry" placeholder="enter coordinates..." type="number" value={this.state.latitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3 className="category">Unique Verification Code</h3>
