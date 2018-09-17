@@ -4,6 +4,7 @@ exports[`Profile should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
+    resetConfirm={[Function]}
     user={
         Object {
             "image": "https://via.placeholder.com/350x150",
@@ -24,92 +25,125 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <div
-          className="user-profile"
+      "children": <div
+        className="panel-wrap"
 >
-          <div
-                    className="post-wrap"
-          >
-                    <div
-                              className="profile-wrap"
-                    >
-                              <img
+        <div
+                className="user-profile"
+        >
+                <div
+                        className="post-wrap"
+                >
+                        <div
+                                className="profile-wrap"
+                        >
+                                <img
                                         alt="user-avatar"
                                         className="profile-image"
                                         src="https://via.placeholder.com/350x150"
-                              />
-                              <h1
+                                />
+                                <h1
                                         className="welcome-text"
-                              >
+                                >
                                         Welcome, 
                                         Harvey
                                         !
-                              </h1>
-                    </div>
-                    <button
-                              className="post-button"
-                              onClick={[Function]}
-                    >
-                              POST A DEAD DROP
-                    </button>
-          </div>
-</div>,
+                                </h1>
+                        </div>
+                </div>
+        </div>
         <div
-          className="board-display"
->
-          
+                className="board-display"
+        >
+                <Unknown
+                        retrievedBoard={Array []}
+                />
+        </div>
 </div>,
-      ],
-      "className": "container",
+      "className": "profile",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="post-wrap"
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="user-profile"
 >
-              <div
-                            className="profile-wrap"
-              >
-                            <img
-                                          alt="user-avatar"
-                                          className="profile-image"
-                                          src="https://via.placeholder.com/350x150"
-                            />
-                            <h1
-                                          className="welcome-text"
-                            >
-                                          Welcome, 
-                                          Harvey
-                                          !
-                            </h1>
-              </div>
-              <button
-                            className="post-button"
-                            onClick={[Function]}
-              >
-                            POST A DEAD DROP
-              </button>
+            <div
+                        className="post-wrap"
+            >
+                        <div
+                                    className="profile-wrap"
+                        >
+                                    <img
+                                                alt="user-avatar"
+                                                className="profile-image"
+                                                src="https://via.placeholder.com/350x150"
+                                    />
+                                    <h1
+                                                className="welcome-text"
+                                    >
+                                                Welcome, 
+                                                Harvey
+                                                !
+                                    </h1>
+                        </div>
+            </div>
 </div>,
-            false,
-          ],
-          "className": "user-profile",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
+          <div
+            className="board-display"
+>
+            <Unknown
+                        retrievedBoard={Array []}
+            />
+</div>,
+        ],
+        "className": "panel-wrap",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="post-wrap"
+>
                 <div
+                                className="profile-wrap"
+                >
+                                <img
+                                                alt="user-avatar"
+                                                className="profile-image"
+                                                src="https://via.placeholder.com/350x150"
+                                />
+                                <h1
+                                                className="welcome-text"
+                                >
+                                                Welcome, 
+                                                Harvey
+                                                !
+                                </h1>
+                </div>
+</div>,
+              false,
+              false,
+            ],
+            "className": "user-profile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
                   className="profile-wrap"
 >
                   <img
@@ -125,18 +159,10 @@ ShallowWrapper {
                                     !
                   </h1>
 </div>,
-                <button
-                  className="post-button"
-                  onClick={[Function]}
->
-                  POST A DEAD DROP
-</button>,
-              ],
-              "className": "post-wrap",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
+                "className": "post-wrap",
+              },
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
@@ -195,45 +221,40 @@ ShallowWrapper {
                 ],
                 "type": "div",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "POST A DEAD DROP",
-                  "className": "post-button",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": "POST A DEAD DROP",
-                "type": "button",
-              },
-            ],
-            "type": "div",
-          },
-          false,
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
+              "type": "div",
+            },
             false,
             false,
           ],
-          "className": "board-display",
+          "type": "div",
         },
-        "ref": null,
-        "rendered": Array [
-          false,
-          false,
-        ],
-        "type": "div",
-      },
-    ],
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Unknown
+              retrievedBoard={Array []}
+/>,
+            "className": "board-display",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "retrievedBoard": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -242,92 +263,125 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <div
-            className="user-profile"
+        "children": <div
+          className="panel-wrap"
 >
-            <div
-                        className="post-wrap"
-            >
-                        <div
-                                    className="profile-wrap"
-                        >
-                                    <img
-                                                alt="user-avatar"
-                                                className="profile-image"
-                                                src="https://via.placeholder.com/350x150"
-                                    />
-                                    <h1
-                                                className="welcome-text"
-                                    >
-                                                Welcome, 
-                                                Harvey
-                                                !
-                                    </h1>
-                        </div>
-                        <button
-                                    className="post-button"
-                                    onClick={[Function]}
-                        >
-                                    POST A DEAD DROP
-                        </button>
-            </div>
-</div>,
           <div
-            className="board-display"
->
-            
+                    className="user-profile"
+          >
+                    <div
+                              className="post-wrap"
+                    >
+                              <div
+                                        className="profile-wrap"
+                              >
+                                        <img
+                                                  alt="user-avatar"
+                                                  className="profile-image"
+                                                  src="https://via.placeholder.com/350x150"
+                                        />
+                                        <h1
+                                                  className="welcome-text"
+                                        >
+                                                  Welcome, 
+                                                  Harvey
+                                                  !
+                                        </h1>
+                              </div>
+                    </div>
+          </div>
+          <div
+                    className="board-display"
+          >
+                    <Unknown
+                              retrievedBoard={Array []}
+                    />
+          </div>
 </div>,
-        ],
-        "className": "container",
+        "className": "profile",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="post-wrap"
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="user-profile"
 >
-                <div
-                                className="profile-wrap"
-                >
-                                <img
-                                                alt="user-avatar"
-                                                className="profile-image"
-                                                src="https://via.placeholder.com/350x150"
-                                />
-                                <h1
-                                                className="welcome-text"
-                                >
-                                                Welcome, 
-                                                Harvey
-                                                !
-                                </h1>
-                </div>
-                <button
-                                className="post-button"
-                                onClick={[Function]}
-                >
-                                POST A DEAD DROP
-                </button>
+              <div
+                            className="post-wrap"
+              >
+                            <div
+                                          className="profile-wrap"
+                            >
+                                          <img
+                                                        alt="user-avatar"
+                                                        className="profile-image"
+                                                        src="https://via.placeholder.com/350x150"
+                                          />
+                                          <h1
+                                                        className="welcome-text"
+                                          >
+                                                        Welcome, 
+                                                        Harvey
+                                                        !
+                                          </h1>
+                            </div>
+              </div>
 </div>,
-              false,
-            ],
-            "className": "user-profile",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
+            <div
+              className="board-display"
+>
+              <Unknown
+                            retrievedBoard={Array []}
+              />
+</div>,
+          ],
+          "className": "panel-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="post-wrap"
+>
                   <div
+                                    className="profile-wrap"
+                  >
+                                    <img
+                                                      alt="user-avatar"
+                                                      className="profile-image"
+                                                      src="https://via.placeholder.com/350x150"
+                                    />
+                                    <h1
+                                                      className="welcome-text"
+                                    >
+                                                      Welcome, 
+                                                      Harvey
+                                                      !
+                                    </h1>
+                  </div>
+</div>,
+                false,
+                false,
+              ],
+              "className": "user-profile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
                     className="profile-wrap"
 >
                     <img
@@ -343,18 +397,10 @@ ShallowWrapper {
                                         !
                     </h1>
 </div>,
-                  <button
-                    className="post-button"
-                    onClick={[Function]}
->
-                    POST A DEAD DROP
-</button>,
-                ],
-                "className": "post-wrap",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
+                  "className": "post-wrap",
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
@@ -413,45 +459,40 @@ ShallowWrapper {
                   ],
                   "type": "div",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "POST A DEAD DROP",
-                    "className": "post-button",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": "POST A DEAD DROP",
-                  "type": "button",
-                },
-              ],
-              "type": "div",
-            },
-            false,
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
+                "type": "div",
+              },
               false,
               false,
             ],
-            "className": "board-display",
+            "type": "div",
           },
-          "ref": null,
-          "rendered": Array [
-            false,
-            false,
-          ],
-          "type": "div",
-        },
-      ],
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Unknown
+                retrievedBoard={Array []}
+/>,
+              "className": "board-display",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "retrievedBoard": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

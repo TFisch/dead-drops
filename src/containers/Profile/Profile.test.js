@@ -5,7 +5,6 @@ import {
   retrieveDropBoard,
   mapStateToProps,
   mapDispatchToProps,
-  handlePost
 } from '../Profile/'
 import { mockUser, mockToken } from '../../utilities/mockData'
 import { getToken, setUser } from '../../actions'
@@ -14,7 +13,7 @@ describe('Profile', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Profile user={mockUser} />)
+    wrapper = shallow(<Profile user={mockUser} resetConfirm={jest.fn()} />)
   });
 
   it('should match the snapshot', () => {
@@ -69,34 +68,30 @@ describe('Profile', () => {
       const mockfetch = jest.fn()
       const mockState = { mockfetch, dropListRetrieved: true }
       await wrapper.instance().retrieveDropBoard();
-
-
     });
 
   });
 
-  describe('handlePost', () => {
-
-    it('should change the state of dropFormActive when called', () => {
-      expect(wrapper.state().dropFormActive).toEqual(false)
-
-      wrapper.instance().handlePost();
-
-      expect(wrapper.state().dropFormActive).toEqual(true)
-    });
-
-  });
 
   describe('toggleSubmit', () => {
 
     it('should change the state of dropToConfirm when called', () => {
-      expect(wrapper.state().dropToConfirm).toEqual(false)
 
-      wrapper.instance().toggleSubmit(true);
+      expect(wrapper.state().confirmDropActive).toEqual(false)
 
-      expect(wrapper.state().dropToConfirm).toEqual(true)
+      wrapper.instance().toggleSubmit();
+
+      expect(wrapper.state().confirmDropActive).toEqual(true)
     });
 
+    it('should change the state of dropToConfirm when called', () => {
+
+      expect(wrapper.state().dropFormActive).toEqual(false)
+
+      wrapper.instance().toggleSubmit();
+
+      expect(wrapper.state().dropFormActive).toEqual(true)
+    });
   });
 
 
