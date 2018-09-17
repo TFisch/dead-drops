@@ -18,14 +18,20 @@
 .nav-button {
   background: none;
   border: none;
-  color: #61892F;
+  color: #61892f;
   font-size: 1.2em;
   font-weight: 700;
   margin-left: .75em;
   margin-right: .75em;
   padding: 0;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer; }
   .nav-button:hover, .nav-button:focus, .nav-button:active {
     cursor: pointer; }
     .nav-button:hover:after, .nav-button:focus:after, .nav-button:active:after {
@@ -41,7 +47,13 @@
     transition: width .4s; }
   .nav-button:hover {
     color: #86C232;
-    position: relative; }
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0;
+    cursor: pointer; }
     .nav-button:hover:hover, .nav-button:hover:focus, .nav-button:hover:active {
       cursor: pointer; }
       .nav-button:hover:hover:after, .nav-button:hover:focus:after, .nav-button:hover:active:after {
@@ -55,6 +67,9 @@
       background-color: #86C232;
       width: 0;
       transition: width .4s; }
+  .nav-button:focus {
+    color: #86C232;
+    outline: none; }
 
 .logo {
   font-family: 'PT Sans', Arial, Verdana;
