@@ -1,0 +1,731 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Nav
+    user={
+        Object {
+            "image": "https://via.placeholder.com/350x150",
+            "username": "Harvey",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="wrap-left"
+>
+          <img
+                    alt=""
+                    className="icon"
+                    src="treasure.svg"
+          />
+          <h1
+                    className="logo"
+          >
+                    DEAD DROPS
+          </h1>
+</div>,
+        <div
+          className="buttons"
+>
+          <div
+                    className="nav-buttons-wrap"
+          >
+                    <Link
+                              replace={false}
+                              to="/profile"
+                    >
+                              <button
+                                        className="nav-button"
+                                        onClick={[Function]}
+                              >
+                                        SUBMIT DROP
+                              </button>
+                    </Link>
+                    <Link
+                              replace={false}
+                              to="/profile"
+                    >
+                              <button
+                                        className="nav-button"
+                                        onClick={[Function]}
+                              >
+                                        PROFILE
+                              </button>
+                    </Link>
+                    <Link
+                              replace={false}
+                              to="/"
+                    >
+                              <button
+                                        className="nav-button"
+                              >
+                                        LOG OUT
+                              </button>
+                    </Link>
+          </div>
+          <button
+                    className="pinterest-button"
+          >
+                    <img
+                              alt="pinterest-icon"
+                              src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+                    />
+          </button>
+</div>,
+      ],
+      "className": "nav",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt=""
+              className="icon"
+              src="treasure.svg"
+/>,
+            <h1
+              className="logo"
+>
+              DEAD DROPS
+</h1>,
+          ],
+          "className": "wrap-left",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "className": "icon",
+              "src": "treasure.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "DEAD DROPS",
+              "className": "logo",
+            },
+            "ref": null,
+            "rendered": "DEAD DROPS",
+            "type": "h1",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="nav-buttons-wrap"
+>
+              <Link
+                            replace={false}
+                            to="/profile"
+              >
+                            <button
+                                          className="nav-button"
+                                          onClick={[Function]}
+                            >
+                                          SUBMIT DROP
+                            </button>
+              </Link>
+              <Link
+                            replace={false}
+                            to="/profile"
+              >
+                            <button
+                                          className="nav-button"
+                                          onClick={[Function]}
+                            >
+                                          PROFILE
+                            </button>
+              </Link>
+              <Link
+                            replace={false}
+                            to="/"
+              >
+                            <button
+                                          className="nav-button"
+                            >
+                                          LOG OUT
+                            </button>
+              </Link>
+</div>,
+            <button
+              className="pinterest-button"
+>
+              <img
+                            alt="pinterest-icon"
+                            src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+              />
+</button>,
+          ],
+          "className": "buttons",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/profile"
+>
+                  <button
+                                    className="nav-button"
+                                    onClick={[Function]}
+                  >
+                                    SUBMIT DROP
+                  </button>
+</Link>,
+                <Link
+                  replace={false}
+                  to="/profile"
+>
+                  <button
+                                    className="nav-button"
+                                    onClick={[Function]}
+                  >
+                                    PROFILE
+                  </button>
+</Link>,
+                <Link
+                  replace={false}
+                  to="/"
+>
+                  <button
+                                    className="nav-button"
+                  >
+                                    LOG OUT
+                  </button>
+</Link>,
+              ],
+              "className": "nav-buttons-wrap",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="nav-button"
+                    onClick={[Function]}
+>
+                    SUBMIT DROP
+</button>,
+                  "replace": false,
+                  "to": "/profile",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "SUBMIT DROP",
+                    "className": "nav-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "SUBMIT DROP",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="nav-button"
+                    onClick={[Function]}
+>
+                    PROFILE
+</button>,
+                  "replace": false,
+                  "to": "/profile",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "PROFILE",
+                    "className": "nav-button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "PROFILE",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="nav-button"
+>
+                    LOG OUT
+</button>,
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "LOG OUT",
+                    "className": "nav-button",
+                  },
+                  "ref": null,
+                  "rendered": "LOG OUT",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="pinterest-icon"
+                src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+/>,
+              "className": "pinterest-button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "pinterest-icon",
+                "src": "//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="wrap-left"
+>
+            <img
+                        alt=""
+                        className="icon"
+                        src="treasure.svg"
+            />
+            <h1
+                        className="logo"
+            >
+                        DEAD DROPS
+            </h1>
+</div>,
+          <div
+            className="buttons"
+>
+            <div
+                        className="nav-buttons-wrap"
+            >
+                        <Link
+                                    replace={false}
+                                    to="/profile"
+                        >
+                                    <button
+                                                className="nav-button"
+                                                onClick={[Function]}
+                                    >
+                                                SUBMIT DROP
+                                    </button>
+                        </Link>
+                        <Link
+                                    replace={false}
+                                    to="/profile"
+                        >
+                                    <button
+                                                className="nav-button"
+                                                onClick={[Function]}
+                                    >
+                                                PROFILE
+                                    </button>
+                        </Link>
+                        <Link
+                                    replace={false}
+                                    to="/"
+                        >
+                                    <button
+                                                className="nav-button"
+                                    >
+                                                LOG OUT
+                                    </button>
+                        </Link>
+            </div>
+            <button
+                        className="pinterest-button"
+            >
+                        <img
+                                    alt="pinterest-icon"
+                                    src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+                        />
+            </button>
+</div>,
+        ],
+        "className": "nav",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt=""
+                className="icon"
+                src="treasure.svg"
+/>,
+              <h1
+                className="logo"
+>
+                DEAD DROPS
+</h1>,
+            ],
+            "className": "wrap-left",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "className": "icon",
+                "src": "treasure.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "DEAD DROPS",
+                "className": "logo",
+              },
+              "ref": null,
+              "rendered": "DEAD DROPS",
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="nav-buttons-wrap"
+>
+                <Link
+                                replace={false}
+                                to="/profile"
+                >
+                                <button
+                                                className="nav-button"
+                                                onClick={[Function]}
+                                >
+                                                SUBMIT DROP
+                                </button>
+                </Link>
+                <Link
+                                replace={false}
+                                to="/profile"
+                >
+                                <button
+                                                className="nav-button"
+                                                onClick={[Function]}
+                                >
+                                                PROFILE
+                                </button>
+                </Link>
+                <Link
+                                replace={false}
+                                to="/"
+                >
+                                <button
+                                                className="nav-button"
+                                >
+                                                LOG OUT
+                                </button>
+                </Link>
+</div>,
+              <button
+                className="pinterest-button"
+>
+                <img
+                                alt="pinterest-icon"
+                                src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+                />
+</button>,
+            ],
+            "className": "buttons",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/profile"
+>
+                    <button
+                                        className="nav-button"
+                                        onClick={[Function]}
+                    >
+                                        SUBMIT DROP
+                    </button>
+</Link>,
+                  <Link
+                    replace={false}
+                    to="/profile"
+>
+                    <button
+                                        className="nav-button"
+                                        onClick={[Function]}
+                    >
+                                        PROFILE
+                    </button>
+</Link>,
+                  <Link
+                    replace={false}
+                    to="/"
+>
+                    <button
+                                        className="nav-button"
+                    >
+                                        LOG OUT
+                    </button>
+</Link>,
+                ],
+                "className": "nav-buttons-wrap",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="nav-button"
+                      onClick={[Function]}
+>
+                      SUBMIT DROP
+</button>,
+                    "replace": false,
+                    "to": "/profile",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "SUBMIT DROP",
+                      "className": "nav-button",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "SUBMIT DROP",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="nav-button"
+                      onClick={[Function]}
+>
+                      PROFILE
+</button>,
+                    "replace": false,
+                    "to": "/profile",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "PROFILE",
+                      "className": "nav-button",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "PROFILE",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="nav-button"
+>
+                      LOG OUT
+</button>,
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "LOG OUT",
+                      "className": "nav-button",
+                    },
+                    "ref": null,
+                    "rendered": "LOG OUT",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="pinterest-icon"
+                  src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
+/>,
+                "className": "pinterest-button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "pinterest-icon",
+                  "src": "//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "disableLifecycleMethods": true,
+    "hydrateIn": undefined,
+  },
+}
+`;
