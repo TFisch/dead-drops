@@ -3,7 +3,7 @@ import { shallow, mount } from 'enzyme'
 import { Nav } from './'
 import { mockUser, mockPropsMethod } from '../../utilities/mockData'
 import { setFormActive, resetConfirm, resetFormActive } from '../../actions'
-import { handleSubmitButton } from './';
+import { mapStateToProps, mapDispatchToProps } from './';
 
 describe('Nav', () => {
   let wrapper;
@@ -51,6 +51,57 @@ describe('Nav', () => {
       expect(mockPropsMethodThree).toHaveBeenCalled();
 
     })
+  });
+
+  describe('MapStateToProps', () => {
+    it('should return a user object', () => {
+      const mockedState = { user: { username: 'Al Borlin', image: 'google.com' } }
+
+      const mappedProps = mapStateToProps(mockedState);
+
+      expect(mappedProps).toEqual(mockedState);
+    });
+
+  });
+
+  describe('MapDispatchToProps', () => {
+
+    it('should call dispatch with a status value when setFormActive is called', () => {
+      const mockDispatch = jest.fn()
+      const mockStatus = true;
+      const actionToDispatch = setFormActive(mockStatus)
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.setFormActive(mockStatus)
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+
+    it('should call dispatch when resetConfirm is called', () => {
+      const mockDispatch = jest.fn()
+
+      const actionToDispatch = resetConfirm()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.resetConfirm()
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+
+
+    it('should call dispatch when resetFormActive is called', () => {
+      const mockDispatch = jest.fn()
+
+      const actionToDispatch = resetFormActive()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.resetFormActive()
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+
+
+
   });
 
 });
