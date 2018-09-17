@@ -1,5 +1,4 @@
 export const cleanImage = (imageResponse) => {
-  console.log(imageResponse);
   const username = imageResponse.data.username
   const imageUrl = imageResponse.data.image;
   const image = imageUrl['60x60'].url;

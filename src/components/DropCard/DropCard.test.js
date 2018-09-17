@@ -1,7 +1,7 @@
 import React from 'react'
 import { DropCard } from './'
 import { shallow } from 'enzyme'
-import { mockImage, mockCardData, mockUserResponse } from '../../utilities/mockData'
+import { mockCardData } from '../../utilities/mockData'
 
 describe('DropCard', () => {
   let wrapper;
