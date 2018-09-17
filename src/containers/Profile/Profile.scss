@@ -24,6 +24,10 @@
 
 .welcome-text {
   @include primary-font;
+  color: $color-one;
+  font-size: 2.8em;
+  font-weight: 700;
+  text-shadow: 3.5px 3.5px $color-five;
 }
 
 .profile {
@@ -37,6 +41,8 @@
 .profile-wrap {
   align-items: center;
   display: flex;
+  margin-left: 2em;
+  margin-top: 2em;
 }
 
 .post-wrap {

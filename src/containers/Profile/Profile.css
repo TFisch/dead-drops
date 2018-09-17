@@ -17,7 +17,11 @@
 
 .welcome-text {
   font-family: 'PT Sans', Arial, Verdana;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #86C232;
+  font-size: 2.8em;
+  font-weight: 700;
+  text-shadow: 3.5px 3.5px #222629; }
 
 .profile {
   background-color: #474B4F;
@@ -28,7 +32,9 @@
 
 .profile-wrap {
   align-items: center;
-  display: flex; }
+  display: flex;
+  margin-left: 2em;
+  margin-top: 2em; }
 
 .post-wrap {
   align-items: center;
