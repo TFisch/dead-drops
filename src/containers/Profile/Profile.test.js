@@ -13,7 +13,7 @@ describe('Profile', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Profile user={mockUser} resetConfirm={mockPropsMethod} />)
+    wrapper = shallow(<Profile user={mockUser} resetConfirm={mockPropsMethod} retrieveDropBoard={mockPropsMethod} />)
   });
 
   it('should match the snapshot', () => {
@@ -66,10 +66,12 @@ describe('Profile', () => {
 
   describe('retrieveDropBoard', () => {
 
-    it.skip('set state when retrieveDropBoard is called', async () => {
-      const mockfetch = jest.fn()
-      const mockState = { mockfetch, dropListRetrieved: true }
-      await wrapper.instance().retrieveDropBoard();
+    it.skip('should set state when retrieveDropBoard is called', async () => {
+      expect(wrapper.state().dropListRetrieved).toEqual(false);
+
+      wrapper.update();
+
+      expect(mockPropsMethod).toHaveBeenCalled();
     });
 
   });
