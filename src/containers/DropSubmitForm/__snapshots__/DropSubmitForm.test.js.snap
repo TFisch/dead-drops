@@ -1,0 +1,1656 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropSubmitForm should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DropSubmitForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form
+        className="drop-submit"
+        onSubmit={[Function]}
+>
+        <div
+                className="drop-form"
+        >
+                <span
+                        className="entry-row"
+                >
+                        <h3
+                                className="category"
+                        >
+                                Latitude Coordinates
+                        </h3>
+                        <input
+                                className="co-entry"
+                                name="latitude"
+                                onChange={[Function]}
+                                placeholder="enter coordinates..."
+                                type="number"
+                                value=""
+                        />
+                </span>
+                <span
+                        className="entry-row"
+                >
+                        <h3
+                                className="category"
+                        >
+                                Longitude Coordinates
+                        </h3>
+                        <input
+                                className="co-entry"
+                                name="longitude"
+                                onChange={[Function]}
+                                placeholder="enter coordinates..."
+                                type="number"
+                                value=""
+                        />
+                </span>
+                <span
+                        className="entry-row"
+                >
+                        <h3
+                                className="category"
+                        >
+                                Unique Verification Code
+                        </h3>
+                        <div
+                                className="unique-code-entry-wrap"
+                        >
+                                <input
+                                        className="code-entry"
+                                        id="0"
+                                        maxLength="1"
+                                        name="uniqueOne"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                                <input
+                                        className="code-entry"
+                                        id="1"
+                                        maxLength="1"
+                                        name="uniqueTwo"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                                <input
+                                        className="code-entry"
+                                        id="2"
+                                        maxLength="1"
+                                        name="uniqueThree"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                                <input
+                                        className="code-entry"
+                                        id="3"
+                                        maxLength="1"
+                                        name="uniqueFour"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                                <input
+                                        className="code-entry"
+                                        id="4"
+                                        maxLength="1"
+                                        name="uniqueFive"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                                <input
+                                        className="code-entry"
+                                        id="5"
+                                        maxLength="1"
+                                        name="uniqueSix"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                                />
+                        </div>
+                </span>
+                <span
+                        className="button-row"
+                >
+                        <button
+                                className="submit-button form-row"
+                        >
+                                SUBMIT
+                        </button>
+                </span>
+        </div>
+</form>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="drop-form"
+>
+          <span
+                    className="entry-row"
+          >
+                    <h3
+                              className="category"
+                    >
+                              Latitude Coordinates
+                    </h3>
+                    <input
+                              className="co-entry"
+                              name="latitude"
+                              onChange={[Function]}
+                              placeholder="enter coordinates..."
+                              type="number"
+                              value=""
+                    />
+          </span>
+          <span
+                    className="entry-row"
+          >
+                    <h3
+                              className="category"
+                    >
+                              Longitude Coordinates
+                    </h3>
+                    <input
+                              className="co-entry"
+                              name="longitude"
+                              onChange={[Function]}
+                              placeholder="enter coordinates..."
+                              type="number"
+                              value=""
+                    />
+          </span>
+          <span
+                    className="entry-row"
+          >
+                    <h3
+                              className="category"
+                    >
+                              Unique Verification Code
+                    </h3>
+                    <div
+                              className="unique-code-entry-wrap"
+                    >
+                              <input
+                                        className="code-entry"
+                                        id="0"
+                                        maxLength="1"
+                                        name="uniqueOne"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="code-entry"
+                                        id="1"
+                                        maxLength="1"
+                                        name="uniqueTwo"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="code-entry"
+                                        id="2"
+                                        maxLength="1"
+                                        name="uniqueThree"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="code-entry"
+                                        id="3"
+                                        maxLength="1"
+                                        name="uniqueFour"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="code-entry"
+                                        id="4"
+                                        maxLength="1"
+                                        name="uniqueFive"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="code-entry"
+                                        id="5"
+                                        maxLength="1"
+                                        name="uniqueSix"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                              />
+                    </div>
+          </span>
+          <span
+                    className="button-row"
+          >
+                    <button
+                              className="submit-button form-row"
+                    >
+                              SUBMIT
+                    </button>
+          </span>
+</div>,
+        "className": "drop-submit",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="entry-row"
+>
+              <h3
+                            className="category"
+              >
+                            Latitude Coordinates
+              </h3>
+              <input
+                            className="co-entry"
+                            name="latitude"
+                            onChange={[Function]}
+                            placeholder="enter coordinates..."
+                            type="number"
+                            value=""
+              />
+</span>,
+            <span
+              className="entry-row"
+>
+              <h3
+                            className="category"
+              >
+                            Longitude Coordinates
+              </h3>
+              <input
+                            className="co-entry"
+                            name="longitude"
+                            onChange={[Function]}
+                            placeholder="enter coordinates..."
+                            type="number"
+                            value=""
+              />
+</span>,
+            <span
+              className="entry-row"
+>
+              <h3
+                            className="category"
+              >
+                            Unique Verification Code
+              </h3>
+              <div
+                            className="unique-code-entry-wrap"
+              >
+                            <input
+                                          className="code-entry"
+                                          id="0"
+                                          maxLength="1"
+                                          name="uniqueOne"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+                            <input
+                                          className="code-entry"
+                                          id="1"
+                                          maxLength="1"
+                                          name="uniqueTwo"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+                            <input
+                                          className="code-entry"
+                                          id="2"
+                                          maxLength="1"
+                                          name="uniqueThree"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+                            <input
+                                          className="code-entry"
+                                          id="3"
+                                          maxLength="1"
+                                          name="uniqueFour"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+                            <input
+                                          className="code-entry"
+                                          id="4"
+                                          maxLength="1"
+                                          name="uniqueFive"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+                            <input
+                                          className="code-entry"
+                                          id="5"
+                                          maxLength="1"
+                                          name="uniqueSix"
+                                          onChange={[Function]}
+                                          placeholder="0"
+                                          type="text"
+                                          value={undefined}
+                            />
+              </div>
+</span>,
+            <span
+              className="button-row"
+>
+              <button
+                            className="submit-button form-row"
+              >
+                            SUBMIT
+              </button>
+</span>,
+          ],
+          "className": "drop-form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="category"
+>
+                  Latitude Coordinates
+</h3>,
+                <input
+                  className="co-entry"
+                  name="latitude"
+                  onChange={[Function]}
+                  placeholder="enter coordinates..."
+                  type="number"
+                  value=""
+/>,
+              ],
+              "className": "entry-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Latitude Coordinates",
+                  "className": "category",
+                },
+                "ref": null,
+                "rendered": "Latitude Coordinates",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "co-entry",
+                  "name": "latitude",
+                  "onChange": [Function],
+                  "placeholder": "enter coordinates...",
+                  "type": "number",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="category"
+>
+                  Longitude Coordinates
+</h3>,
+                <input
+                  className="co-entry"
+                  name="longitude"
+                  onChange={[Function]}
+                  placeholder="enter coordinates..."
+                  type="number"
+                  value=""
+/>,
+              ],
+              "className": "entry-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Longitude Coordinates",
+                  "className": "category",
+                },
+                "ref": null,
+                "rendered": "Longitude Coordinates",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "co-entry",
+                  "name": "longitude",
+                  "onChange": [Function],
+                  "placeholder": "enter coordinates...",
+                  "type": "number",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="category"
+>
+                  Unique Verification Code
+</h3>,
+                <div
+                  className="unique-code-entry-wrap"
+>
+                  <input
+                                    className="code-entry"
+                                    id="0"
+                                    maxLength="1"
+                                    name="uniqueOne"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+                  <input
+                                    className="code-entry"
+                                    id="1"
+                                    maxLength="1"
+                                    name="uniqueTwo"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+                  <input
+                                    className="code-entry"
+                                    id="2"
+                                    maxLength="1"
+                                    name="uniqueThree"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+                  <input
+                                    className="code-entry"
+                                    id="3"
+                                    maxLength="1"
+                                    name="uniqueFour"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+                  <input
+                                    className="code-entry"
+                                    id="4"
+                                    maxLength="1"
+                                    name="uniqueFive"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+                  <input
+                                    className="code-entry"
+                                    id="5"
+                                    maxLength="1"
+                                    name="uniqueSix"
+                                    onChange={[Function]}
+                                    placeholder="0"
+                                    type="text"
+                                    value={undefined}
+                  />
+</div>,
+              ],
+              "className": "entry-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Unique Verification Code",
+                  "className": "category",
+                },
+                "ref": null,
+                "rendered": "Unique Verification Code",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <input
+                      className="code-entry"
+                      id="0"
+                      maxLength="1"
+                      name="uniqueOne"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                    <input
+                      className="code-entry"
+                      id="1"
+                      maxLength="1"
+                      name="uniqueTwo"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                    <input
+                      className="code-entry"
+                      id="2"
+                      maxLength="1"
+                      name="uniqueThree"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                    <input
+                      className="code-entry"
+                      id="3"
+                      maxLength="1"
+                      name="uniqueFour"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                    <input
+                      className="code-entry"
+                      id="4"
+                      maxLength="1"
+                      name="uniqueFive"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                    <input
+                      className="code-entry"
+                      id="5"
+                      maxLength="1"
+                      name="uniqueSix"
+                      onChange={[Function]}
+                      placeholder="0"
+                      type="text"
+                      value={undefined}
+/>,
+                  ],
+                  "className": "unique-code-entry-wrap",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "0",
+                      "maxLength": "1",
+                      "name": "uniqueOne",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "1",
+                      "maxLength": "1",
+                      "name": "uniqueTwo",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "2",
+                      "maxLength": "1",
+                      "name": "uniqueThree",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "3",
+                      "maxLength": "1",
+                      "name": "uniqueFour",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "4",
+                      "maxLength": "1",
+                      "name": "uniqueFive",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "code-entry",
+                      "id": "5",
+                      "maxLength": "1",
+                      "name": "uniqueSix",
+                      "onChange": [Function],
+                      "placeholder": "0",
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="submit-button form-row"
+>
+                SUBMIT
+</button>,
+              "className": "button-row",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SUBMIT",
+                "className": "submit-button form-row",
+              },
+              "ref": null,
+              "rendered": "SUBMIT",
+              "type": "button",
+            },
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          className="drop-submit"
+          onSubmit={[Function]}
+>
+          <div
+                    className="drop-form"
+          >
+                    <span
+                              className="entry-row"
+                    >
+                              <h3
+                                        className="category"
+                              >
+                                        Latitude Coordinates
+                              </h3>
+                              <input
+                                        className="co-entry"
+                                        name="latitude"
+                                        onChange={[Function]}
+                                        placeholder="enter coordinates..."
+                                        type="number"
+                                        value=""
+                              />
+                    </span>
+                    <span
+                              className="entry-row"
+                    >
+                              <h3
+                                        className="category"
+                              >
+                                        Longitude Coordinates
+                              </h3>
+                              <input
+                                        className="co-entry"
+                                        name="longitude"
+                                        onChange={[Function]}
+                                        placeholder="enter coordinates..."
+                                        type="number"
+                                        value=""
+                              />
+                    </span>
+                    <span
+                              className="entry-row"
+                    >
+                              <h3
+                                        className="category"
+                              >
+                                        Unique Verification Code
+                              </h3>
+                              <div
+                                        className="unique-code-entry-wrap"
+                              >
+                                        <input
+                                                  className="code-entry"
+                                                  id="0"
+                                                  maxLength="1"
+                                                  name="uniqueOne"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                                        <input
+                                                  className="code-entry"
+                                                  id="1"
+                                                  maxLength="1"
+                                                  name="uniqueTwo"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                                        <input
+                                                  className="code-entry"
+                                                  id="2"
+                                                  maxLength="1"
+                                                  name="uniqueThree"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                                        <input
+                                                  className="code-entry"
+                                                  id="3"
+                                                  maxLength="1"
+                                                  name="uniqueFour"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                                        <input
+                                                  className="code-entry"
+                                                  id="4"
+                                                  maxLength="1"
+                                                  name="uniqueFive"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                                        <input
+                                                  className="code-entry"
+                                                  id="5"
+                                                  maxLength="1"
+                                                  name="uniqueSix"
+                                                  onChange={[Function]}
+                                                  placeholder="0"
+                                                  type="text"
+                                                  value={undefined}
+                                        />
+                              </div>
+                    </span>
+                    <span
+                              className="button-row"
+                    >
+                              <button
+                                        className="submit-button form-row"
+                              >
+                                        SUBMIT
+                              </button>
+                    </span>
+          </div>
+</form>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="drop-form"
+>
+            <span
+                        className="entry-row"
+            >
+                        <h3
+                                    className="category"
+                        >
+                                    Latitude Coordinates
+                        </h3>
+                        <input
+                                    className="co-entry"
+                                    name="latitude"
+                                    onChange={[Function]}
+                                    placeholder="enter coordinates..."
+                                    type="number"
+                                    value=""
+                        />
+            </span>
+            <span
+                        className="entry-row"
+            >
+                        <h3
+                                    className="category"
+                        >
+                                    Longitude Coordinates
+                        </h3>
+                        <input
+                                    className="co-entry"
+                                    name="longitude"
+                                    onChange={[Function]}
+                                    placeholder="enter coordinates..."
+                                    type="number"
+                                    value=""
+                        />
+            </span>
+            <span
+                        className="entry-row"
+            >
+                        <h3
+                                    className="category"
+                        >
+                                    Unique Verification Code
+                        </h3>
+                        <div
+                                    className="unique-code-entry-wrap"
+                        >
+                                    <input
+                                                className="code-entry"
+                                                id="0"
+                                                maxLength="1"
+                                                name="uniqueOne"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                                    <input
+                                                className="code-entry"
+                                                id="1"
+                                                maxLength="1"
+                                                name="uniqueTwo"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                                    <input
+                                                className="code-entry"
+                                                id="2"
+                                                maxLength="1"
+                                                name="uniqueThree"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                                    <input
+                                                className="code-entry"
+                                                id="3"
+                                                maxLength="1"
+                                                name="uniqueFour"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                                    <input
+                                                className="code-entry"
+                                                id="4"
+                                                maxLength="1"
+                                                name="uniqueFive"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                                    <input
+                                                className="code-entry"
+                                                id="5"
+                                                maxLength="1"
+                                                name="uniqueSix"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                    />
+                        </div>
+            </span>
+            <span
+                        className="button-row"
+            >
+                        <button
+                                    className="submit-button form-row"
+                        >
+                                    SUBMIT
+                        </button>
+            </span>
+</div>,
+          "className": "drop-submit",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="entry-row"
+>
+                <h3
+                                className="category"
+                >
+                                Latitude Coordinates
+                </h3>
+                <input
+                                className="co-entry"
+                                name="latitude"
+                                onChange={[Function]}
+                                placeholder="enter coordinates..."
+                                type="number"
+                                value=""
+                />
+</span>,
+              <span
+                className="entry-row"
+>
+                <h3
+                                className="category"
+                >
+                                Longitude Coordinates
+                </h3>
+                <input
+                                className="co-entry"
+                                name="longitude"
+                                onChange={[Function]}
+                                placeholder="enter coordinates..."
+                                type="number"
+                                value=""
+                />
+</span>,
+              <span
+                className="entry-row"
+>
+                <h3
+                                className="category"
+                >
+                                Unique Verification Code
+                </h3>
+                <div
+                                className="unique-code-entry-wrap"
+                >
+                                <input
+                                                className="code-entry"
+                                                id="0"
+                                                maxLength="1"
+                                                name="uniqueOne"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                                <input
+                                                className="code-entry"
+                                                id="1"
+                                                maxLength="1"
+                                                name="uniqueTwo"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                                <input
+                                                className="code-entry"
+                                                id="2"
+                                                maxLength="1"
+                                                name="uniqueThree"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                                <input
+                                                className="code-entry"
+                                                id="3"
+                                                maxLength="1"
+                                                name="uniqueFour"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                                <input
+                                                className="code-entry"
+                                                id="4"
+                                                maxLength="1"
+                                                name="uniqueFive"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                                <input
+                                                className="code-entry"
+                                                id="5"
+                                                maxLength="1"
+                                                name="uniqueSix"
+                                                onChange={[Function]}
+                                                placeholder="0"
+                                                type="text"
+                                                value={undefined}
+                                />
+                </div>
+</span>,
+              <span
+                className="button-row"
+>
+                <button
+                                className="submit-button form-row"
+                >
+                                SUBMIT
+                </button>
+</span>,
+            ],
+            "className": "drop-form",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category"
+>
+                    Latitude Coordinates
+</h3>,
+                  <input
+                    className="co-entry"
+                    name="latitude"
+                    onChange={[Function]}
+                    placeholder="enter coordinates..."
+                    type="number"
+                    value=""
+/>,
+                ],
+                "className": "entry-row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Latitude Coordinates",
+                    "className": "category",
+                  },
+                  "ref": null,
+                  "rendered": "Latitude Coordinates",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "co-entry",
+                    "name": "latitude",
+                    "onChange": [Function],
+                    "placeholder": "enter coordinates...",
+                    "type": "number",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category"
+>
+                    Longitude Coordinates
+</h3>,
+                  <input
+                    className="co-entry"
+                    name="longitude"
+                    onChange={[Function]}
+                    placeholder="enter coordinates..."
+                    type="number"
+                    value=""
+/>,
+                ],
+                "className": "entry-row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Longitude Coordinates",
+                    "className": "category",
+                  },
+                  "ref": null,
+                  "rendered": "Longitude Coordinates",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "co-entry",
+                    "name": "longitude",
+                    "onChange": [Function],
+                    "placeholder": "enter coordinates...",
+                    "type": "number",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="category"
+>
+                    Unique Verification Code
+</h3>,
+                  <div
+                    className="unique-code-entry-wrap"
+>
+                    <input
+                                        className="code-entry"
+                                        id="0"
+                                        maxLength="1"
+                                        name="uniqueOne"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+                    <input
+                                        className="code-entry"
+                                        id="1"
+                                        maxLength="1"
+                                        name="uniqueTwo"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+                    <input
+                                        className="code-entry"
+                                        id="2"
+                                        maxLength="1"
+                                        name="uniqueThree"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+                    <input
+                                        className="code-entry"
+                                        id="3"
+                                        maxLength="1"
+                                        name="uniqueFour"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+                    <input
+                                        className="code-entry"
+                                        id="4"
+                                        maxLength="1"
+                                        name="uniqueFive"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+                    <input
+                                        className="code-entry"
+                                        id="5"
+                                        maxLength="1"
+                                        name="uniqueSix"
+                                        onChange={[Function]}
+                                        placeholder="0"
+                                        type="text"
+                                        value={undefined}
+                    />
+</div>,
+                ],
+                "className": "entry-row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Unique Verification Code",
+                    "className": "category",
+                  },
+                  "ref": null,
+                  "rendered": "Unique Verification Code",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <input
+                        className="code-entry"
+                        id="0"
+                        maxLength="1"
+                        name="uniqueOne"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                      <input
+                        className="code-entry"
+                        id="1"
+                        maxLength="1"
+                        name="uniqueTwo"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                      <input
+                        className="code-entry"
+                        id="2"
+                        maxLength="1"
+                        name="uniqueThree"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                      <input
+                        className="code-entry"
+                        id="3"
+                        maxLength="1"
+                        name="uniqueFour"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                      <input
+                        className="code-entry"
+                        id="4"
+                        maxLength="1"
+                        name="uniqueFive"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                      <input
+                        className="code-entry"
+                        id="5"
+                        maxLength="1"
+                        name="uniqueSix"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="text"
+                        value={undefined}
+/>,
+                    ],
+                    "className": "unique-code-entry-wrap",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "0",
+                        "maxLength": "1",
+                        "name": "uniqueOne",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "1",
+                        "maxLength": "1",
+                        "name": "uniqueTwo",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "2",
+                        "maxLength": "1",
+                        "name": "uniqueThree",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "3",
+                        "maxLength": "1",
+                        "name": "uniqueFour",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "4",
+                        "maxLength": "1",
+                        "name": "uniqueFive",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "code-entry",
+                        "id": "5",
+                        "maxLength": "1",
+                        "name": "uniqueSix",
+                        "onChange": [Function],
+                        "placeholder": "0",
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="submit-button form-row"
+>
+                  SUBMIT
+</button>,
+                "className": "button-row",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SUBMIT",
+                  "className": "submit-button form-row",
+                },
+                "ref": null,
+                "rendered": "SUBMIT",
+                "type": "button",
+              },
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "disableLifecycleMethods": true,
+    "hydrateIn": undefined,
+  },
+}
+`;
