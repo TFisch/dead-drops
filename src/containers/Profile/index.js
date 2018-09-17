@@ -32,18 +32,11 @@ export class Profile extends Component {
     await this.setState({ retrievedBoard, dropListRetrieved: true })
   }
 
-  handlePost = () => {
-    const dropFormActive = !this.state.dropFormActive;
-    const dropToConfirm = !this.state.dropToConfirm;
-    this.setState({ dropFormActive, dropToConfirm })
-  }
-
   toggleSubmit = () => {
     const dropFormActive = !this.state.dropFormActive;
     const confirmDropActive = !this.state.confirmDropActive;
     this.setState({ dropFormActive, confirmDropActive })
     this.props.resetConfirm();
-
   }
 
 
