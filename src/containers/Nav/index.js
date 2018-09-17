@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setFormActive } from '../../actions'
+import { setFormActive, resetConfirm, resetFormActive } from '../../actions'
 import './style.css';
 
 export class Nav extends Component {
@@ -14,6 +14,11 @@ export class Nav extends Component {
     this.props.setFormActive(true)
   }
 
+  handleProfileButton = () => {
+    this.props.resetConfirm()
+    this.props.resetFormActive()
+  }
+
   render() {
     return (
       <div className="nav">
@@ -24,7 +29,7 @@ export class Nav extends Component {
               <Link to='/profile'><button className="nav-button" onClick={this.handleSubmitButton}>SUBMIT DROP</button></Link>
             }
             {this.props.user.username &&
-              <Link to='/profile'><button className="nav-button">PROFILE</button></Link>
+              <Link to='/profile'><button className="nav-button" onClick={this.handleProfileButton}>PROFILE</button></Link>
             }
             {this.props.user.username &&
               <Link to='/'><button className="nav-button">LOG OUT</button></Link>
@@ -48,6 +53,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   setFormActive: (status) => dispatch(setFormActive(status)),
+  resetConfirm: (status) => dispatch(resetConfirm(status)),
+  resetFormActive: (status) => dispatch(resetFormActive(status))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);

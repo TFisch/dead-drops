@@ -36,6 +36,10 @@
     color: $color-one;
     @include underline-effect()
   }
+  &:focus{
+    color: $color-one;
+    outline: none;
+  }
 }
 
 .logo {
