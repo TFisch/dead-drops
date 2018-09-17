@@ -1,5 +1,5 @@
 import React from 'react'
-import DropCard from '../DropCard'
+import { DropCard } from '../DropCard'
 import './DropList.css'
 
 export const DropList = (props) => {

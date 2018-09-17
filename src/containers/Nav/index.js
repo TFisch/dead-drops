@@ -7,7 +7,6 @@ import './style.css';
 export class Nav extends Component {
   constructor() {
     super()
-
   }
 
   handleSubmitButton = () => {
@@ -48,16 +47,13 @@ export class Nav extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  token: state.token,
-  formActive: state.formActive,
   user: state.user,
-  location: state.locationData
 });
 
 export const mapDispatchToProps = (dispatch) => ({
   setFormActive: (status) => dispatch(setFormActive(status)),
-  resetConfirm: (status) => dispatch(resetConfirm(status)),
-  resetFormActive: (status) => dispatch(resetFormActive(status))
+  resetConfirm: () => dispatch(resetConfirm()),
+  resetFormActive: () => dispatch(resetFormActive())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);

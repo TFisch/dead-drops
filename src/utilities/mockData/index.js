@@ -35,7 +35,11 @@ export const mockRawImage = {
   data: {
     id: '21903992',
     image: {
-      '60x60': {},
+      '60x60': {
+        height: 60,
+        url: "https://i.pinimg.com/60x60_RS/6",
+        width: 60
+      },
     },
     username: "Al Borlin"
   }
@@ -48,4 +52,12 @@ export const mockBoardResponse = {
 export const mockImageResponse = {
   size: 3509,
   type: "image/png"
+}
+
+export const mockCardData = {
+  note: 'mockNote',
+  url: 'www.mock.com',
+  id: '2232003',
+  link: '',
+  image: 'mockImage.com'
 }

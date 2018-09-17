@@ -19,7 +19,7 @@ export const fetchDropBoard = async (token) => {
 export const fetchLocation = async (coordinatesEntry) => {
   try {
     const { longitude, latitude, codeLog } = coordinatesEntry;
-    const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C${longitude},${latitude}&key=${key}`
+    const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C${latitude},${longitude}&key=${key}`
     const response = await fetch(url);
     const data = await response.blob();
     const imageUrl = URL.createObjectURL(data)
@@ -41,14 +41,13 @@ export const postPin = async (note, token) => {
     const response = await fetch(url, {
       method: 'POST',
       body: JSON.stringify({
-        "data": {
-          'board': 'deaddrops',
-          "note": "note",
-          "url": "https://www.pinterest.com/pin/864409722205273908/",
-        }
+        board: 'deaddrops/dead-drops',
+        note: "note",
+        url: "https://www.pinterest.com/pin/864409722205273908/",
       }),
     })
     const result = await response.json();
+    console.log(result);
   } catch (error) {
     console.log(error.message)
   }

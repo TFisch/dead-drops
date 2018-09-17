@@ -1,7 +1,7 @@
 import React from 'react'
 import './DropCard.css'
 
-export default (props) => {
+export const DropCard = (props) => {
   const { note } = props
   return (
     <div className="drop-card">

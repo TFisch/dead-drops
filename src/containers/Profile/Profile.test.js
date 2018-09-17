@@ -20,8 +20,6 @@ describe('Profile', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-
-
   describe('MapStateToProps', () => {
 
     it('should return an object with username and image', () => {
