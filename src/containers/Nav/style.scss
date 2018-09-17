@@ -1,25 +1,59 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .nav{
   align-items: center;
-  background-color: lime;
+  background-color: $color-five;
+  border-bottom: 3.5px solid $color-three;
   display: flex;
   justify-content: space-between;
-  height: 4em;
+  height: 3em;
   width: 100%;
 }
 
-.logout-button {
+.nav-buttons-wrap {
+  margin-right: 1em;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
   background:none;
   border:none;
+  color: $color-two;
   font-size: 1.2em;
-  margin-right: 2em;
+  font-weight: 700;
+  margin-left: .75em;
+  margin-right: .75em;
   padding:0;
   cursor: pointer;
+  @include underline-effect();
+  &:hover{
+    color: $color-one;
+    @include underline-effect()
+  }
 }
 
 .logo {
   @include primary-font-heavy;
+  color: $color-one;
+  text-shadow: 2px 1.3px $color-three;
   font-size: 1.8em;
   margin-left: 1em;
+}
+
+.pinterest-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: .7;
+  padding: 0;
+  width: 4em;
+  &:hover{
+    opacity: 1;
+  }
 }

@@ -1,21 +1,75 @@
 .nav {
   align-items: center;
-  background-color: lime;
+  background-color: #222629;
+  border-bottom: 3.5px solid #6B6E70;
   display: flex;
   justify-content: space-between;
-  height: 4em;
+  height: 3em;
   width: 100%; }
 
-.logout-button {
+.nav-buttons-wrap {
+  margin-right: 1em; }
+
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; }
+
+.nav-button {
   background: none;
   border: none;
+  color: #61892F;
   font-size: 1.2em;
-  margin-right: 2em;
+  font-weight: 700;
+  margin-left: .75em;
+  margin-right: .75em;
   padding: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
+  .nav-button:hover, .nav-button:focus, .nav-button:active {
+    cursor: pointer; }
+    .nav-button:hover:after, .nav-button:focus:after, .nav-button:active:after {
+      width: 100%; }
+  .nav-button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    background-color: #86C232;
+    width: 0;
+    transition: width .4s; }
+  .nav-button:hover {
+    color: #86C232;
+    position: relative; }
+    .nav-button:hover:hover, .nav-button:hover:focus, .nav-button:hover:active {
+      cursor: pointer; }
+      .nav-button:hover:hover:after, .nav-button:hover:focus:after, .nav-button:hover:active:after {
+        width: 100%; }
+    .nav-button:hover:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 3px;
+      background-color: #86C232;
+      width: 0;
+      transition: width .4s; }
 
 .logo {
   font-family: 'PT Sans', Arial, Verdana;
   font-weight: 700;
+  color: #86C232;
+  text-shadow: 2px 1.3px #6B6E70;
   font-size: 1.8em;
   margin-left: 1em; }
+
+.pinterest-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: .7;
+  padding: 0;
+  width: 4em; }
+  .pinterest-button:hover {
+    opacity: 1; }
