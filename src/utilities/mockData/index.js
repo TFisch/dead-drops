@@ -2,6 +2,7 @@ export const tokenMock = 'AotyU8WH1d1jf6hbf_a5234kjkjfmjpsdFOEBtoWBGwAn_ADAAAaba
 export const mockId = '4b6305e8od12b2e30386a2ee5546e8a2a6bde854e3c2190fc323da077e98f1e3';
 export const tokenAuth = 'qwekrj43-kpkl;khbf_a5234kjkjfmjpsdFOEBtoWBGwAn_ADAAAabaRTpF9Oppppppp'
 export const mockUsername = "Harvey";
+export const mockPropsMethod = jest.fn();
 export const mockImage = 'https://via.placeholder.com/350x150';
 
 export const userReducerMock = { username: 'clark', image: 'https://via.placeholder.com/350x150' }
