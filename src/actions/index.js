@@ -16,3 +16,21 @@ export const getLocation = ({ long, lat, locationImage, verificationCode }) => (
   locationImage,
   verificationCode
 })
+
+export const setFormActive = (setForm) => ({
+  type: 'SET_FORM_ACTIVE',
+  setForm
+});
+
+export const resetFormActive = () => ({
+  type: 'RESET_FORM_ACTIVE',
+});
+
+export const resetConfirm = () => ({
+  type: 'RESET_CONFIRM_ACTIVE',
+});
+
+export const setConfirm = (setConfirm) => ({
+  type: 'SET_CONFIRM_ACTIVE',
+  setConfirm
+});
