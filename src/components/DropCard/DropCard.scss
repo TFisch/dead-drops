@@ -9,11 +9,12 @@
 
 .drop-card {
   background-color: $color-three;
-  border: 2px solid $color-five;
+  border: 1px solid black;
+  border-radius: .45em;
   display: flex;
   flex-direction: column;
   height: 12em;
-  margin: .1em;
+  margin: .14em;
   padding: 1em;
   width: 10em;
 }
