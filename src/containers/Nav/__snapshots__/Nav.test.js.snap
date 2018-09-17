@@ -4,6 +4,9 @@ exports[`Nav should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Nav
+    resetConfirm={[Function]}
+    resetFormActive={[Function]}
+    setFormActive={[Function]}
     user={
         Object {
             "image": "https://via.placeholder.com/350x150",
