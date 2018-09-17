@@ -12,7 +12,7 @@ class ConfirmDrop extends Component {
     const { latitude, longitude } = this.props.location;
     const note = `Latitude: ${latitude}, Longitude: ${longitude}`;
     postPin(note, this.props.token)
-    this.props.toggleDisplay();
+    this.props.toggleSubmit();
   }
 
   render() {

@@ -3,7 +3,7 @@ import './DropSubmitForm.css'
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchLocation } from '../../api';
-import { getLocation } from '../../actions'
+import { getLocation, setConfirm, resetFormActive } from '../../actions'
 
 export class DropSubmitForm extends Component {
   constructor() {
@@ -53,7 +53,9 @@ export class DropSubmitForm extends Component {
     event.preventDefault();
     const returnedLocation = await fetchLocation(this.state);
     await this.props.getLocation(returnedLocation);
-    this.props.toggleSubmit(true);
+    this.props.toggleSubmit();
+    this.props.setConfirm(true);
+    this.props.resetFormActive();
   }
 
   render() {
@@ -107,6 +109,9 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   getLocation: (locationData) => dispatch(getLocation(locationData)),
+  setConfirm: (status) => dispatch(setConfirm(status)),
+  resetFormActive: (status) => dispatch(resetFormActive(status)),
+
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(DropSubmitForm);

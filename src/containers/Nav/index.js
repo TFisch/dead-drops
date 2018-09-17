@@ -1,22 +1,53 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { setFormActive } from '../../actions'
 import './style.css';
 
-export const Nav = (props) => {
-  return (
-    <div className="nav">
-      <h1 className="logo">DEAD DROPS</h1>
-      {props.user.username &&
-        <Link to='/'><button className="logout-button">Log Out</button></Link>
-      }
-    </div>
-  )
+export class Nav extends Component {
+  constructor() {
+    super()
+
+  }
+
+  handleSubmitButton = () => {
+    this.props.setFormActive(true)
+  }
+
+  render() {
+    return (
+      <div className="nav">
+        <h1 className="logo">DEAD DROPS</h1>
+        <div className='buttons'>
+          <div className="nav-buttons-wrap">
+            {this.props.user.username &&
+              <Link to='/profile'><button className="nav-button" onClick={this.handleSubmitButton}>SUBMIT DROP</button></Link>
+            }
+            {this.props.user.username &&
+              <Link to='/profile'><button className="nav-button">PROFILE</button></Link>
+            }
+            {this.props.user.username &&
+              <Link to='/'><button className="nav-button">LOG OUT</button></Link>
+            }
+          </div>
+          <button className="pinterest-button">
+            <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" alt="pinterest-icon" />
+          </button>
+        </div>
+      </div>
+    )
+  }
 }
 
 export const mapStateToProps = (state) => ({
   token: state.token,
-  user: state.user
-})
+  formActive: state.formActive,
+  user: state.user,
+  location: state.locationData
+});
 
-export default connect(mapStateToProps)(Nav);
+export const mapDispatchToProps = (dispatch) => ({
+  setFormActive: (status) => dispatch(setFormActive(status)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nav);
