@@ -1,8 +1,13 @@
+@import '../../styles/variables.scss';
+
 .welcome{
   align-items: center;
-  background-color: magenta;
+  background-color: $color-three;
+  border: 2px solid black;
   height: 40em;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
   text-align: center;
   width: 40em;
 }

@@ -1,7 +1,10 @@
 .welcome {
   align-items: center;
-  background-color: magenta;
+  background-color: #6B6E70;
+  border: 2px solid black;
   height: 40em;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
   text-align: center;
   width: 40em; }
