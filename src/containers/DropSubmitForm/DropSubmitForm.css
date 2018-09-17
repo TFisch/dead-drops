@@ -26,14 +26,28 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 29em; }
+  width: 28em; }
 
 .form-row {
   margin-top: 1em; }
 
-input {
+.co-entry {
+  background-color: #6B6E70;
+  border: 1.48px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  color: #86C232;
+  font-family: "PT Sans", Arial, Verdana;
+  font-weight: 700;
+  font-size: 1em;
   height: 2em;
-  width: 20em; }
+  width: 14em; }
+  .co-entry ::-webkit-inner-spin-button,
+  .co-entry ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .co-entry::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #86C232; }
 
 .submit-button {
   height: 2.8em;

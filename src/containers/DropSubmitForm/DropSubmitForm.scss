@@ -32,17 +32,27 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 29em;
+  width: 28em;
 }
 
 .form-row {
   margin-top: 1em;
 }
 
-input {
+.co-entry {
+  background-color: $color-three;
+  border: 1.48px solid black;
+  box-shadow: $box-shadow;
+  color: $color-one;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 1em;
   height: 2em;
-  width: 20em;
+  width: 14em;
+  @include hideSpinner();
+  @include placeholder-color($color-one);
 }
+
 
 .submit-button {
   height: 2.8em;
