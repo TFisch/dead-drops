@@ -74,11 +74,11 @@ export class DropSubmitForm extends Component {
             </span>
             <span className="entry-row">
               <h3 className="category">Longitude Coordinates</h3>
-              <input name="longitude" placeholder="enter coordinates..." type="number" value={this.state.longitude} onChange={this.handleChange} />
+              <input name="longitude" className="co-entry" placeholder="enter coordinates..." type="number" value={this.state.longitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3 className="category">Latitude Coordinates</h3>
-              <input name="latitude" placeholder="enter coordinates..." type="number" value={this.state.latitude} onChange={this.handleChange} />
+              <input name="latitude" className="co-entry" placeholder="enter coordinates..." type="number" value={this.state.latitude} onChange={this.handleChange} />
             </span>
             <span className="entry-row">
               <h3 className="category">Unique Verification Code</h3>

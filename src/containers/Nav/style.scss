@@ -1,6 +1,25 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
+
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+ width: 1.5em;
+}
+
+.logo {
+  @include primary-font-heavy;
+  color: $color-one;
+  text-shadow: 2px 1.3px $color-three;
+  font-size: 1.8em;
+  margin-left: 1em;
+}
+
 .nav{
   align-items: center;
   background-color: $color-five;
@@ -10,17 +29,6 @@
   height: 3em;
   width: 100%;
 }
-
-.nav-buttons-wrap {
-  margin-right: 1em;
-}
-
-.buttons {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .nav-button {
   background:none;
   border:none;
@@ -42,12 +50,8 @@
   }
 }
 
-.logo {
-  @include primary-font-heavy;
-  color: $color-one;
-  text-shadow: 2px 1.3px $color-three;
-  font-size: 1.8em;
-  margin-left: 1em;
+.nav-buttons-wrap {
+  margin-right: 1em;
 }
 
 .pinterest-button {
@@ -60,4 +64,10 @@
   &:hover{
     opacity: 1;
   }
+}
+
+.wrap-left {
+  align-items: center;
+  display: flex;
+  margin-left: 1em;
 }

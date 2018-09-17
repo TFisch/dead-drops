@@ -1,3 +1,19 @@
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; }
+
+.icon {
+  width: 1.5em; }
+
+.logo {
+  font-family: 'PT Sans', Arial, Verdana;
+  font-weight: 700;
+  color: #86C232;
+  text-shadow: 2px 1.3px #6B6E70;
+  font-size: 1.8em;
+  margin-left: 1em; }
+
 .nav {
   align-items: center;
   background-color: #222629;
@@ -6,14 +22,6 @@
   justify-content: space-between;
   height: 3em;
   width: 100%; }
-
-.nav-buttons-wrap {
-  margin-right: 1em; }
-
-.buttons {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end; }
 
 .nav-button {
   background: none;
@@ -69,13 +77,8 @@
     color: #86C232;
     outline: none; }
 
-.logo {
-  font-family: 'PT Sans', Arial, Verdana;
-  font-weight: 700;
-  color: #86C232;
-  text-shadow: 2px 1.3px #6B6E70;
-  font-size: 1.8em;
-  margin-left: 1em; }
+.nav-buttons-wrap {
+  margin-right: 1em; }
 
 .pinterest-button {
   border: none;
@@ -86,3 +89,8 @@
   width: 4em; }
   .pinterest-button:hover {
     opacity: 1; }
+
+.wrap-left {
+  align-items: center;
+  display: flex;
+  margin-left: 1em; }
