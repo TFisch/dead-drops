@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getToken, setUser } from '../../actions';
+import { getToken, setUser, resetConfirm } from '../../actions';
 import { connect } from 'react-redux';
 import { fetchDropBoard } from '../../api'
 import './Profile.css'
@@ -15,10 +15,8 @@ export class Profile extends Component {
       image: '',
       dropFormActive: false,
       dropListRetrieved: false,
-      dropListHidden: false,
-      pictureRetrieved: false,
+      confirmDropActive: false,
       retrievedBoard: [],
-      dropToConfirm: false
     }
   }
 
@@ -36,43 +34,44 @@ export class Profile extends Component {
 
   handlePost = () => {
     const dropFormActive = !this.state.dropFormActive;
-    this.setState({ dropFormActive })
+    const dropToConfirm = !this.state.dropToConfirm;
+    this.setState({ dropFormActive, dropToConfirm })
   }
 
-  toggleSubmit = (boolean) => {
-    this.setState({ dropToConfirm: boolean, dropListHidden: true })
+  toggleSubmit = () => {
+    const dropFormActive = !this.state.dropFormActive;
+    const confirmDropActive = !this.state.confirmDropActive;
+    this.setState({ dropFormActive, confirmDropActive })
+    this.props.resetConfirm();
+
   }
 
-  toggleDisplay = () => {
-    const dropListHidden = !this.state.dropListHidden;
-    this.setState({ dropListHidden })
-  }
 
   render() {
     const { username, image } = this.props.user;
+    const { setConfirm, formActive } = this.props;
     const {
       dropFormActive,
       retrievedBoard,
-      dropListRetrieved,
-      dropToConfirm,
-      dropListHidden
+      confirmDropActive,
     } = this.state;
 
     return (
-      <div className="container">
-        <div className='user-profile'>
-          <div className="post-wrap">
-            <div className="profile-wrap">
-              <img src={image} className='profile-image' alt='user-avatar' />
-              <h1 className="welcome-text">Welcome, {username}!</h1>
+      <div className="profile">
+        <div className="panel-wrap">
+          <div className='user-profile'>
+            <div className="post-wrap">
+              <div className="profile-wrap">
+                <img src={image} className='profile-image' alt='user-avatar' />
+                <h1 className="welcome-text">Welcome, {username}!</h1>
+              </div>
             </div>
-            {!dropFormActive && <button className="post-button" onClick={this.handlePost}>POST A DEAD DROP</button>}
+            {formActive === true && <DropSubmitForm toggleSubmit={this.toggleSubmit} />}
+            {setConfirm === true && <ConfirmDrop toggleSubmit={this.toggleSubmit} />}
           </div>
-          {dropFormActive && <DropSubmitForm toggleSubmit={this.toggleSubmit} />}
-        </div>
-        <div className="board-display">
-          {dropListRetrieved && !dropListHidden && < DropList retrievedBoard={retrievedBoard} />}
-          {dropToConfirm && dropListHidden && <ConfirmDrop toggleDisplay={this.toggleDisplay} />}
+          <div className="board-display">
+            <DropList retrievedBoard={retrievedBoard} />
+          </div>
         </div>
       </div>
     )
@@ -82,12 +81,16 @@ export class Profile extends Component {
 export const mapStateToProps = (state) => ({
   token: state.token,
   user: state.user,
-  location: state.locationData
+  location: state.locationData,
+  formActive: state.formActive,
+  setConfirm: state.setConfirm
 });
 
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
   setUser: (user) => dispatch(setUser(user)),
+  resetConfirm: (status) => dispatch(resetConfirm(status)),
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
