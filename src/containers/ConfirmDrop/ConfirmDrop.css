@@ -1,15 +1,83 @@
+.category-confirm {
+  color: #86C232;
+  text-shadow: 2px 1.3px black;
+  text-align: center; }
+
+.confirm-button {
+  color: #61892f;
+  font-size: 1.2em;
+  text-shadow: 2px 1.3px black;
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer; }
+  .confirm-button:hover, .confirm-button:focus, .confirm-button:active {
+    cursor: pointer; }
+    .confirm-button:hover:after, .confirm-button:focus:after, .confirm-button:active:after {
+      width: 100%; }
+  .confirm-button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    background-color: #86C232;
+    width: 0;
+    transition: width .4s; }
+  .confirm-button:hover {
+    color: #86C232; }
+  .confirm-button:focus {
+    color: #86C232;
+    outline: none; }
+
 .confirm-form {
-  border: 1px solid black;
-  margin-left: 3em;
-  margin-top: 10em;
+  background-color: #6B6E70;
+  border: 2.5px solid #86C232;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  height: 23.3em;
+  margin-left: 3.2em;
+  margin-top: 4.6em;
+  padding: 1em;
+  text-align: left;
   width: 30em; }
 
-.location-display {
-  width: 13em; }
-
-.data-wrap {
-  align-items: flex-start;
+.column-left-wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
+  justify-content: flex-start;
+  margin-top: 1.5em;
+  width: 50%; }
+
+.column-right-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 50%; }
+
+.data-wrap {
+  display: flex;
+  height: 90%;
+  justify-content: space-between; }
+
+.location-display {
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  width: 13em; }
+
+.longitude {
+  margin-top: 0; }
+
+.output {
+  color: #86C232;
+  text-align: center;
+  text-shadow: 1.5px 1px black; }
+
+.stat-wrap {
+  background-color: #474B4F;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
   margin-top: 1em; }

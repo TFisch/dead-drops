@@ -1,18 +1,80 @@
-.confirm-form{
-  border: 1px solid black;
-  margin-left: 3em;
-  margin-top: 10em;
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+
+.category-confirm {
+  @include category();
+  text-align: center;
+}
+
+.confirm-button {
+  color: $color-two;
+  font-size: 1.2em;
+  text-shadow: 2px 1.3px black;
+
+  @include underline-effect();
+  &:hover{
+    color: $color-one;
+  }
+  &:focus{
+    color: $color-one;
+    outline: none;
+  }
+}
+
+.confirm-form {
+  background-color: $color-three;
+  border: 2.5px solid $color-one;
+  box-shadow: $box-shadow;
+  height: 23.3em;
+  margin-left: 3.2em;
+  margin-top: 4.6em;
+  padding: 1em;
+  text-align: left;
   width: 30em;
 }
 
-.location-display{
+.column-left-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1.5em;
+  width: 50%;
+}
+
+.column-right-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 50%;
+}
+
+.data-wrap {
+  display: flex;
+  height: 90%;
+  justify-content: space-between;
+}
+       
+.location-display {
+  border: 2px solid black;
+  box-shadow: $box-shadow;
   width: 13em;
 }
 
-.data-wrap{
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  margin-left: 1em;
+.longitude {
+  margin-top: 0;
+}
+
+.output {
+  color: $color-one;
+  text-align: center;
+  text-shadow: 1.5px 1px black;
+}
+
+.stat-wrap {
+  background-color: $color-four;
+  border: 2px solid black;
+  box-shadow: $box-shadow;
   margin-top: 1em;
 }
