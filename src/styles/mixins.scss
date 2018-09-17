@@ -1,3 +1,9 @@
+@mixin category(){
+    color: $color-one;
+    text-shadow: 2px 1.3px black;
+}
+
+
 @mixin primary-font(){
   font-family: 'PT Sans', Arial, Verdana;
   font-weight: 400;
@@ -9,9 +15,13 @@
 }
 
 @mixin underline-effect(){
-
     position: relative;
-    
+    background:none;
+    border:none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding:0;
+    cursor: pointer;
     &:hover,
     &:focus,
     &:active {
@@ -20,7 +30,6 @@
         width: 100%;
       }
     }
-    
     &:after {
       content: '';
       position: absolute;
