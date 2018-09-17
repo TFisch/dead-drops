@@ -1,8 +1,9 @@
 .button-wrap-confirm {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-left: .4em;
-  padding-top: .5em; }
+  padding-bottom: 3em;
+  padding-left: .4em; }
 
 .category-confirm {
   color: #86C232;
@@ -10,31 +11,17 @@
   text-align: center; }
 
 .confirm-button, .edit-button {
-  color: #86C232;
+  color: #61892f;
   font-size: 1.75em;
+  text-align: center;
   text-shadow: 2px 1.3px black;
-  position: relative;
   background: none;
   border: none;
   font-weight: 700;
-  padding: 0;
-  cursor: pointer; }
-  .confirm-button:hover, .confirm-button:focus, .confirm-button:active, .edit-button:hover, .edit-button:focus, .edit-button:active {
-    cursor: pointer; }
-    .confirm-button:hover:after, .confirm-button:focus:after, .confirm-button:active:after, .edit-button:hover:after, .edit-button:focus:after, .edit-button:active:after {
-      outline: none;
-      width: 100%; }
-  .confirm-button:after, .edit-button:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    height: 3px;
-    background-color: #86C232;
-    width: 0;
-    transition: width .4s; }
+  padding-top: 1.75em; }
   .confirm-button:hover, .edit-button:hover {
-    color: #86C232; }
+    color: #86C232;
+    cursor: pointer; }
   .confirm-button:focus, .edit-button:focus {
     color: #86C232;
     outline: none; }
@@ -53,14 +40,12 @@
 .column-left-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin-top: .4em;
   width: 50%; }
 
 .column-right-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   margin-left: 1.75em;
   text-align: left;
@@ -69,7 +54,8 @@
 .data-wrap {
   display: flex;
   height: 90%;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 30em; }
 
 .location-display {
   border: 2px solid black;
