@@ -1,7 +1,8 @@
 import React from 'react'
 import { ConfirmDrop } from '../ConfirmDrop'
 import { shallow } from 'enzyme'
-import { mockLocation, mockPropsMethod } from '../../utilities/mockData'
+import { mockLocation, mockPropsMethod, tokenMock } from '../../utilities/mockData'
+import { mapStateToProps } from './';
 
 describe('ConfirmDrop', () => {
   let wrapper;
@@ -37,7 +38,6 @@ describe('ConfirmDrop', () => {
 
   describe('handleEdit', () => {
 
-
     it('should call toggleSubmit', () => {
 
       wrapper.instance().handleEdit();
@@ -45,7 +45,18 @@ describe('ConfirmDrop', () => {
       expect(mockPropsMethod).toHaveBeenCalled();
 
     });
-
-
   });
+
+  describe('mapStatetoProps', () => {
+
+    it('should return a token object', () => {
+      const mockState = { token: tokenMock, locationData: {} };
+      const expected = { token: tokenMock, location: {} };
+
+      const mappedProps = mapStateToProps(mockState);
+
+      expect(mappedProps).toEqual(expected)
+    });
+  });
+
 });
