@@ -51,9 +51,7 @@ export class Profile extends Component {
     const { username, image } = this.props.user;
     const { setConfirm, formActive } = this.props;
     const {
-      dropFormActive,
       retrievedBoard,
-      confirmDropActive,
     } = this.state;
 
     return (
@@ -90,7 +88,6 @@ export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
   setUser: (user) => dispatch(setUser(user)),
   resetConfirm: (status) => dispatch(resetConfirm(status)),
-
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
