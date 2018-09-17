@@ -8,8 +8,8 @@
 }
 
 .confirm-button {
-  color: $color-two;
-  font-size: 1.2em;
+  color: $color-one;
+  font-size: 1.75em;
   text-shadow: 2px 1.3px black;
 
   @include underline-effect();
@@ -45,7 +45,8 @@
 .column-right-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  height: 100%;
   text-align: left;
   width: 50%;
 }
@@ -62,10 +63,6 @@
   width: 13em;
 }
 
-.longitude {
-  margin-top: 0;
-}
-
 .output {
   color: $color-one;
   text-align: center;
@@ -73,8 +70,11 @@
 }
 
 .stat-wrap {
+  align-items: center;
   background-color: $color-four;
   border: 2px solid black;
   box-shadow: $box-shadow;
-  margin-top: 1em;
+  height: 12em;
+  margin-top: .25em;
+  margin-bottom: .5em;
 }
