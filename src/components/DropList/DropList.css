@@ -1,8 +1,8 @@
 .drop-list {
-  background-color: blueviolet; 
+  background-color: #474B4F;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-}
-
-
+  margin-left: .25em;
+  overflow: scroll;
+  width: 100%; }
