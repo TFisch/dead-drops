@@ -32,7 +32,7 @@
   margin-top: 1em; }
 
 .co-entry {
-  background-color: #6B6E70;
+  background-color: #474B4F;
   border: 1.48px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
   color: #86C232;
@@ -46,15 +46,48 @@
     -webkit-appearance: none;
     margin: 0; }
   .co-entry::-webkit-input-placeholder {
-    /* WebKit browsers */
     color: #86C232; }
+  .co-entry:focus::-webkit-input-placeholder {
+    color: transparent;
+    box-shadow: none;
+    outline: 0; }
+
+.code-entry {
+  background-color: #474B4F;
+  border: 1.48px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  color: #86C232;
+  font-family: "PT Sans", Arial, Verdana;
+  font-weight: 700;
+  font-size: 1em;
+  height: 2em;
+  margin: .15em;
+  text-align: center;
+  width: 1.5em; }
+  .code-entry::-webkit-input-placeholder {
+    color: #86C232; }
+  .code-entry:focus::-webkit-input-placeholder {
+    color: transparent;
+    box-shadow: none;
+    outline: 0; }
 
 .submit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.75em;
+  font-weight: 700;
   height: 2.8em;
   margin-right: 1.2em;
-  width: 10em; }
+  padding: 0;
+  text-align: right;
+  text-shadow: 2px 1.3px black;
+  width: 10em;
+  color: #86C232;
+  text-shadow: 2px 1.3px black; }
 
 .unique-code-entry-wrap {
   display: flex;
   justify-content: space-between;
-  width: 10em; }
+  outline: none;
+  width: 100%; }
