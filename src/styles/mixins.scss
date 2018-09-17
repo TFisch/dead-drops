@@ -7,3 +7,28 @@
   font-family: 'PT Sans', Arial, Verdana;
   font-weight: 700;
 }
+
+@mixin underline-effect(){
+
+    position: relative;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      &:after {
+        width: 100%;
+      }
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -3px;
+      height: 3px;
+      background-color: $color-one;
+      width: 0;
+      transition: width .4s;
+    }
+  
+}
