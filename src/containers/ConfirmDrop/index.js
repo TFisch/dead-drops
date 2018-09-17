@@ -20,14 +20,25 @@ class ConfirmDrop extends Component {
     return (
       <div className="confirm-form">
         <div className="data-wrap">
-          <img className="location-display" src={image} alt="coordinate-location" />
-          <h4>Longitude: {longitude}</h4>
-          <h4>Latitude: {latitude}</h4>
-          <span className="button-wrap">
-            <h4>Unique Verification Code: {verificationCode} </h4>
-            <button className="submit-button" onClick={(e) => this.handleConfirm(e)}>CONFIRM</button>
-          </span>
+          <div className="column-left-wrap">
+            <img className="location-display" src={image} alt="coordinate-location" />
+          </div>
+          <div className="column-right-wrap">
+            <div className="stat-wrap">
+              <h3 className="category-confirm" id="longitude">Longitude</h3>
+              <h2 className="output">{longitude}</h2>
+            </div>
+            <div className="stat-wrap">
+              <h3 className="category-confirm">Latitude</h3>
+              <h2 className="output"> {latitude}</h2>
+            </div>
+            <div className="stat-wrap">
+              <h3 className="category-confirm">Unique Verification Code</h3>
+              <h2 className="output"> {verificationCode}</h2>
+            </div>
+          </div>
         </div>
+        <button className="confirm-button" onClick={(e) => this.handleConfirm(e)}>CONFIRM</button>
       </div>
     )
   }
