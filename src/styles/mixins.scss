@@ -3,6 +3,14 @@
     text-shadow: 2px 1.3px black;
 }
 
+@mixin hideSpinner(){
+  ::-webkit-inner-spin-button, 
+  ::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+}
+
 
 @mixin primary-font(){
   font-family: 'PT Sans', Arial, Verdana;
@@ -37,6 +45,11 @@
       background-color: $color-one;
       width: 0;
       transition: width .4s;
-    }
-  
+    } 
+}
+
+@mixin placeholder-color($color-one) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color-one;
+  }
 }
