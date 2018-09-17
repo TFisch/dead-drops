@@ -6,14 +6,14 @@ import {
   mapStateToProps,
   mapDispatchToProps,
 } from '../Profile/'
-import { mockUser, mockToken } from '../../utilities/mockData'
+import { mockUser, mockToken, mockPropsMethod } from '../../utilities/mockData'
 import { getToken, setUser } from '../../actions'
 
 describe('Profile', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Profile user={mockUser} resetConfirm={jest.fn()} />)
+    wrapper = shallow(<Profile user={mockUser} resetConfirm={mockPropsMethod} />)
   });
 
   it('should match the snapshot', () => {
@@ -25,11 +25,13 @@ describe('Profile', () => {
   describe('MapStateToProps', () => {
 
     it('should return an object with username and image', () => {
-      const mockedState = { locationData: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
-      const expected = { location: {}, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+      const mockedState = { locationData: {}, formActive: mockPropsMethod, setConfirm: mockPropsMethod, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+      const expected = { location: {}, formActive: mockPropsMethod, setConfirm: mockPropsMethod, user: { username: 'Al Borlin', image: 'google.com' }, token: '32904932' }
+
       const mappedProps = mapStateToProps(mockedState);
 
       expect(mappedProps).toEqual(expected);
+
 
     });
   });
