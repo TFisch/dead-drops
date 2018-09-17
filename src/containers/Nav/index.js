@@ -22,7 +22,10 @@ export class Nav extends Component {
   render() {
     return (
       <div className="nav">
-        <h1 className="logo">DEAD DROPS</h1>
+        <div className="wrap-left">
+          <img className="icon" src={require('../../utilities/images/treasure.svg')} alt="" />
+          <h1 className="logo">DEAD DROPS</h1>
+        </div>
         <div className='buttons'>
           <div className="nav-buttons-wrap">
             {this.props.user.username &&
