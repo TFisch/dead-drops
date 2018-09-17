@@ -34,6 +34,7 @@
     &:active {
       cursor: pointer;
       &:after {
+        outline: none;
         width: 100%;
       }
     }
@@ -49,7 +50,12 @@
 }
 
 @mixin placeholder-color($color-one) {
-  &::-webkit-input-placeholder { /* WebKit browsers */
+  &::-webkit-input-placeholder {
       color: $color-one;
+  }
+  &:focus::-webkit-input-placeholder { 
+    color:transparent; 
+    box-shadow:none;
+    outline:0;
   }
 }

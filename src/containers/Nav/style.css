@@ -42,6 +42,7 @@
   .nav-button:hover, .nav-button:focus, .nav-button:active {
     cursor: pointer; }
     .nav-button:hover:after, .nav-button:focus:after, .nav-button:active:after {
+      outline: none;
       width: 100%; }
   .nav-button:after {
     content: '';
@@ -63,6 +64,7 @@
     .nav-button:hover:hover, .nav-button:hover:focus, .nav-button:hover:active {
       cursor: pointer; }
       .nav-button:hover:hover:after, .nav-button:hover:focus:after, .nav-button:hover:active:after {
+        outline: none;
         width: 100%; }
     .nav-button:hover:after {
       content: '';
