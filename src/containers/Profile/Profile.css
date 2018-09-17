@@ -1,23 +1,30 @@
 .board-display {
-  background-color: darkorange;
+  background-color: #474B4F;
   width: 50em; }
 
-.container {
-  background-color: aqua;
-  display: flex; }
+.panel-wrap {
+  display: flex;
+  height: 46em; }
 
 .profile-image {
   border: 1px solid black;
   border-radius: 50%; }
 
 .user-profile {
-  background-color: magenta;
-  height: 40em;
+  background-color: #474B4F;
+  height: 100%;
   width: 40em; }
 
 .welcome-text {
   font-family: 'PT Sans', Arial, Verdana;
   font-weight: 400; }
+
+.profile {
+  background-color: #474B4F;
+  border-top: 2px solid black;
+  display: flex;
+  height: 100%;
+  width: 100%; }
 
 .profile-wrap {
   align-items: center;

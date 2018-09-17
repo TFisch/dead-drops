@@ -1,13 +1,14 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .board-display {
-  background-color: darkorange;
+  background-color: $color-four;
   width: 50em;
 }
 
-.container {
-  background-color: aqua;
-  display: flex;
+.panel-wrap {
+   display: flex;
+  height: 46em;
 }
 
 .profile-image {
@@ -16,13 +17,21 @@
 }
 
 .user-profile {
-  background-color: magenta;
-  height: 40em;
+  background-color: $color-four;
+  height: 100%;
   width: 40em;
 }
 
 .welcome-text {
   @include primary-font;
+}
+
+.profile {
+  background-color: $color-four;
+  border-top: 2px solid black;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .profile-wrap {
