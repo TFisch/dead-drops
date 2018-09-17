@@ -2,12 +2,19 @@
 @import '../../styles/variables.scss';
 
 
+.button-wrap-confirm {
+  display: flex;
+  justify-content: space-between;
+  padding-left: .4em;
+  padding-top: .5em;
+}
+
 .category-confirm {
   @include category();
   text-align: center;
 }
 
-.confirm-button {
+.confirm-button, .edit-button {
   color: $color-one;
   font-size: 1.75em;
   text-shadow: 2px 1.3px black;
@@ -30,7 +37,7 @@
   margin-left: 3.2em;
   margin-top: 4.6em;
   padding: 1em;
-  text-align: left;
+  text-align: right;
   width: 30em;
 }
 
@@ -38,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 1.5em;
+  margin-top: .4em;
   width: 50%;
 }
 
@@ -47,6 +54,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  margin-left: 1.75em;
   text-align: left;
   width: 50%;
 }
@@ -60,6 +68,7 @@
 .location-display {
   border: 2px solid black;
   box-shadow: $box-shadow;
+  margin-top: .64em;
   width: 13em;
 }
 
@@ -77,4 +86,5 @@
   height: 12em;
   margin-top: .25em;
   margin-bottom: .5em;
+  width: 15em;
 }

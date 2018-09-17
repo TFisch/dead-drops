@@ -1,9 +1,15 @@
+.button-wrap-confirm {
+  display: flex;
+  justify-content: space-between;
+  padding-left: .4em;
+  padding-top: .5em; }
+
 .category-confirm {
   color: #86C232;
   text-shadow: 2px 1.3px black;
   text-align: center; }
 
-.confirm-button {
+.confirm-button, .edit-button {
   color: #86C232;
   font-size: 1.75em;
   text-shadow: 2px 1.3px black;
@@ -13,11 +19,12 @@
   font-weight: 700;
   padding: 0;
   cursor: pointer; }
-  .confirm-button:hover, .confirm-button:focus, .confirm-button:active {
+  .confirm-button:hover, .confirm-button:focus, .confirm-button:active, .edit-button:hover, .edit-button:focus, .edit-button:active {
     cursor: pointer; }
-    .confirm-button:hover:after, .confirm-button:focus:after, .confirm-button:active:after {
+    .confirm-button:hover:after, .confirm-button:focus:after, .confirm-button:active:after, .edit-button:hover:after, .edit-button:focus:after, .edit-button:active:after {
+      outline: none;
       width: 100%; }
-  .confirm-button:after {
+  .confirm-button:after, .edit-button:after {
     content: '';
     position: absolute;
     left: 0;
@@ -26,9 +33,9 @@
     background-color: #86C232;
     width: 0;
     transition: width .4s; }
-  .confirm-button:hover {
+  .confirm-button:hover, .edit-button:hover {
     color: #86C232; }
-  .confirm-button:focus {
+  .confirm-button:focus, .edit-button:focus {
     color: #86C232;
     outline: none; }
 
@@ -40,14 +47,14 @@
   margin-left: 3.2em;
   margin-top: 4.6em;
   padding: 1em;
-  text-align: left;
+  text-align: right;
   width: 30em; }
 
 .column-left-wrap {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 1.5em;
+  margin-top: .4em;
   width: 50%; }
 
 .column-right-wrap {
@@ -55,6 +62,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  margin-left: 1.75em;
   text-align: left;
   width: 50%; }
 
@@ -66,6 +74,7 @@
 .location-display {
   border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  margin-top: .64em;
   width: 13em; }
 
 .output {
@@ -80,4 +89,5 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
   height: 12em;
   margin-top: .25em;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  width: 15em; }
