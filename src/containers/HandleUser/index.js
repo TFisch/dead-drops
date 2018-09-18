@@ -16,7 +16,7 @@ export class HandleUser extends Component {
     }
   }
 
-  async componentDidMount() {
+  componentDidMount = async () => {
     if (!this.state.tokenFetched) {
       let code;
       window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (value) {
@@ -35,7 +35,7 @@ export class HandleUser extends Component {
     this.getUserImage(response.access_token);
   }
 
-  async getUserImage(token) {
+  getUserImage = async (token) => {
     const fetchedUser = await fetchUserImage(token);
     await this.props.setUser(fetchedUser);
   }
