@@ -1,0 +1,3 @@
+src/registerServiceWorker.js
+src/containers/Profile/Profile.test.js
+src/containers/Nav/Nav.test
