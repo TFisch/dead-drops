@@ -64,7 +64,7 @@ Nav.propTypes = {
   user: PropTypes.object,
   setFormActive: PropTypes.func,
   resetConfirm: PropTypes.func,
-  resetFormActive: PropTypes.fun
+  resetFormActive: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);

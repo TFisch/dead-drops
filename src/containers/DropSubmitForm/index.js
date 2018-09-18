@@ -73,7 +73,7 @@ DropSubmitForm.propTypes = {
   location: PropTypes.object,
   setConfirm: PropTypes.object,
   getLocation: PropTypes.func,
-  user: PropTypes.obj,
+  user: PropTypes.object,
   resetFormActive: PropTypes.func
 };
 
