@@ -11,6 +11,7 @@ export class Nav extends Component {
 
   handleSubmitButton = () => {
     this.props.setFormActive(true)
+    this.props.resetConfirm()
   }
 
   handleProfileButton = () => {
