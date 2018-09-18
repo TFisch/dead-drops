@@ -18,7 +18,7 @@ export const fetchDropBoard = async (token) => {
 
 export const fetchLocation = async (coordinatesEntry) => {
   try {
-    const { longitude, latitude, codeLog } = coordinatesEntry;
+    const { longitude, latitude } = coordinatesEntry;
     const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C${latitude},${longitude}&key=${key}`;
     const response = await fetch(url);
     const data = await response.blob();
@@ -28,7 +28,6 @@ export const fetchLocation = async (coordinatesEntry) => {
       long: longitude,
       lat: latitude,
       locationImage: cleanedImage,
-      verificationCode: codeLog
     };
     return searchedLocation;
   } catch (error) {
