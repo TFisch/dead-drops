@@ -74,6 +74,7 @@
 .submit-button {
   background: none;
   border: none;
+  color: #61892f;
   cursor: pointer;
   font-size: 1.75em;
   font-weight: 700;
@@ -83,11 +84,13 @@
   text-align: right;
   text-shadow: 2px 1.3px black;
   width: 10em;
-  color: #86C232;
   text-shadow: 2px 1.3px black; }
   .submit-button:Focus {
     outline: none;
     border: none; }
+  .submit-button:hover {
+    color: #86C232;
+    cursor: pointer; }
 
 .unique-code-entry-wrap {
   display: flex;
