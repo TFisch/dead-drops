@@ -71,6 +71,7 @@
 .submit-button {
   background:none;
   border:none;
+  color: $color-two;
   cursor: pointer;
   font-size: 1.75em;
   font-weight: 700;
@@ -84,6 +85,10 @@
   &:Focus{
     outline: none;
     border: none;
+  }
+  &:hover{
+    color: $color-one;
+    cursor: pointer;
   }
 }
 

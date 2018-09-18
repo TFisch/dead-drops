@@ -14,12 +14,12 @@
   display: flex;
   flex-direction: column;
   font-family: $primary-font;
-  font-size: 1em;
+  font-size: .89em;
   font-weight: 700;
   height: 12em;
   margin: .14em;
-  padding: 1em;
-  width: 12em;
+  padding: .75em;
+  width: 13em;
   &:hover{
     background-color: $color-two;
   }
