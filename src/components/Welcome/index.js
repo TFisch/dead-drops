@@ -9,8 +9,10 @@ export const Welcome = () => {
     "client_id=4987807426915878592"
   return (
     <div className="welcome">
-      <h1>WELCOME</h1>
-      <a href={url}>Sign In With Pinterest</a>
+      <h1 className="welcome-text">WELCOME</h1>
+      <div className="login">
+        <a className="auth-link" href={url}>CLICK HERE TO SIGN IN WITH PINTEREST</a>
+      </div>
     </div>
 
   )
