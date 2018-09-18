@@ -26,7 +26,6 @@ describe('DropSubmitForm', () => {
 
       wrapper.find('[name="longitude"]').simulate('change', event);
 
-
       expect(spy).toHaveBeenCalled();
     });
 
