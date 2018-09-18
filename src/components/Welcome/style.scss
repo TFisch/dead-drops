@@ -1,13 +1,50 @@
 @import '../../styles/variables.scss';
 
+.auth-link {
+  color: $color-two;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  a:visited {
+    text-decoration: none;
+  }
+  &:hover {
+  color: $color-one;
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.login{
+  align-items: center;
+  background-color: $color-five;
+  border: 3px solid black;
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4em;
+  opacity: .8;
+  width: 70%;
+}
+
 .welcome{
   align-items: center;
   background-color: $color-three;
   border: 2px solid black;
+  color: $color-one;
+  font-family: $primary-font;
+  font-size: 1em;
   height: 40em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
   text-align: center;
   width: 40em;
+}
+
+.welcome-text {
+  outline: none;
 }

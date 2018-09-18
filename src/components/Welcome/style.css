@@ -1,10 +1,41 @@
+.auth-link {
+  color: #61892f;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none; }
+  .auth-link a:visited {
+    text-decoration: none; }
+  .auth-link:hover {
+    color: #86C232;
+    text-decoration: underline; }
+  .auth-link a:active {
+    text-decoration: underline; }
+
+.login {
+  align-items: center;
+  background-color: #222629;
+  border: 3px solid black;
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4em;
+  opacity: .8;
+  width: 70%; }
+
 .welcome {
   align-items: center;
   background-color: #6B6E70;
   border: 2px solid black;
+  color: #86C232;
+  font-family: "PT Sans", Arial, Verdana;
+  font-size: 1em;
   height: 40em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
   text-align: center;
   width: 40em; }
+
+.welcome-text {
+  outline: none; }
