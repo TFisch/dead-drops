@@ -18,8 +18,9 @@ export class ConfirmDrop extends Component {
   }
 
   handleEdit = () => {
-    this.props.toggleSubmit();
-    this.props.setFormActive(true);
+    const { toggleSubmit, setFormActive } = this.props
+    toggleSubmit();
+    setFormActive(true);
   }
 
   render() {
@@ -40,8 +41,8 @@ export class ConfirmDrop extends Component {
           <div className="column-right-wrap">
             <img className="location-display" src={image} alt="coordinate-location" />
             <div className="button-wrap-confirm">
-              <button className="edit-button" name="edit" onClick={() => this.handleEdit()}>EDIT</button>
-              <button className="confirm-button" name="confirm" onClick={() => this.handleConfirm()}>CONFIRM</button>
+              <button className="edit-button" name="edit" onClick={this.handleEdit}>EDIT</button>
+              <button className="confirm-button" name="confirm" onClick={this.handleConfirm}>CONFIRM</button>
             </div>
           </div>
         </div>

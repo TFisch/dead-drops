@@ -14,7 +14,7 @@ describe('locationReducer', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should retieve the token', () => {
+  it('should return a location object', () => {
 
     expect(locationReducer(undefined, getLocation(mockLocation))).toEqual(mockLocationReducer);
   });
