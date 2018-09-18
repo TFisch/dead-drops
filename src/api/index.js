@@ -47,6 +47,8 @@ export const postPin = async (note, token) => {
         image_url: image
       })
     });
+
+    return response;
   } catch (error) {
     console.log(error.message);
   }

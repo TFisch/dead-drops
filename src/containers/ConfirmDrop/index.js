@@ -23,7 +23,7 @@ export class ConfirmDrop extends Component {
   }
 
   render() {
-    const { latitude, longitude, image, verificationCode } = this.props.location;
+    const { latitude, longitude, image } = this.props.location;
     return (
       <div className="confirm-form">
         <div className="data-wrap">
@@ -53,7 +53,8 @@ export class ConfirmDrop extends Component {
 ConfirmDrop.propTypes = {
   token: PropTypes.string,
   toggleSubmit: PropTypes.func,
-  location: PropTypes.object
+  location: PropTypes.object,
+  setFormActive: PropTypes.func
 };
 
 export const mapStateToProps = (state) => ({
@@ -62,7 +63,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setFormActive: (status) => dispatch(setFormActive(status)),
+  setFormActive: (status) => dispatch(setFormActive(status))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ConfirmDrop);

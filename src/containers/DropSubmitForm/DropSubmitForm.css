@@ -25,10 +25,8 @@
 .entry-row {
   align-items: center;
   display: flex;
-  height: 9em;
   justify-content: space-between;
-  width: 28em; 
-}
+  width: 28em; }
 
 .form-row {
   margin-top: 1em; }

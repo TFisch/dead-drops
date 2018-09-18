@@ -70,26 +70,6 @@ ShallowWrapper {
                                  
                         </h2>
                 </div>
-                <div
-                        className="stat-wrap"
-                >
-                        <h3
-                                className="category-confirm"
-                        >
-                                Unique Verification Code
-                        </h3>
-                        <h2
-                                className="output"
-                        >
-                                 
-                                0
-                                0
-                                0
-                                0
-                                0
-                                0
-                        </h2>
-                </div>
         </div>
         <div
                 className="column-right-wrap"
@@ -158,26 +138,6 @@ ShallowWrapper {
                                      
                         </h2>
             </div>
-            <div
-                        className="stat-wrap"
-            >
-                        <h3
-                                    className="category-confirm"
-                        >
-                                    Unique Verification Code
-                        </h3>
-                        <h2
-                                    className="output"
-                        >
-                                     
-                                    0
-                                    0
-                                    0
-                                    0
-                                    0
-                                    0
-                        </h2>
-            </div>
 </div>,
           <div
             className="column-right-wrap"
@@ -242,26 +202,6 @@ ShallowWrapper {
                                 className="output"
                 >
                                  
-                </h2>
-</div>,
-              <div
-                className="stat-wrap"
->
-                <h3
-                                className="category-confirm"
-                >
-                                Unique Verification Code
-                </h3>
-                <h2
-                                className="output"
-                >
-                                 
-                                0
-                                0
-                                0
-                                0
-                                0
-                                0
                 </h2>
 </div>,
             ],
@@ -365,78 +305,6 @@ ShallowWrapper {
                   "rendered": Array [
                     " ",
                     undefined,
-                  ],
-                  "type": "h2",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h3
-                    className="category-confirm"
->
-                    Unique Verification Code
-</h3>,
-                  <h2
-                    className="output"
->
-                     
-                    0
-                    0
-                    0
-                    0
-                    0
-                    0
-</h2>,
-                ],
-                "className": "stat-wrap",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Unique Verification Code",
-                    "className": "category-confirm",
-                  },
-                  "ref": null,
-                  "rendered": "Unique Verification Code",
-                  "type": "h3",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      " ",
-                      Array [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                      ],
-                    ],
-                    "className": "output",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    " ",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
                   ],
                   "type": "h2",
                 },
@@ -596,26 +464,6 @@ ShallowWrapper {
                                          
                               </h2>
                     </div>
-                    <div
-                              className="stat-wrap"
-                    >
-                              <h3
-                                        className="category-confirm"
-                              >
-                                        Unique Verification Code
-                              </h3>
-                              <h2
-                                        className="output"
-                              >
-                                         
-                                        0
-                                        0
-                                        0
-                                        0
-                                        0
-                                        0
-                              </h2>
-                    </div>
           </div>
           <div
                     className="column-right-wrap"
@@ -684,26 +532,6 @@ ShallowWrapper {
                                            
                             </h2>
               </div>
-              <div
-                            className="stat-wrap"
-              >
-                            <h3
-                                          className="category-confirm"
-                            >
-                                          Unique Verification Code
-                            </h3>
-                            <h2
-                                          className="output"
-                            >
-                                           
-                                          0
-                                          0
-                                          0
-                                          0
-                                          0
-                                          0
-                            </h2>
-              </div>
 </div>,
             <div
               className="column-right-wrap"
@@ -768,26 +596,6 @@ ShallowWrapper {
                                     className="output"
                   >
                                      
-                  </h2>
-</div>,
-                <div
-                  className="stat-wrap"
->
-                  <h3
-                                    className="category-confirm"
-                  >
-                                    Unique Verification Code
-                  </h3>
-                  <h2
-                                    className="output"
-                  >
-                                     
-                                    0
-                                    0
-                                    0
-                                    0
-                                    0
-                                    0
                   </h2>
 </div>,
               ],
@@ -891,78 +699,6 @@ ShallowWrapper {
                     "rendered": Array [
                       " ",
                       undefined,
-                    ],
-                    "type": "h2",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <h3
-                      className="category-confirm"
->
-                      Unique Verification Code
-</h3>,
-                    <h2
-                      className="output"
->
-                       
-                      0
-                      0
-                      0
-                      0
-                      0
-                      0
-</h2>,
-                  ],
-                  "className": "stat-wrap",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Unique Verification Code",
-                      "className": "category-confirm",
-                    },
-                    "ref": null,
-                    "rendered": "Unique Verification Code",
-                    "type": "h3",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        " ",
-                        Array [
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                        ],
-                      ],
-                      "className": "output",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      " ",
-                      0,
-                      0,
-                      0,
-                      0,
-                      0,
-                      0,
                     ],
                     "type": "h2",
                   },

@@ -16,8 +16,8 @@ export class DropSubmitForm extends Component {
     };
   }
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
+  handleChange = (event) => {
+    const { name, value } = event.target;
     this.setState({ [name]: value });
   }
 
@@ -33,7 +33,7 @@ export class DropSubmitForm extends Component {
   render() {
     return (
       <div>
-        <form className="drop-submit" onSubmit={(e) => this.sendCoordinates(e)}>
+        <form className="drop-submit" onSubmit={(event) => this.sendCoordinates(event)}>
           <div className="drop-form">
             <span className="entry-row">
               <h3 className="category">Latitude Coordinates</h3>

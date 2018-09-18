@@ -16,21 +16,6 @@ describe('HandleUser', () => {
 
   });
 
-
-
-  describe('getUserImage', () => {
-    it('should call the setUser action', async () => {
-      const spy = spyOn(await wrapper.instance(), 'getUserImage');
-
-      const response = wrapper.instance().getUserImage(tokenMock);
-
-      wrapper.instance().forceUpdate();
-
-      expect(spy).toHaveBeenCalledWith(tokenMock);
-
-    });
-  });
-
   describe('MapStateToProps', () => {
     it('should return a user object', () => {
       const mockedState = { user: { username: 'Al Borlin', image: 'google.com' } };
