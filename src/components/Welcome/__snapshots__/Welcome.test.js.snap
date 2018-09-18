@@ -18,14 +18,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
+        <h1
+          className="welcome-text"
+>
           WELCOME
 </h1>,
-        <a
-          href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+        <div
+          className="login"
 >
-          Sign In With Pinterest
-</a>,
+          <a
+                    className="auth-link"
+                    href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+          >
+                    CLICK HERE TO SIGN IN WITH PINTEREST
+          </a>
+</div>,
       ],
       "className": "welcome",
     },
@@ -37,6 +44,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "WELCOME",
+          "className": "welcome-text",
         },
         "ref": null,
         "rendered": "WELCOME",
@@ -47,12 +55,29 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Sign In With Pinterest",
-          "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+          "children": <a
+            className="auth-link"
+            href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+>
+            CLICK HERE TO SIGN IN WITH PINTEREST
+</a>,
+          "className": "login",
         },
         "ref": null,
-        "rendered": "Sign In With Pinterest",
-        "type": "a",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CLICK HERE TO SIGN IN WITH PINTEREST",
+            "className": "auth-link",
+            "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+          },
+          "ref": null,
+          "rendered": "CLICK HERE TO SIGN IN WITH PINTEREST",
+          "type": "a",
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -64,14 +89,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
+          <h1
+            className="welcome-text"
+>
             WELCOME
 </h1>,
-          <a
-            href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+          <div
+            className="login"
 >
-            Sign In With Pinterest
-</a>,
+            <a
+                        className="auth-link"
+                        href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+            >
+                        CLICK HERE TO SIGN IN WITH PINTEREST
+            </a>
+</div>,
         ],
         "className": "welcome",
       },
@@ -83,6 +115,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "WELCOME",
+            "className": "welcome-text",
           },
           "ref": null,
           "rendered": "WELCOME",
@@ -93,12 +126,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Sign In With Pinterest",
-            "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+            "children": <a
+              className="auth-link"
+              href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+>
+              CLICK HERE TO SIGN IN WITH PINTEREST
+</a>,
+            "className": "login",
           },
           "ref": null,
-          "rendered": "Sign In With Pinterest",
-          "type": "a",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CLICK HERE TO SIGN IN WITH PINTEREST",
+              "className": "auth-link",
+              "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+            },
+            "ref": null,
+            "rendered": "CLICK HERE TO SIGN IN WITH PINTEREST",
+            "type": "a",
+          },
+          "type": "div",
         },
       ],
       "type": "div",

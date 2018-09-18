@@ -32,7 +32,7 @@ ShallowWrapper {
           className="wrap-left"
 >
           <img
-                    alt=""
+                    alt="treasure-icon"
                     className="icon"
                     src="treasure.svg"
           />
@@ -102,7 +102,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <img
-              alt=""
+              alt="treasure-icon"
               className="icon"
               src="treasure.svg"
 />,
@@ -121,7 +121,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "",
+              "alt": "treasure-icon",
               "className": "icon",
               "src": "treasure.svg",
             },
@@ -376,7 +376,7 @@ ShallowWrapper {
             className="wrap-left"
 >
             <img
-                        alt=""
+                        alt="treasure-icon"
                         className="icon"
                         src="treasure.svg"
             />
@@ -446,7 +446,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <img
-                alt=""
+                alt="treasure-icon"
                 className="icon"
                 src="treasure.svg"
 />,
@@ -465,7 +465,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "alt": "",
+                "alt": "treasure-icon",
                 "className": "icon",
                 "src": "treasure.svg",
               },
