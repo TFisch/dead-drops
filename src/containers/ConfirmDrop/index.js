@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { postPin } from '../../api'
 import './ConfirmDrop.css'
+import treasureIcon from '../../utilities/images/treasure.svg'
 
 export class ConfirmDrop extends Component {
   constructor(props) {
@@ -9,9 +10,9 @@ export class ConfirmDrop extends Component {
   }
 
   handleConfirm = () => {
-    const { latitude, longitude } = this.props.location;
+    const { latitude, longitude, image } = this.props.location;
     const note = `Latitude: ${latitude}, Longitude: ${longitude}`;
-    postPin(note, this.props.token)
+    postPin(note, this.props.token, image)
     this.props.toggleSubmit();
   }
 
