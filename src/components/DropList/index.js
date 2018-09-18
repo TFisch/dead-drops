@@ -3,8 +3,8 @@ import { DropCard } from '../DropCard';
 import './DropList.css';
 import PropTypes from 'prop-types';
 
-export const DropList = (props) => {
-  const displayPins = props.retrievedBoard.map((pin, index) => <DropCard {...pin} key={index} />);
+export const DropList = ({ retrievedBoard }) => {
+  const displayPins = retrievedBoard.map((pin, index) => <DropCard {...pin} key={index} />);
   return (
     <div className='drop-list'>
       {displayPins}
@@ -13,6 +13,5 @@ export const DropList = (props) => {
 };
 
 DropList.propTypes = {
-  retrieveBoard: PropTypes.array,
-  retrievedBoard: PropTypes.boolean
+  retrievedBoard: PropTypes.array
 };

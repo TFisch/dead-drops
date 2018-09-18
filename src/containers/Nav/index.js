@@ -11,13 +11,15 @@ export class Nav extends Component {
   }
 
   handleSubmitButton = () => {
-    this.props.setFormActive(true);
-    this.props.resetConfirm();
+    const { setFormActive, resetConfirm } = this.props;
+    setFormActive(true);
+    resetConfirm();
   }
 
   handleProfileButton = () => {
-    this.props.resetConfirm();
-    this.props.resetFormActive();
+    const { resetFormActive, resetConfirm } = this.props;
+    resetFormActive();
+    resetConfirm();
   }
 
   render() {

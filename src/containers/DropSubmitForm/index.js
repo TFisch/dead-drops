@@ -22,12 +22,13 @@ export class DropSubmitForm extends Component {
   }
 
   sendCoordinates = async (event) => {
+    const { toggleSubmit, setConfirm, resetFormActive, getLocation } = this.props;
     event.preventDefault();
     const returnedLocation = await fetchLocation(this.state);
-    await this.props.getLocation(returnedLocation);
-    this.props.toggleSubmit();
-    this.props.setConfirm(true);
-    this.props.resetFormActive();
+    await getLocation(returnedLocation);
+    toggleSubmit();
+    setConfirm(true);
+    resetFormActive();
   }
 
   render() {
