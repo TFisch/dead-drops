@@ -1,4 +1,4 @@
-import { cleanImage } from '../utilities/helper/'
+import { cleanImage, cleanLocationImage } from '../utilities/helper/'
 import { key } from '../hidden/hidden'
 
 export const fetchUserImage = async (token) => {
@@ -10,7 +10,7 @@ export const fetchUserImage = async (token) => {
 }
 
 export const fetchDropBoard = async (token) => {
-  const url = `https://api.pinterest.com/v1/boards/deaddrops/dead-drops/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl%2Cimage`
+  const url = `https://api.pinterest.com/v1/boards/deaddrops/dead-drops-official/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl%2Cimage`
   const response = await fetch(url);
   const data = await response.json();
   return data.data;
@@ -22,11 +22,12 @@ export const fetchLocation = async (coordinatesEntry) => {
     const url = `https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C${latitude},${longitude}&key=${key}`
     const response = await fetch(url);
     const data = await response.blob();
-    const imageUrl = URL.createObjectURL(data)
+    const cleanedImage = await cleanLocationImage(data)
+
     const searchedLocation = {
       long: longitude,
       lat: latitude,
-      locationImage: imageUrl,
+      locationImage: cleanedImage,
       verificationCode: codeLog
     }
     return searchedLocation;
@@ -36,8 +37,9 @@ export const fetchLocation = async (coordinatesEntry) => {
 }
 
 export const postPin = async (note, token) => {
+  const image = 'https://postimg.cc/3dFYfCpr';
   try {
-    const url = `https://api.pinterest.com/v1/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl`
+    const url = `https://api.pinterest.com/v1/pins/?access_token=${token}&fields=id%2Clink%2Cnote%2Curl&board=deaddrops/dead-drops-official/&note=${note}&image_url=${image}`
     const response = await fetch(url, {
       method: 'POST',
       body: JSON.stringify({
@@ -47,7 +49,6 @@ export const postPin = async (note, token) => {
       }),
     })
     const result = await response.json();
-    console.log(result);
   } catch (error) {
     console.log(error.message)
   }
