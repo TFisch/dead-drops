@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { getToken, setUser, resetConfirm } from '../../actions';
 import { connect } from 'react-redux';
 import { fetchDropBoard } from '../../api'
+import { Redirect } from 'react-router-dom'
 import './Profile.css'
 import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
+import { Welcome } from '../../components/Welcome'
 import ConfirmDrop from '../ConfirmDrop';
 
 export class Profile extends Component {
@@ -20,7 +22,7 @@ export class Profile extends Component {
     }
   }
 
-  componentDidUpdate() {
+  componentDidUpdate = () => {
     if (!this.state.dropListRetrieved) {
       this.retrieveDropBoard();
     }
@@ -39,13 +41,10 @@ export class Profile extends Component {
     this.props.resetConfirm();
   }
 
-
   render() {
     const { username, image } = this.props.user;
     const { setConfirm, formActive } = this.props;
-    const {
-      retrievedBoard,
-    } = this.state;
+    const { retrievedBoard } = this.state;
 
     return (
       <div className="profile">
