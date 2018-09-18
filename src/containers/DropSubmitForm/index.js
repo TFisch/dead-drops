@@ -31,11 +31,6 @@ export class DropSubmitForm extends Component {
     this.autotab(e);
   }
 
-  handleDifficulty = (e) => {
-    const difficulty = e.target.value;
-    this.setState({ difficulty })
-  }
-
   autotab = (e) => {
     const next = e.target.nextElementSibling;
     const previous = e.target.previousElementSibling;
