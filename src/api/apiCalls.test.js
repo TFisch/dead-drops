@@ -86,7 +86,7 @@ describe('API Calls', () => {
         status: 200, json: () => Promise.resolve(mockPinResponse)
       }));
 
-      await postPin(mockNote, tokenAuth)
+      await postPin(mockNote, tokenAuth);
 
       expect(window.fetch).toHaveBeenCalled();
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { postPin } from '../../api';
+import { setFormActive } from '../../actions';
 import './ConfirmDrop.css';
 import PropTypes from 'prop-types';
 
@@ -18,6 +19,7 @@ export class ConfirmDrop extends Component {
 
   handleEdit = () => {
     this.props.toggleSubmit();
+    this.props.setFormActive(true);
   }
 
   render() {
@@ -33,10 +35,6 @@ export class ConfirmDrop extends Component {
             <div className="stat-wrap">
               <h3 className="category-confirm">Latitude</h3>
               <h2 className="output"> {latitude}</h2>
-            </div>
-            <div className="stat-wrap">
-              <h3 className="category-confirm">Unique Verification Code</h3>
-              <h2 className="output"> {verificationCode}</h2>
             </div>
           </div>
           <div className="column-right-wrap">
@@ -63,4 +61,8 @@ export const mapStateToProps = (state) => ({
   location: state.locationData
 });
 
-export default connect(mapStateToProps)(ConfirmDrop);
+export const mapDispatchToProps = (dispatch) => ({
+  setFormActive: (status) => dispatch(setFormActive(status)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ConfirmDrop);

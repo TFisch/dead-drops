@@ -70,8 +70,8 @@ export const mockPinResponse = {
   link: "",
   note: "Latitude: 40.7128, Longitude: 74.0060",
   url: "https://www.pinterest.com/pin/864409722205307254/"
-}
+};
 
-export const mockNote = 'longitude: 3214321504, latitude: 2.52343245'
+export const mockNote = 'longitude: 3214321504, latitude: 2.52343245';
 
 
