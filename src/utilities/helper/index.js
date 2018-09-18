@@ -1,4 +1,4 @@
-export const cleanImage = (imageResponse) => {
+export const cleanUserImage = (imageResponse) => {
   const username = imageResponse.data.username
   const imageUrl = imageResponse.data.image;
   const image = imageUrl['60x60'].url;
