@@ -8,3 +8,8 @@ export const cleanImage = (imageResponse) => {
   }
   return userProfile;
 }
+
+export const cleanLocationImage = (imageResponse) => {
+  const imageUrl = URL.createObjectURL(imageResponse);
+  return imageUrl;
+}
