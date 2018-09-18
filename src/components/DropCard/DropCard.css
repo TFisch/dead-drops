@@ -10,10 +10,21 @@
   border-radius: .45em;
   display: flex;
   flex-direction: column;
+  font-family: "PT Sans", Arial, Verdana;
+  font-size: 1em;
+  font-weight: 700;
   height: 12em;
   margin: .14em;
   padding: 1em;
-  width: 10em; }
+  width: 12em; }
+  .drop-card:hover {
+    background-color: #61892f; }
+
+.drop-icon {
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  width: 3em; }
 
 .drop-image {
   height: 5em;
