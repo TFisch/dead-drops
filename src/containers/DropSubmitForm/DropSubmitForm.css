@@ -85,6 +85,9 @@
   width: 10em;
   color: #86C232;
   text-shadow: 2px 1.3px black; }
+  .submit-button:Focus {
+    outline: none;
+    border: none; }
 
 .unique-code-entry-wrap {
   display: flex;

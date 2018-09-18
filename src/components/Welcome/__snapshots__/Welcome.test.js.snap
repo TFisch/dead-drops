@@ -28,7 +28,7 @@ ShallowWrapper {
 >
           <a
                     className="auth-link"
-                    href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+                    href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
           >
                     CLICK HERE TO SIGN IN WITH PINTEREST
           </a>
@@ -57,7 +57,7 @@ ShallowWrapper {
         "props": Object {
           "children": <a
             className="auth-link"
-            href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+            href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
 >
             CLICK HERE TO SIGN IN WITH PINTEREST
 </a>,
@@ -71,7 +71,7 @@ ShallowWrapper {
           "props": Object {
             "children": "CLICK HERE TO SIGN IN WITH PINTEREST",
             "className": "auth-link",
-            "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+            "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
           },
           "ref": null,
           "rendered": "CLICK HERE TO SIGN IN WITH PINTEREST",
@@ -99,7 +99,7 @@ ShallowWrapper {
 >
             <a
                         className="auth-link"
-                        href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+                        href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
             >
                         CLICK HERE TO SIGN IN WITH PINTEREST
             </a>
@@ -128,7 +128,7 @@ ShallowWrapper {
           "props": Object {
             "children": <a
               className="auth-link"
-              href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
+              href="https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592"
 >
               CLICK HERE TO SIGN IN WITH PINTEREST
 </a>,
@@ -142,7 +142,7 @@ ShallowWrapper {
             "props": Object {
               "children": "CLICK HERE TO SIGN IN WITH PINTEREST",
               "className": "auth-link",
-              "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://ce2f9bf7.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
+              "href": "https://api.pinterest.com/oauth/?response_type=code&redirect_uri=https://516a7332.ngrok.io/HandleUser&scope=read_public,write_public,read_relationships,write_relationships&client_id=4987807426915878592",
             },
             "ref": null,
             "rendered": "CLICK HERE TO SIGN IN WITH PINTEREST",

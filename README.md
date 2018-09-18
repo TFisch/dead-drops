@@ -1543,7 +1543,9 @@ Example package.json:
     "collectCoverageFrom" : [
       "src/**/*.{js,jsx}",
       "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
+      "!<rootDir>/path/to/dir/",
+      "!src/registerServiceWorker.js",
+      "!src/reducers/index.js"
     ],
     "coverageThreshold": {
       "global": {

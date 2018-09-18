@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchLocation } from '../../api';
 import { getLocation, setConfirm, resetFormActive } from '../../actions';
@@ -79,7 +78,7 @@ export class DropSubmitForm extends Component {
               </div>
             </span>
             <span className="button-row">
-              <button className="submit-button form-row">SUBMIT</button>
+              <button name="submit-co-button" className="submit-button form-row">SUBMIT</button>
             </span>
           </div>
         </form>

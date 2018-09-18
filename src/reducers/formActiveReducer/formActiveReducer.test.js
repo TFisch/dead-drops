@@ -1,4 +1,3 @@
-import React from 'react';
 import { formActiveReducer } from './';
 import * as actions from '../../actions/';
 

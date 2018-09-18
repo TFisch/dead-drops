@@ -48,8 +48,6 @@ export const postPin = async (note, token) => {
         image_url: image
       })
     });
-    const result = await response.json();
-    console.log(result);
   } catch (error) {
     console.log(error.message);
   }

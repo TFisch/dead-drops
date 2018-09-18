@@ -81,14 +81,14 @@ ShallowWrapper {
                               </button>
                     </Link>
           </div>
-          <button
-                    className="pinterest-button"
+          <a
+                    href="https://www.pinterest.com/deaddrops/dead-drops-official/"
           >
                     <img
                               alt="pinterest-icon"
                               src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
                     />
-          </button>
+          </a>
 </div>,
       ],
       "className": "nav",
@@ -186,14 +186,14 @@ ShallowWrapper {
                             </button>
               </Link>
 </div>,
-            <button
-              className="pinterest-button"
+            <a
+              href="https://www.pinterest.com/deaddrops/dead-drops-official/"
 >
               <img
                             alt="pinterest-icon"
                             src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
               />
-</button>,
+</a>,
           ],
           "className": "buttons",
         },
@@ -342,7 +342,7 @@ ShallowWrapper {
                 alt="pinterest-icon"
                 src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
 />,
-              "className": "pinterest-button",
+              "href": "https://www.pinterest.com/deaddrops/dead-drops-official/",
             },
             "ref": null,
             "rendered": Object {
@@ -357,7 +357,7 @@ ShallowWrapper {
               "rendered": null,
               "type": "img",
             },
-            "type": "button",
+            "type": "a",
           },
         ],
         "type": "div",
@@ -425,14 +425,14 @@ ShallowWrapper {
                                     </button>
                         </Link>
             </div>
-            <button
-                        className="pinterest-button"
+            <a
+                        href="https://www.pinterest.com/deaddrops/dead-drops-official/"
             >
                         <img
                                     alt="pinterest-icon"
                                     src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
                         />
-            </button>
+            </a>
 </div>,
         ],
         "className": "nav",
@@ -530,14 +530,14 @@ ShallowWrapper {
                                 </button>
                 </Link>
 </div>,
-              <button
-                className="pinterest-button"
+              <a
+                href="https://www.pinterest.com/deaddrops/dead-drops-official/"
 >
                 <img
                                 alt="pinterest-icon"
                                 src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
                 />
-</button>,
+</a>,
             ],
             "className": "buttons",
           },
@@ -686,7 +686,7 @@ ShallowWrapper {
                   alt="pinterest-icon"
                   src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
 />,
-                "className": "pinterest-button",
+                "href": "https://www.pinterest.com/deaddrops/dead-drops-official/",
               },
               "ref": null,
               "rendered": Object {
@@ -701,7 +701,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": "img",
               },
-              "type": "button",
+              "type": "a",
             },
           ],
           "type": "div",

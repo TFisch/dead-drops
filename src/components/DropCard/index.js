@@ -1,6 +1,6 @@
 import React from 'react';
 import './DropCard.css';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 export const DropCard = (props) => {
   const { note } = props;
@@ -13,6 +13,6 @@ export const DropCard = (props) => {
 };
 
 DropCard.propTypes = {
-  note: PropTypes.object,
+  note: PropTypes.object
 
 };

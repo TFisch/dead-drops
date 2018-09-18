@@ -1,7 +1,5 @@
-import React from 'react';
 import { confirmReducer } from './';
 import * as actions from '../../actions/';
-
 
 describe('confirmReducer', () => {
   const { setConfirm, resetConfirm } = actions;

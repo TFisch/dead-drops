@@ -1,4 +1,3 @@
-import React from 'react';
 import { locationReducer } from '../locationReducer';
 import { mockLocation, mockLocationReducer } from '../../utilities/mockData';
 import * as actions from '../../actions/';

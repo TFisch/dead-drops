@@ -138,6 +138,7 @@ ShallowWrapper {
                 >
                         <button
                                 className="submit-button form-row"
+                                name="submit-co-button"
                         >
                                 SUBMIT
                         </button>
@@ -266,6 +267,7 @@ ShallowWrapper {
           >
                     <button
                               className="submit-button form-row"
+                              name="submit-co-button"
                     >
                               SUBMIT
                     </button>
@@ -393,6 +395,7 @@ ShallowWrapper {
 >
               <button
                             className="submit-button form-row"
+                            name="submit-co-button"
               >
                             SUBMIT
               </button>
@@ -796,6 +799,7 @@ ShallowWrapper {
             "props": Object {
               "children": <button
                 className="submit-button form-row"
+                name="submit-co-button"
 >
                 SUBMIT
 </button>,
@@ -809,6 +813,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "SUBMIT",
                 "className": "submit-button form-row",
+                "name": "submit-co-button",
               },
               "ref": null,
               "rendered": "SUBMIT",
@@ -948,6 +953,7 @@ ShallowWrapper {
                     >
                               <button
                                         className="submit-button form-row"
+                                        name="submit-co-button"
                               >
                                         SUBMIT
                               </button>
@@ -1076,6 +1082,7 @@ ShallowWrapper {
             >
                         <button
                                     className="submit-button form-row"
+                                    name="submit-co-button"
                         >
                                     SUBMIT
                         </button>
@@ -1203,6 +1210,7 @@ ShallowWrapper {
 >
                 <button
                                 className="submit-button form-row"
+                                name="submit-co-button"
                 >
                                 SUBMIT
                 </button>
@@ -1606,6 +1614,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <button
                   className="submit-button form-row"
+                  name="submit-co-button"
 >
                   SUBMIT
 </button>,
@@ -1619,6 +1628,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "SUBMIT",
                   "className": "submit-button form-row",
+                  "name": "submit-co-button",
                 },
                 "ref": null,
                 "rendered": "SUBMIT",

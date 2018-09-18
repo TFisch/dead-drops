@@ -27,5 +27,14 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/registerServiceWorker.js",
+      "!src/reducers/rootReducer/index.js"
+    ]
+  }
 }

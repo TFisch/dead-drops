@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { HandleUser, getAccessToken, mapStateToProps, mapDispatchToProps } from '../HandleUser';
-import { getToken, setUser, fetchUserImage } from '../../actions';
+import { HandleUser, mapStateToProps, mapDispatchToProps } from '../HandleUser';
+import { getToken, setUser } from '../../actions';
 import { tokenMock, mockUser, mockPropsMethod } from '../../utilities/mockData';
 
 describe('HandleUser', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<HandleUser setUser={mockPropsMethod} />);
+    wrapper = shallow(<HandleUser setUser={mockPropsMethod} fetchUserImage={mockPropsMethod} />);
   });
 
   it('should match the snapshot', () => {
@@ -16,14 +16,17 @@ describe('HandleUser', () => {
 
   });
 
+
+
   describe('getUserImage', () => {
-    it('should ', async () => {
-      const spy = spyOn(wrapper.instance(), 'getUserImage');
+    it('should call the setUser action', async () => {
+      const spy = spyOn(await wrapper.instance(), 'getUserImage');
+
+      const response = wrapper.instance().getUserImage(tokenMock);
+
       wrapper.instance().forceUpdate();
 
-      await wrapper.instance().getUserImage();
-
-      expect(spy).toHaveBeenCalled();
+      expect(spy).toHaveBeenCalledWith(tokenMock);
 
     });
   });

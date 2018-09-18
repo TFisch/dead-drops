@@ -1,9 +1,8 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import { Nav } from './';
+import { shallow } from 'enzyme';
 import { mockUser, mockPropsMethod } from '../../utilities/mockData';
 import { setFormActive, resetConfirm, resetFormActive } from '../../actions';
-import { mapStateToProps, mapDispatchToProps } from './';
+import { mapStateToProps, mapDispatchToProps, Nav } from './';
 
 describe('Nav', () => {
   let wrapper;

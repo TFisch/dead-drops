@@ -81,6 +81,10 @@
   text-shadow: 2px 1.3px black;
   width: 10em;
   @include category();
+  &:Focus{
+    outline: none;
+    border: none;
+  }
 }
 
 .unique-code-entry-wrap {

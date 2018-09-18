@@ -1,4 +1,3 @@
-import React from 'react';
 import { tokenReducer } from '../tokenReducer';
 import { tokenMock } from '../../utilities/mockData';
 import * as actions from '../../actions/';
