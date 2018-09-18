@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { postPin } from '../../api'
 import './ConfirmDrop.css'
-import treasureIcon from '../../utilities/images/treasure.svg'
+import PropTypes from 'prop-types';
 
 export class ConfirmDrop extends Component {
   constructor(props) {
@@ -51,6 +51,12 @@ export class ConfirmDrop extends Component {
     )
   }
 }
+
+ConfirmDrop.propTypes = {
+  token: PropTypes.string,
+  toggleSubmit: PropTypes.func,
+  location: PropTypes.object
+};
 
 export const mapStateToProps = (state) => ({
   token: state.token,
