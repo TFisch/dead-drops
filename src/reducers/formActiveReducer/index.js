@@ -7,6 +7,6 @@ export const formActiveReducer = (state = {}, action) => {
     default:
       return state;
   }
-}
+};
 
 

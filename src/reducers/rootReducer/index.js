@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import { tokenReducer } from '../tokenReducer'
-import { userReducer } from '../userReducer'
-import { locationReducer } from '../locationReducer'
-import { formActiveReducer } from '../formActiveReducer'
-import { confirmReducer } from '../confirmReducer'
+import { tokenReducer } from '../tokenReducer';
+import { userReducer } from '../userReducer';
+import { locationReducer } from '../locationReducer';
+import { formActiveReducer } from '../formActiveReducer';
+import { confirmReducer } from '../confirmReducer';
 
 export const rootReducer = combineReducers({
   token: tokenReducer,
@@ -11,4 +11,4 @@ export const rootReducer = combineReducers({
   locationData: locationReducer,
   setConfirm: confirmReducer,
   formActive: formActiveReducer
-})
+});

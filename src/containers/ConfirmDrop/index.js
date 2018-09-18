@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { postPin } from '../../api'
-import './ConfirmDrop.css'
+import { postPin } from '../../api';
+import './ConfirmDrop.css';
 import PropTypes from 'prop-types';
 
 export class ConfirmDrop extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   handleConfirm = () => {
     const { latitude, longitude, image } = this.props.location;
     const note = `Latitude: ${latitude}, Longitude: ${longitude}`;
-    postPin(note, this.props.token, image)
+    postPin(note, this.props.token, image);
     this.props.toggleSubmit();
   }
 
@@ -48,7 +48,7 @@ export class ConfirmDrop extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Welcome } from '../../components/Welcome/'
+import { Welcome } from '../../components/Welcome/';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { DropSubmitForm } from '../DropSubmitForm/';
 import Profile from '../Profile/';

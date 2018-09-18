@@ -1,6 +1,6 @@
 import React from 'react';
-import { locationReducer } from '../locationReducer'
-import { mockLocation, mockLocationReducer } from '../../utilities/mockData'
+import { locationReducer } from '../locationReducer';
+import { mockLocation, mockLocationReducer } from '../../utilities/mockData';
 import * as actions from '../../actions/';
 
 
@@ -17,7 +17,7 @@ describe('locationReducer', () => {
 
   it('should retieve the token', () => {
 
-    expect(locationReducer(undefined, getLocation(mockLocation))).toEqual(mockLocationReducer)
+    expect(locationReducer(undefined, getLocation(mockLocation))).toEqual(mockLocationReducer);
   });
 
 });

@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setFormActive, resetConfirm, resetFormActive } from '../../actions'
+import { setFormActive, resetConfirm, resetFormActive } from '../../actions';
+import PropTypes from 'prop-types';
 import './style.css';
 
 export class Nav extends Component {
   constructor() {
-    super()
+    super();
   }
 
   handleSubmitButton = () => {
-    this.props.setFormActive(true)
-    this.props.resetConfirm()
+    this.props.setFormActive(true);
+    this.props.resetConfirm();
   }
 
   handleProfileButton = () => {
-    this.props.resetConfirm()
-    this.props.resetFormActive()
+    this.props.resetConfirm();
+    this.props.resetFormActive();
   }
 
   render() {
@@ -38,17 +39,17 @@ export class Nav extends Component {
               <Link to='/'><button className="nav-button">LOG OUT</button></Link>
             }
           </div>
-          <button className="pinterest-button">
+          <a href='https://www.pinterest.com/deaddrops/dead-drops-official/'>
             <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" alt="pinterest-icon" />
-          </button>
+          </a>
         </div>
       </div>
-    )
+    );
   }
 }
 
 export const mapStateToProps = (state) => ({
-  user: state.user,
+  user: state.user
 });
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -56,5 +57,12 @@ export const mapDispatchToProps = (dispatch) => ({
   resetConfirm: () => dispatch(resetConfirm()),
   resetFormActive: () => dispatch(resetFormActive())
 });
+
+Nav.propTypes = {
+  user: PropTypes.object,
+  setFormActive: PropTypes.func,
+  resetConfirm: PropTypes.func,
+  resetFormActive: PropTypes.fun
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);

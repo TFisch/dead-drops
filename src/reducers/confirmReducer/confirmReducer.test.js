@@ -1,5 +1,5 @@
 import React from 'react';
-import { confirmReducer } from './'
+import { confirmReducer } from './';
 import * as actions from '../../actions/';
 
 
@@ -18,13 +18,13 @@ describe('confirmReducer', () => {
   it('should set the confirm state to true', () => {
     const mockConfirmReducer = true;
 
-    expect(confirmReducer(undefined, setConfirm(mockStatus))).toEqual(mockConfirmReducer)
+    expect(confirmReducer(undefined, setConfirm(mockStatus))).toEqual(mockConfirmReducer);
   });
 
   it('should clear the confirm state to an empty object', () => {
     const mockConfirmReducer = {};
 
-    expect(confirmReducer(undefined, resetConfirm())).toEqual(mockConfirmReducer)
+    expect(confirmReducer(undefined, resetConfirm())).toEqual(mockConfirmReducer);
   });
 
 });

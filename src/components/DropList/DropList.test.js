@@ -1,7 +1,7 @@
-import React from 'react'
-import { DropList } from './'
-import { shallow } from 'enzyme'
-import { mockBoardResponseFull } from '../../utilities/mockData'
+import React from 'react';
+import { DropList } from './';
+import { shallow } from 'enzyme';
+import { mockBoardResponseFull } from '../../utilities/mockData';
 
 describe('DropList', () => {
   let wrapper;
@@ -9,7 +9,7 @@ describe('DropList', () => {
   beforeEach(() => {
 
     wrapper = shallow(<DropList retrievedBoard={mockBoardResponseFull}
-    />)
+    />);
   });
 
   it('should match the snapshot', () => {

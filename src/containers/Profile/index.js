@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import { getToken, setUser, resetConfirm } from '../../actions';
 import { connect } from 'react-redux';
-import { fetchDropBoard } from '../../api'
-import { Redirect } from 'react-router-dom'
-import './Profile.css'
+import { fetchDropBoard } from '../../api';
 import DropSubmitForm from '../DropSubmitForm';
 import { DropList } from '../../components/DropList';
-import { Welcome } from '../../components/Welcome'
 import ConfirmDrop from '../ConfirmDrop';
+import PropTypes from 'prop-types';
+import './Profile.css';
 
 export class Profile extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       username: '',
       image: '',
       dropFormActive: false,
       dropListRetrieved: false,
       confirmDropActive: false,
-      retrievedBoard: [],
-    }
+      retrievedBoard: []
+    };
   }
 
   componentDidUpdate = () => {
@@ -29,15 +28,15 @@ export class Profile extends Component {
   }
 
   retrieveDropBoard = async () => {
-    const token = this.props.token
+    const token = this.props.token;
     const retrievedBoard = await fetchDropBoard(token);
-    await this.setState({ retrievedBoard, dropListRetrieved: true })
+    await this.setState({ retrievedBoard, dropListRetrieved: true });
   }
 
   toggleSubmit = () => {
     const dropFormActive = !this.state.dropFormActive;
     const confirmDropActive = !this.state.confirmDropActive;
-    this.setState({ dropFormActive, confirmDropActive })
+    this.setState({ dropFormActive, confirmDropActive });
     this.props.resetConfirm();
   }
 
@@ -64,7 +63,7 @@ export class Profile extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -79,7 +78,20 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
   setUser: (user) => dispatch(setUser(user)),
-  resetConfirm: (status) => dispatch(resetConfirm(status)),
+  resetConfirm: (status) => dispatch(resetConfirm(status))
 });
+
+Profile.propTypes = {
+  formActive: PropTypes.object,
+  getToken: PropTypes.func,
+  history: PropTypes.object,
+  location: PropTypes.object,
+  match: PropTypes.object,
+  resetConfirm: PropTypes.func,
+  setConfirm: PropTypes.object,
+  setUser: PropTypes.func,
+  token: PropTypes.string,
+  user: PropTypes.object
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);

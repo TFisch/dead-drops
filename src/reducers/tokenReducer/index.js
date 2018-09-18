@@ -5,6 +5,6 @@ export const tokenReducer = (state = {}, action) => {
     default:
       return state;
   }
-}
+};
 
 

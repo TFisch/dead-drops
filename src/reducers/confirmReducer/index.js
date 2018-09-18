@@ -7,4 +7,4 @@ export const confirmReducer = (state = {}, action) => {
     default:
       return state;
   }
-}
+};

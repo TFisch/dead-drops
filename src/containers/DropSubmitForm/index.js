@@ -1,25 +1,26 @@
 import React from 'react';
-import './DropSubmitForm.css'
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchLocation } from '../../api';
-import { getLocation, setConfirm, resetFormActive } from '../../actions'
+import { getLocation, setConfirm, resetFormActive } from '../../actions';
+import PropTypes from 'prop-types';
+import './DropSubmitForm.css';
 
 export class DropSubmitForm extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       difficulty: "",
       longitude: "",
       latitude: "",
       codeLog: [0, 0, 0, 0, 0, 0],
       drop: false
-    }
+    };
   }
 
   handleChange = (e) => {
-    const { name, value } = e.target
-    this.setState({ [name]: value })
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
   }
 
   handleCode = (e) => {
@@ -27,7 +28,7 @@ export class DropSubmitForm extends Component {
     const entry = e.target.value;
     let codeLog = this.state.codeLog;
     codeLog[id] = entry;
-    this.setState({ codeLog })
+    this.setState({ codeLog });
     this.autotab(e);
   }
 
@@ -38,7 +39,7 @@ export class DropSubmitForm extends Component {
       next.focus();
     } else if (e.target.value.length === 0) {
       if (previous === null) {
-        return
+        return;
       }
       previous.focus();
     }
@@ -83,7 +84,7 @@ export class DropSubmitForm extends Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
@@ -91,14 +92,24 @@ export const mapStateToProps = (state) => ({
   token: state.token,
   user: state.user,
   location: state.locationData
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   getLocation: (locationData) => dispatch(getLocation(locationData)),
   setConfirm: (status) => dispatch(setConfirm(status)),
-  resetFormActive: (status) => dispatch(resetFormActive(status)),
+  resetFormActive: (status) => dispatch(resetFormActive(status))
+});
 
-})
+DropSubmitForm.propTypes = {
+  toggleSubmit: PropTypes.func,
+  token: PropTypes.string,
+  history: PropTypes.object,
+  location: PropTypes.object,
+  setConfirm: PropTypes.object,
+  getLocation: PropTypes.func,
+  user: PropTypes.obj,
+  resetFormActive: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(DropSubmitForm);
 

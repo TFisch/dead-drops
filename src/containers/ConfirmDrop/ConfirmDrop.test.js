@@ -1,7 +1,7 @@
-import React from 'react'
-import { ConfirmDrop } from '../ConfirmDrop'
-import { shallow } from 'enzyme'
-import { mockLocation, mockPropsMethod, tokenMock } from '../../utilities/mockData'
+import React from 'react';
+import { ConfirmDrop } from '../ConfirmDrop';
+import { shallow } from 'enzyme';
+import { mockLocation, mockPropsMethod, tokenMock } from '../../utilities/mockData';
 import { mapStateToProps } from './';
 
 describe('ConfirmDrop', () => {
@@ -16,7 +16,7 @@ describe('ConfirmDrop', () => {
       toggleSubmit={mockPropsMethod}
       postPin={mockPropsMethodTwo}
       handleEdit={mockPropsMethodFour}
-    />)
+    />);
   });
 
   it('should match the snapshot', () => {
@@ -45,7 +45,7 @@ describe('ConfirmDrop', () => {
 
       expect(mockPropsMethodTwo).toHaveBeenCalled();
 
-    }
+    };
   });
 
 
@@ -74,7 +74,7 @@ describe('ConfirmDrop', () => {
 
       const mappedProps = mapStateToProps(mockState);
 
-      expect(mappedProps).toEqual(expected)
+      expect(mappedProps).toEqual(expected);
     });
   });
 

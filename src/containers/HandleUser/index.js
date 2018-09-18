@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import { id } from '../../hidden/hidden'
-import { getToken, setUser } from '../../actions'
+import { id } from '../../hidden/hidden';
+import { getToken, setUser } from '../../actions';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { fetchUserImage, fetchAccessToken } from '../../api'
-
+import { fetchUserImage, fetchAccessToken } from '../../api';
+import PropTypes from 'prop-types';
 
 export class HandleUser extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       authorizationCode: '',
       fireRedirect: false,
       tokenFetched: false
-    }
+    };
   }
 
   componentDidMount = async () => {
@@ -22,15 +22,15 @@ export class HandleUser extends Component {
       window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (value) {
         code = value;
       });
-      const newCode = code.split('').splice(6, code.length).join('')
-      await this.setState({ authorizationCode: newCode })
+      const newCode = code.split('').splice(6, code.length).join('');
+      await this.setState({ authorizationCode: newCode });
       await this.getAccessToken();
     }
   }
 
   getAccessToken = async () => {
     const response = await fetchAccessToken(id, this.state.authorizationCode);
-    await this.setState({ fireRedirect: true, tokenFetched: true })
+    await this.setState({ fireRedirect: true, tokenFetched: true });
     this.props.getToken(response.access_token);
     this.getUserImage(response.access_token);
   }
@@ -55,11 +55,19 @@ export class HandleUser extends Component {
 export const mapStateToProps = (state) => ({
   token: state.token,
   user: state.user
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   getToken: (token) => dispatch(getToken(token)),
   setUser: (user) => dispatch(setUser(user))
-})
+});
+
+HandleUser.propTypes = {
+  getToken: PropTypes.func,
+  match: PropTypes.object,
+  history: PropTypes.object,
+  location: PropTypes.object,
+  setUser: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HandleUser);

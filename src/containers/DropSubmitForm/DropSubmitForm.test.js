@@ -1,7 +1,7 @@
-import React from 'react'
-import { DropSubmitForm } from './'
-import { shallow } from 'enzyme'
-import { mockPropsMethod } from '../../utilities/mockData'
+import React from 'react';
+import { DropSubmitForm } from './';
+import { shallow } from 'enzyme';
+import { mockPropsMethod } from '../../utilities/mockData';
 
 describe('DropSubmitForm', () => {
   let wrapper;
@@ -9,7 +9,7 @@ describe('DropSubmitForm', () => {
   beforeEach(() => {
 
     wrapper = shallow(<DropSubmitForm handleChange={mockPropsMethod}
-    />)
+    />);
   });
 
   it('should match the snapshot', () => {
@@ -30,13 +30,13 @@ describe('DropSubmitForm', () => {
       expect(spy).toHaveBeenCalled();
     });
 
-  })
+  });
 
 
-  describe('handleChange', () => {
+  describe('handleCode', () => {
     it('should be called when an on change occurs', () => {
 
-      const event = { target: [0] };
+      const event = { target: [3] };
 
       const spy = jest.spyOn(wrapper.instance(), 'handleCode');
       wrapper.instance().forceUpdate();
@@ -46,9 +46,9 @@ describe('DropSubmitForm', () => {
 
       expect(spy).toHaveBeenCalled();
     });
-  })
+  });
 
-})
+});
 
 
 

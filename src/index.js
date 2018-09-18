@@ -4,7 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { App } from './containers/App';
 import { createStore } from 'redux';
-import { rootReducer } from './reducers/rootReducer'
+import { rootReducer } from './reducers/rootReducer';
 
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ &&
   window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -14,7 +14,7 @@ const router = (
   <Provider store={store}>
     <App />
   </Provider>
-)
+);
 
 
 ReactDOM.render(router, document.getElementById('root'));

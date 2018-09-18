@@ -1,14 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme'
-import { HandleUser, getAccessToken, mapStateToProps, mapDispatchToProps } from '../HandleUser'
-import { getToken, setUser, fetchUserImage } from '../../actions'
-import { tokenMock, mockUser, mockPropsMethod } from '../../utilities/mockData'
+import { shallow } from 'enzyme';
+import { HandleUser, getAccessToken, mapStateToProps, mapDispatchToProps } from '../HandleUser';
+import { getToken, setUser, fetchUserImage } from '../../actions';
+import { tokenMock, mockUser, mockPropsMethod } from '../../utilities/mockData';
 
 describe('HandleUser', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<HandleUser setUser={mockPropsMethod} />)
+    wrapper = shallow(<HandleUser setUser={mockPropsMethod} />);
   });
 
   it('should match the snapshot', () => {
@@ -30,7 +30,7 @@ describe('HandleUser', () => {
 
   describe('MapStateToProps', () => {
     it('should return a user object', () => {
-      const mockedState = { user: { username: 'Al Borlin', image: 'google.com' } }
+      const mockedState = { user: { username: 'Al Borlin', image: 'google.com' } };
 
       const mappedProps = mapStateToProps(mockedState);
 
@@ -43,7 +43,7 @@ describe('HandleUser', () => {
 
       const mappedProps = mapStateToProps(mockState);
 
-      expect(mappedProps).toEqual(expected)
+      expect(mappedProps).toEqual(expected);
     });
   });
 
@@ -51,11 +51,11 @@ describe('HandleUser', () => {
 
     it('calls dispatch with a getToken action when getToken is called', () => {
 
-      const mockDispatch = jest.fn()
-      const actionToDispatch = getToken(tokenMock)
+      const mockDispatch = jest.fn();
+      const actionToDispatch = getToken(tokenMock);
 
-      const mappedProps = mapDispatchToProps(mockDispatch)
-      mappedProps.getToken(tokenMock)
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.getToken(tokenMock);
 
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
 
@@ -63,11 +63,11 @@ describe('HandleUser', () => {
 
     it('calls dispatch with a setUser action when setUser is called', () => {
 
-      const mockDispatch = jest.fn()
-      const actionToDispatch = setUser(mockUser)
+      const mockDispatch = jest.fn();
+      const actionToDispatch = setUser(mockUser);
 
-      const mappedProps = mapDispatchToProps(mockDispatch)
-      mappedProps.setUser(mockUser)
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.setUser(mockUser);
 
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
 

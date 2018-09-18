@@ -1,6 +1,6 @@
-import React from 'react'
-import { Welcome } from './'
-import { shallow } from 'enzyme'
+import React from 'react';
+import { Welcome } from './';
+import { shallow } from 'enzyme';
 
 describe('Welcome', () => {
   let wrapper;
@@ -8,7 +8,7 @@ describe('Welcome', () => {
   beforeEach(() => {
 
     wrapper = shallow(<Welcome
-    />)
+    />);
   });
 
   it('should match the snapshot', () => {
