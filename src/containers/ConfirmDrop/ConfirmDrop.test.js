@@ -2,7 +2,8 @@ import React from 'react';
 import { ConfirmDrop } from '../ConfirmDrop';
 import { shallow } from 'enzyme';
 import { mockLocation, mockPropsMethod, tokenMock } from '../../utilities/mockData';
-import { mapStateToProps } from './';
+import { mapStateToProps, mapDispatchToProps } from './';
+import { setFormActive } from '../../actions';
 
 describe('ConfirmDrop', () => {
   let wrapper;
@@ -16,6 +17,7 @@ describe('ConfirmDrop', () => {
       toggleSubmit={mockPropsMethod}
       postPin={mockPropsMethodTwo}
       handleEdit={mockPropsMethodFour}
+      setFormActive={mockPropsMethod}
     />);
   });
 
@@ -75,6 +77,20 @@ describe('ConfirmDrop', () => {
       const mappedProps = mapStateToProps(mockState);
 
       expect(mappedProps).toEqual(expected);
+    });
+  });
+
+  describe('MapDispatchToProps', () => {
+
+    it('should call dispatch with a status value when setFormActive is called', () => {
+      const mockDispatch = jest.fn();
+      const mockStatus = true;
+      const actionToDispatch = setFormActive(mockStatus);
+
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.setFormActive(mockStatus);
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
     });
   });
 
