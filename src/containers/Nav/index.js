@@ -22,7 +22,7 @@ export class Nav extends Component {
     return (
       <div className="nav">
         <div className="wrap-left">
-          <img className="icon" src={require('../../utilities/images/treasure.svg')} alt="" />
+          <img className="icon" src={require('../../utilities/images/treasure.svg')} alt="treasure-icon" />
           <h1 className="logo">DEAD DROPS</h1>
         </div>
         <div className='buttons'>
