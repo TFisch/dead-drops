@@ -6,7 +6,7 @@ describe('confirmReducer', () => {
   const mockStatus = true;
 
   it('should return the initial State', () => {
-    const expected = {};
+    const expected = false;
 
     const result = confirmReducer(undefined, {});
 
@@ -20,7 +20,7 @@ describe('confirmReducer', () => {
   });
 
   it('should clear the confirm state to an empty object', () => {
-    const mockConfirmReducer = {};
+    const mockConfirmReducer = false;
 
     expect(confirmReducer(undefined, resetConfirm())).toEqual(mockConfirmReducer);
   });

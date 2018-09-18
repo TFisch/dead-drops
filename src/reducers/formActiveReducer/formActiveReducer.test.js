@@ -7,7 +7,7 @@ describe('formActiveReducer', () => {
   const mockStatus = true;
 
   it('should return the initial State', () => {
-    const expected = {};
+    const expected = false;
 
     const result = formActiveReducer(undefined, {});
 
@@ -21,7 +21,7 @@ describe('formActiveReducer', () => {
   });
 
   it('should clear the confirm state to an empty object', () => {
-    const mockFormActiveReducer = {};
+    const mockFormActiveReducer = false;
 
     expect(formActiveReducer(undefined, resetFormActive())).toEqual(mockFormActiveReducer);
   });
