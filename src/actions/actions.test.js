@@ -13,7 +13,11 @@ describe('actions', () => {
   const {
     setUser,
     getToken,
-    getLocation
+    getLocation,
+    setFormActive,
+    setConfirm,
+    resetConfirm,
+    resetFormActive
   } = actions;
 
   it('should return a user object with the type of SET_USER', () => {
@@ -55,6 +59,43 @@ describe('actions', () => {
     const result = getLocation(mockLocation);
 
     expect(expected).toEqual(result);
+  });
+
+  it('should set setForm to true with a type of SET_FORM_ACTIVE ', () => {
+
+    const expected = { type: 'SET_FORM_ACTIVE', setForm: true };
+    const result = setFormActive(true)
+
+    expect(expected).toEqual(result);
+
+  });
+
+  it('should set setForm to true with a type of SET_CONFIRM_ACTIVE ', () => {
+
+    const expected = { type: 'SET_CONFIRM_ACTIVE', setConfirm: true };
+    const result = setConfirm(true)
+
+    expect(expected).toEqual(result);
+
+
+  });
+
+  it('should reset the confirm property with a type of RESET_FORM_ACTIVE ', () => {
+
+    const expected = { type: 'RESET_FORM_ACTIVE' };
+    const result = resetFormActive()
+
+    expect(expected).toEqual(result);
+
+  });
+
+  it('should reset the confirm property with a type of RESET_CONFIRM_ACTIVE ', () => {
+
+    const expected = { type: 'RESET_CONFIRM_ACTIVE' };
+    const result = resetConfirm()
+
+    expect(expected).toEqual(result);
+
   });
 
 

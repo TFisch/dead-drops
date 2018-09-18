@@ -22,15 +22,15 @@ export const setFormActive = (setForm) => ({
   setForm
 });
 
+export const setConfirm = (setConfirm) => ({
+  type: 'SET_CONFIRM_ACTIVE',
+  setConfirm
+});
+
 export const resetFormActive = () => ({
   type: 'RESET_FORM_ACTIVE'
 });
 
 export const resetConfirm = () => ({
   type: 'RESET_CONFIRM_ACTIVE'
-});
-
-export const setConfirm = (setConfirm) => ({
-  type: 'SET_CONFIRM_ACTIVE',
-  setConfirm
 });
